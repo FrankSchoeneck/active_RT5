@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 14.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 43363)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1"
+	 id="svg2" inkscape:export-filename="F:\GIS\render\symbols\cross.png" inkscape:version="0.48.0 r9654" sodipodi:docname="mine.svg" inkscape:export-ydpi="90" inkscape:export-xdpi="90" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" inkscape:label="PozadĂ­" xmlns:dc="http://purl.org/dc/elements/1.1/"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="20px" height="20px"
+	 viewBox="-2 -2 20 20" enable-background="new -2 -2 20 20" xml:space="preserve">
+<filter  x="-0.1103144" y="-0.13155009" width="1.2206288" height="1.2631002" id="filter3788" inkscape:collect="always">
+	<feGaussianBlur  id="feGaussianBlur3790" stdDeviation="0.44885986" inkscape:collect="always"></feGaussianBlur>
+</filter>
+<sodipodi:namedview  id="base" inkscape:window-maximized="1" inkscape:snap-nodes="false" inkscape:snap-grids="false" inkscape:snap-to-guides="false" inkscape:window-y="-4" inkscape:window-x="-4" inkscape:window-height="751" inkscape:window-width="1280" inkscape:current-layer="layer1" inkscape:document-units="px" inkscape:pageshadow="2" inkscape:pageopacity="0.0" showgrid="true" inkscape:cy="9.6622998" inkscape:cx="0.20451568" inkscape:zoom="25.527783" borderopacity="1.0" bordercolor="#666666" pagecolor="#ffffff">
+	
+		<inkscape:grid  type="xygrid" dotted="false" enabled="true" visible="true" id="grid3768" snapvisiblegridlinesonly="true" empspacing="4">
+		</inkscape:grid>
+</sodipodi:namedview>
+<g id="layer1" transform="translate(0,-1036.3622)" inkscape:groupmode="layer" inkscape:label="Vrstva 1">
+	<g id="use3768" inkscape:connector-curvature="0" sodipodi:nodetypes="ccccccccccccccccccccc" filter="url(#filter3788)">
+		<polygon fill="#FFFFFF" points="11.293,1037.999 9.621,1039.67 11.243,1041.291 8.051,1044.486 4.708,1041.144 6.135,1039.668 
+			4.515,1037.997 1.258,1041.253 0.409,1045.464 3.578,1042.225 6.968,1045.616 2.792,1049.743 3.874,1050.873 8.051,1046.697 
+			12.226,1050.873 13.308,1049.743 9.132,1045.616 12.373,1042.373 14.092,1044.093 15.764,1042.422 		"/>
+		<polygon fill="none" stroke="#FFFFFF" points="11.293,1037.999 9.621,1039.67 11.243,1041.291 8.051,1044.486 4.708,1041.144 
+			6.135,1039.668 4.515,1037.997 1.258,1041.253 0.409,1045.464 3.578,1042.225 6.968,1045.616 2.792,1049.743 3.874,1050.873 
+			8.051,1046.697 12.226,1050.873 13.308,1049.743 9.132,1045.616 12.373,1042.373 14.092,1044.093 15.764,1042.422 		"/>
+	</g>
+	<path id="path3002" inkscape:connector-curvature="0" sodipodi:nodetypes="ccccccccccccccccccccc" d="M11.293,1037.999
+		l-1.672,1.671l1.622,1.621l-3.192,3.194l-3.343-3.342l1.427-1.476l-1.62-1.671l-3.257,3.256l-0.849,4.21l3.169-3.238l3.39,3.391
+		l-4.176,4.127l1.082,1.13l4.177-4.176l4.175,4.176l1.082-1.13l-4.176-4.127l3.241-3.243l1.719,1.72l1.672-1.67L11.293,1037.999z"/>
+</g>
+</svg>

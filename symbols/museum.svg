@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg id="svg2" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" height="580" width="580" version="1.0" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/">
+ <path id="path8074" opacity=".8" stroke-linejoin="round" d="m294.99 63.604s-219.48 73.876-218.77 73.876 0 0-43.329-0.72l1.42 70.33h47.59v209.54l-21.309-0.71-30.543 49.73 522.08-0.72-27.69-47.59-27.71-0.71 1.43-208.12 49.01 0.71 1.42-71.74-36.94-0.72-216.65-73.156zm156.27 144.19-1.42 208.84-72.44-0.71 0.7-205.99 73.16-2.14zm-322.49 0.72h72.46l0.71 207.41-72.45-0.7-0.72-206.71zm121.47 0.71h78.84l1.43 207.41h-81.69l1.42-207.41z" fill-rule="evenodd" stroke="#fff" stroke-linecap="round" stroke-width="39.19" fill="none"/>
+ <g>
+  <g fill-rule="evenodd">
+   <path id="path828" stroke-linejoin="round" d="m28.585 466.3 523.66-0.91-28.49-49.36h-464.75l-30.417 50.27z" stroke-linecap="round" stroke-width="22.615"/>
+   <g stroke="#000" stroke-width="47.51">
+    <path id="path829" d="m105.19 421.87v-215.19"/>
+    <path id="path830" d="m225.31 421.87v-215.19"/>
+    <path id="path832" d="m353.63 421.87v-215.19"/>
+    <path id="path833" d="m473.75 421.87v-215.19"/>
+   </g>
+   <path id="path837" stroke-linejoin="round" d="m29.852 151.26h522.65c-86.3-29.26-172.59-58.527-258.87-87.792-87.93 29.265-175.85 58.532-263.78 87.792z" stroke-linecap="round" stroke-width="22.615"/>
+  </g>
+  <rect id="rect3475" rx="0" height="43.18" width="486.36" stroke="#000" stroke-linecap="square" y="151.33" x="47.9" stroke-width="28.925"/>
+ </g>
+</svg>
