@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg id="svg2" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" height="64" width="64" version="1.1" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" viewBox="0 0 64.000001 64.000001">
+ <g id="layer1" transform="translate(0 -988.36)">
+  <rect id="rect7279" opacity="0" height=".89227" width="4.8669" y="1001.8" x="11.831" stroke-width=".5"/>
+  <rect id="rect7281" opacity="0" height=".081115" width=".081115" y="1001.6" x="12.074" stroke-width=".5"/>
+  <g stroke="#7a7a76" stroke-linecap="square" fill="#7a7a76">
+   <rect id="rect7283" height=".61842" width="8.7806" y="1002.1" x="11.853" stroke-width=".38158"/>
+   <rect id="rect7283-3" transform="rotate(-90)" height=".64056" width="7.5221" y="15.938" x="-1002.3" stroke-width=".35944"/>
+   <rect id="rect7283-4" transform="matrix(.65963 .75159 -.79158 .61106 0 0)" height=".65345" width="5.3486" y="649.85" x="798.95" stroke-width=".30613"/>
+   <rect id="rect7283-4-8" transform="matrix(-.65963 .75159 .79158 .61106 0 0)" height=".65345" width="5.3486" y="674.51" x="778.9" stroke-width=".30613"/>
+  </g>
+  <rect id="rect7279-5" opacity="0" height=".89227" width="4.8669" y="1016.6" x="41.008" stroke-width=".5"/>
+  <rect id="rect7281-2" opacity="0" height=".081115" width=".081115" y="1016.3" x="41.252" stroke-width=".5"/>
+  <g stroke="#7a7a76" stroke-linecap="square" fill="#7a7a76">
+   <rect id="rect7283-6" height=".61842" width="8.7806" y="1016.8" x="41.031" stroke-width=".38158"/>
+   <rect id="rect7283-3-6" transform="rotate(-90)" height=".64056" width="7.5221" y="45.116" x="-1017" stroke-width=".35944"/>
+   <rect id="rect7283-4-5" transform="matrix(.65963 .75159 -.79158 .61106 0 0)" height=".65345" width="5.3486" y="637.62" x="828.5" stroke-width=".30613"/>
+   <rect id="rect7283-4-8-0" transform="matrix(-.65963 .75159 .79158 .61106 0 0)" height=".65345" width="5.3486" y="706.23" x="772.72" stroke-width=".30613"/>
+  </g>
+  <rect id="rect7279-2" opacity="0" height=".89227" width="4.8669" y="1031.5" x="11.969" stroke-width=".5"/>
+  <rect id="rect7281-20" opacity="0" height=".081115" width=".081115" y="1031.2" x="12.212" stroke-width=".5"/>
+  <g stroke="#7a7a76" stroke-linecap="square" fill="#7a7a76">
+   <rect id="rect7283-44" height=".61842" width="8.7806" y="1031.7" x="11.991" stroke-width=".38158"/>
+   <rect id="rect7283-3-4" transform="rotate(-90)" height=".64056" width="7.5221" y="16.076" x="-1031.9" stroke-width=".35944"/>
+   <rect id="rect7283-4-84" transform="matrix(.65963 .75159 -.79158 .61106 0 0)" height=".65345" width="5.3486" y="669.36" x="822.56" stroke-width=".30613"/>
+   <rect id="rect7283-4-8-3" transform="matrix(-.65963 .75159 .79158 .61106 0 0)" height=".65345" width="5.3486" y="694.23" x="802.34" stroke-width=".30613"/>
+  </g>
+  <rect id="rect7279-0" opacity="0" height=".89227" width="4.8669" y="1046.7" x="41.008" stroke-width=".5"/>
+  <rect id="rect7281-9" opacity="0" height=".081115" width=".081115" y="1046.5" x="41.252" stroke-width=".5"/>
+  <g stroke="#7a7a76" stroke-linecap="square" fill="#7a7a76">
+   <rect id="rect7283-64" height=".61842" width="8.7806" y="1047" x="41.031" stroke-width=".38158"/>
+   <rect id="rect7283-3-63" transform="rotate(-90)" height=".64056" width="7.5221" y="45.116" x="-1047.2" stroke-width=".35944"/>
+   <rect id="rect7283-4-4" transform="matrix(.65963 .75159 -.79158 .61106 0 0)" height=".65345" width="5.3486" y="657.57" x="852.44" stroke-width=".30613"/>
+   <rect id="rect7283-4-8-6" transform="matrix(-.65963 .75159 .79158 .61106 0 0)" height=".65345" width="5.3486" y="726.17" x="796.66" stroke-width=".30613"/>
+  </g>
+ </g>
+</svg>
