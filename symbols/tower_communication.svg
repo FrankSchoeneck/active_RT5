@@ -1,89 +1,21 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!-- Created with Inkscape (http://www.inkscape.org/) -->
-
-<svg
-   xmlns:dc="http://purl.org/dc/elements/1.1/"
-   xmlns:cc="http://creativecommons.org/ns#"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-   xmlns:svg="http://www.w3.org/2000/svg"
-   xmlns="http://www.w3.org/2000/svg"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   version="1.0"
-   width="32"
-   height="32"
-   id="svg2"
-   sodipodi:version="0.32"
-   inkscape:version="0.91 r13725"
-   sodipodi:docname="schloss.svg"
-   inkscape:output_extension="org.inkscape.output.svg.inkscape">
-  <metadata
-     id="metadata2393">
-    <rdf:RDF>
-      <cc:Work
-         rdf:about="">
-        <dc:format>image/svg+xml</dc:format>
-        <dc:type
-           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <cc:license
-           rdf:resource="http://creativecommons.org/publicdomain/zero/1.0/" />
-        <dc:creator>
-          <cc:Agent>
-            <dc:title>malenki (Michael Buchberger)</dc:title>
-          </cc:Agent>
-        </dc:creator>
-        <dc:title></dc:title>
-      </cc:Work>
-      <cc:License
-         rdf:about="http://creativecommons.org/publicdomain/zero/1.0/">
-        <cc:permits
-           rdf:resource="http://creativecommons.org/ns#Reproduction" />
-        <cc:permits
-           rdf:resource="http://creativecommons.org/ns#Distribution" />
-        <cc:permits
-           rdf:resource="http://creativecommons.org/ns#DerivativeWorks" />
-      </cc:License>
-    </rdf:RDF>
-  </metadata>
-  <sodipodi:namedview
-     inkscape:window-height="953"
-     inkscape:window-width="1276"
-     inkscape:pageshadow="2"
-     inkscape:pageopacity="0.0"
-     guidetolerance="10.0"
-     gridtolerance="10.0"
-     objecttolerance="10.0"
-     borderopacity="1.0"
-     bordercolor="#666666"
-     pagecolor="#ffffff"
-     id="base"
-     showgrid="false"
-     inkscape:zoom="21.717717"
-     inkscape:cx="17.101008"
-     inkscape:cy="15.127555"
-     inkscape:window-x="130"
-     inkscape:window-y="24"
-     inkscape:current-layer="svg2"
-     inkscape:window-maximized="0">
-    <inkscape:grid
-       type="xygrid"
-       id="grid3753"
-       visible="true"
-       enabled="true" />
-  </sodipodi:namedview>
-  <defs
-     id="defs4">
-    <inkscape:perspective
-       sodipodi:type="inkscape:persp3d"
-       inkscape:vp_x="0 : 526.18109 : 1"
-       inkscape:vp_y="0 : 1000 : 0"
-       inkscape:vp_z="744.09448 : 526.18109 : 1"
-       inkscape:persp3d-origin="372.04724 : 350.78739 : 1"
-       id="perspective2395" />
-  </defs>
-  <path
-     style="fill:#000000;stroke:#ffffff;stroke-width:0.666269;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-     d="M 14.890591,31.396465 C 14.290952,31.295381 13.359946,31.049638 12.82169,30.850371 11.949184,30.527362 11.760164,30.4027 11.078771,29.700887 9.9973129,28.587015 9.1350968,27.008465 9.0377185,25.964111 8.938499,24.900007 9.264776,23.650116 9.9048003,22.642525 c 0.5575837,-0.877809 1.4745787,-1.561172 3.2435317,-2.417147 1.195623,-0.578555 1.920103,-0.766481 2.930159,-0.760091 0.412137,0.0027 0.749367,-0.01879 0.749397,-0.04758 3.2e-5,-0.0288 0.291647,-1.107109 0.648033,-2.396257 0.356386,-1.289153 0.622959,-2.364315 0.592383,-2.389256 -0.104301,-0.08509 -5.788965,0.251387 -6.025604,0.356664 -0.196585,0.08745 -0.224014,0.0737 -0.164819,-0.08275 C 12.204529,14.04292 15.180069,4.5916614 15.1364,4.5560324 15.105276,4.5306557 14.422707,4.9272603 13.619618,5.4374402 12.816529,5.9476149 12.123317,6.3537433 12.079144,6.3399459 11.846605,6.2673153 10.558371,4.9050069 10.564107,4.737793 c 0.0043,-0.128611 1.112512,-0.9004983 3.230587,-2.2503877 1.77313,-1.1300498 3.29391,-2.06817281 3.379504,-2.08471835 0.08561,-0.0165481 0.30175,0.17157561 0.480335,0.41804863 0.178585,0.24647172 0.498537,0.58298472 0.71101,0.74780552 0.212472,0.1648217 0.356372,0.3624397 0.31978,0.4391503 -0.03661,0.07671 0.62755,1.2335058 1.475868,2.5706539 l 1.542397,2.4311741 -1.09949,0.4338515 c -0.60472,0.2386146 -1.115033,0.419724 -1.134035,0.402465 -0.019,-0.017237 -0.379631,-0.5929628 -0.801408,-1.2793363 L 17.901796,5.3185453 17.630902,5.6765675 c -0.148989,0.196914 -0.390613,0.8014653 -0.536938,1.3434524 -0.146328,0.5419872 -0.46419,1.5911289 -0.706366,2.3314202 -0.447011,1.3664519 -0.968843,3.1885249 -0.923719,3.2253369 0.01363,0.0111 1.410266,-0.05291 3.103666,-0.142273 1.6934,-0.08935 3.100146,-0.148935 3.126097,-0.1324 0.02594,0.0165 -0.512719,1.716622 -1.197044,3.777971 -0.684326,2.061356 -1.198141,3.781754 -1.141811,3.823113 0.05634,0.04135 0.503797,0.292901 0.994369,0.558987 1.121302,0.608202 2.254332,1.66321 2.897786,2.698242 0.435453,0.700455 0.50706,0.919809 0.576958,1.767439 0.23827,2.889444 -1.355672,5.005442 -4.566767,6.062483 -1.211836,0.398918 -2.389306,0.633915 -3.019718,0.602664 -0.14111,-0.0071 -0.747181,-0.09543 -1.346824,-0.19652 z"
-     id="path10449"
-     inkscape:connector-curvature="0" />
+<svg xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" height="580" width="580" version="1.1" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/">
+ <title>funkmast</title>
+ <metadata>
+  <rdf:RDF>
+   <cc:Work rdf:about="">
+    <dc:format>image/svg+xml</dc:format>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:title>funkmast</dc:title>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <path d="m145 464v87h290v-87h-87v-116l29 14.854c58-14.85 116-72.85 116-159.85s-58-145-116-159.85c-29 0.55-58 72.85-58 101.85h-58c0-29-29-101.41-58-101.85-58 14.85-116 72.85-116 159.85s58 145 116 159.85l29-14.85v116z" fill-rule="evenodd" fill="#FFFFFF"/>
+ <g fill="#575757">
+  <path d="m203 69.781c-51.25 22.601-87.91 73.829-87.91 133.22 0 59.389 36.656 110.62 87.906 133.22v-33.531c-34.67-20.033-58-56.531-58-99.687s23.33-79.655 58-99.688v-33.531z"/>
+  <path d="m377 69.781v33.531c34.67 20.033 58 56.531 58 99.688 0 43.156-23.33 79.655-58 99.687v33.531c51.25-22.6 87.906-73.83 87.906-133.22 0-59.389-36.656-110.62-87.906-133.22z"/>
+  <path d="m232 121.44c-33.554 12.089-58 43.959-58 81.563 0 37.603 24.446 69.474 58 81.562v-31.719c-17.31-9.99-29-28.28-29-49.84 0-21.564 11.689-39.847 29-49.844v-31.719z"/>
+  <path d="m348 121.44v31.719c17.311 9.9969 29 28.28 29 49.844s-11.689 39.847-29 49.844v31.719c33.554-12.089 58-43.959 58-81.562s-24.446-69.474-58-81.563z"/>
+ </g>
+ <path d="m261 203v261c0 29 0 29-29 29l-58-0.00001v29h232v-29l-58 0.00001c-29 0-29 0-29-29l0.00001-261c0-29-22.22-29-29-29-6.7764 0-29 0.00001-29 29z" fill="#575757"/>
 </svg>
