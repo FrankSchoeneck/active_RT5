@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<locusActions>
+  <download>
+    <source>
+	  <![CDATA[https://github.com/FrankSchoeneck/active_RT5/archive/master.zip]]>
+	</source>
+    <dest>
+	  <![CDATA[/mapsVector/_themes/active RT5.zip]]>
+	</dest>
+    <after>extract|deleteSource|refreshMap</after>
+  </download>
+</locusActions>
