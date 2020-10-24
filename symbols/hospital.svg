@@ -1,55 +1,129 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!-- Created with Sodipodi ("http://www.sodipodi.com/") -->
-<svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://web.resource.org/cc/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" version="1.0" x="0" y="0" width="90.138756" height="89.984581" id="svg831" sodipodi:version="0.32" inkscape:version="0.44.1" sodipodi:docname="SymbolHospital.svg" sodipodi:docbase="C:\Dokumente und Einstellungen\Stefan Fussan\Eigene Dateien\WikiVoyage\Symbole" inkscape:export-filename="C:\Dokumente und Einstellungen\Stefan Fussan\Eigene Dateien\Eigene Bilder\WikiTravel\Kartenentwürfe\eigene Symbole\SymbolKrankenhaus.png" inkscape:export-xdpi="150" inkscape:export-ydpi="150">
-  <metadata id="metadata7">
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="457"
+   height="457.29999"
+   version="1.1"
+   id="svg15"
+   sodipodi:docname="hospital.svg"
+   inkscape:version="0.92.3 (2405546, 2018-03-11)">
+  <metadata
+     id="metadata21">
     <rdf:RDF>
-      <cc:Work rdf:about="">
+      <cc:Work
+         rdf:about="">
         <dc:format>image/svg+xml</dc:format>
-        <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-        <dc:title>Symbol Hospital</dc:title>
-        <dc:date>01. Oct. 2006</dc:date>
-        <dc:creator>
-          <cc:Agent>
-            <dc:title>Stefan Fussan</dc:title>
-          </cc:Agent>
-        </dc:creator>
-        <dc:subject>
-          <rdf:Bag>
-            <rdf:li>Hospital</rdf:li>
-            <rdf:li>Symbol</rdf:li>
-            <rdf:li>Map</rdf:li>
-            <rdf:li>Wikivoyage</rdf:li>
-          </rdf:Bag>
-        </dc:subject>
-        <dc:description>Mapsymbol Hospital for Wikivoyage maps</dc:description>
-        <cc:license rdf:resource="http://creativecommons.org/licenses/by-sa/2.5/"/>
-        <dc:language>English</dc:language>
-        <dc:rights>
-          <cc:Agent>
-            <dc:title>Stefan Fussan</dc:title>
-          </cc:Agent>
-        </dc:rights>
-        <dc:publisher>
-          <cc:Agent>
-            <dc:title>Stefan Fussan</dc:title>
-          </cc:Agent>
-        </dc:publisher>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
       </cc:Work>
-      <cc:License rdf:about="http://creativecommons.org/licenses/by-sa/2.5/">
-        <cc:permits rdf:resource="http://web.resource.org/cc/Reproduction"/>
-        <cc:permits rdf:resource="http://web.resource.org/cc/Distribution"/>
-        <cc:requires rdf:resource="http://web.resource.org/cc/Notice"/>
-        <cc:requires rdf:resource="http://web.resource.org/cc/Attribution"/>
-        <cc:permits rdf:resource="http://web.resource.org/cc/DerivativeWorks"/>
-        <cc:requires rdf:resource="http://web.resource.org/cc/ShareAlike"/>
-      </cc:License>
     </rdf:RDF>
   </metadata>
-  <sodipodi:namedview inkscape:window-height="790" inkscape:window-width="1032" inkscape:pageshadow="2" inkscape:pageopacity="0.0" borderopacity="1.0" bordercolor="#666666" pagecolor="#ffffff" id="base" showgrid="true" showguides="true" inkscape:guide-bbox="true" inkscape:zoom="4.7185823" inkscape:cx="37.77727" inkscape:cy="46.353935" inkscape:window-x="176" inkscape:window-y="41" inkscape:current-layer="g2328" inkscape:grid-points="true" width="100px" height="100px"/>
-  <defs id="defs833"/>
-  <g id="g2328" transform="translate(-5.114755,-6.314629)">
-    <path id="path6274" style="font-size:12px;fill:white;fill-opacity:1;fill-rule:evenodd;stroke:black;stroke-width:2.8268106;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" d="M 6.6590485,7.7280346 L 93.840109,7.7280346 L 93.840109,94.885804 C 93.840109,94.885804 6.6590485,94.885804 6.6590485,94.885804 C 6.3645499,94.885804 6.6590485,7.7280346 6.6590485,7.7280346 z "/>
-    <path style="opacity:1;color:black;fill:red;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;marker:none;marker-start:none;marker-mid:none;marker-end:none;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:20;stroke-opacity:1;visibility:visible;display:inline;overflow:visible" d="M 42.422035,33.253455 L 57.577965,33.253455 L 57.577965,52.198367 L 76.522878,52.198367 L 76.522878,67.354297 L 57.577965,67.354297 L 57.577965,86.29921 L 42.422035,86.29921 L 42.422035,67.354297 L 23.477122,67.354297 L 23.477122,52.198367 L 42.422035,52.198367 L 42.422035,33.253455 z " id="path2801"/>
-    <path style="opacity:1;color:black;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:black;stroke-width:4;stroke-linecap:square;stroke-linejoin:miter;marker:none;marker-start:none;marker-mid:none;marker-end:none;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:2.52529125;stroke-opacity:1;visibility:visible;display:inline;overflow:visible" d="M 10,29.984581 L 45,9.984581 L 80,29.984581" id="path1988" transform="translate(5.114755,6.314629)"/>
+  <defs
+     id="defs19" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="731"
+     inkscape:window-height="480"
+     id="namedview17"
+     showgrid="false"
+     inkscape:zoom="0.40689655"
+     inkscape:cx="221"
+     inkscape:cy="223.6"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg15"
+     inkscape:pagecheckerboard="true"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0" />
+  <g
+     id="g5"
+     transform="translate(-69,-56.300002)">
+    <title
+       id="title2">background</title>
+    <rect
+       id="canvas_background"
+       height="602"
+       width="802"
+       y="-1"
+       x="-1"
+       style="fill:none" />
   </g>
+  <g
+     id="g13"
+     style="fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-opacity:1;stroke-width:11.6;stroke-miterlimit:4;stroke-dasharray:none"
+     transform="translate(-69,-56.300002)">
+    <title
+       id="title7">Layer 1</title>
+    <path
+       d="m 231,218 h -82 c 0,44.33333 0,88.66667 0,133 h 82 v 82 h 132 v -82 h 82 V 218 h -82 v -81 c -44,0 -88,0 -132,0 z"
+       id="path4141"
+       style="opacity:0.8;fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#ffffff;stroke-width:11.6;stroke-linejoin:round;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
+       inkscape:connector-curvature="0" />
+    <path
+       d="M 101,481.6 H 494 V 88.6 L 101,88.3 c 0,131.1 0,262.2 0,393.3 z m 372,-372 v 351 H 122 v -351 z"
+       id="path4143"
+       style="opacity:0.8;fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#ffffff;stroke-width:11.6;stroke-linejoin:round;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
+       inkscape:connector-curvature="0" />
+    <path
+       id="rect2160"
+       d="m 231,218 h -82 c 0,44.33333 0,88.66667 0,133 h 82 v 82 h 132 v -82 h 82 V 218 h -82 v -81 c -44,0 -88,0 -132,0 z"
+       style="fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-opacity:1;stroke-width:11.6;stroke-miterlimit:4;stroke-dasharray:none"
+       inkscape:connector-curvature="0" />
+    <path
+       id="rect3184"
+       d="M 101,481.6 H 494 V 88.6 L 101,88.3 c 0,131.1 0,262.2 0,393.3 z m 372,-372 v 351 H 122 v -351 z"
+       style="fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-opacity:1;stroke-width:11.6;stroke-miterlimit:4;stroke-dasharray:none"
+       inkscape:connector-curvature="0" />
+  </g>
+  <g
+     id="g13-1"
+     style="fill:#dc2017;fill-opacity:1;stroke:none;stroke-width:11.6;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     transform="translate(-69,-56.300002)"
+     inkscape:transform-center-x="-54.067797"
+     inkscape:transform-center-y="34.408994">
+    <title
+       id="title7-1">Layer 1</title>
+    <path
+       d="m 231,218 h -82 c 0,44.33333 0,88.66667 0,133 h 82 v 82 h 132 v -82 h 82 V 218 h -82 v -81 c -44,0 -88,0 -132,0 z"
+       id="path4141-0"
+       style="opacity:0.8;fill:#dc2017;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:11.6;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       inkscape:connector-curvature="0" />
+    <path
+       d="M 101,481.6 H 494 V 88.6 L 101,88.3 c 0,131.1 0,262.2 0,393.3 z m 372,-372 v 351 H 122 v -351 z"
+       id="path4143-0"
+       style="opacity:0.8;fill:#dc2017;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:11.6;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       inkscape:connector-curvature="0" />
+    <path
+       id="rect2160-5"
+       d="m 231,218 h -82 c 0,44.33333 0,88.66667 0,133 h 82 v 82 h 132 v -82 h 82 V 218 h -82 v -81 c -44,0 -88,0 -132,0 z"
+       style="fill:#dc2017;fill-opacity:1;stroke:none;stroke-width:11.6;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       inkscape:connector-curvature="0" />
+    <path
+       id="rect3184-6"
+       d="M 101,481.6 H 494 V 88.6 L 101,88.3 c 0,131.1 0,262.2 0,393.3 z m 372,-372 v 351 H 122 v -351 z"
+       style="fill:#dc2017;fill-opacity:1;stroke:none;stroke-width:11.6;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       inkscape:connector-curvature="0" />
+  </g>
+  <path
+     style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:28.50847626;stroke-linecap:square;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     d="M 59.288136,228.04745 V 59.699988 H 227.63559 395.98305 V 228.04745 396.3949 H 227.63559 59.288136 Z M 300.13559,342.32711 v -41.77966 h 41.77966 41.77967 v -72.5 -72.5 H 341.91525 300.13559 V 114.9966 74.445751 h -72.5 -72.5 V 114.9966 155.54745 H 114.58475 74.033898 v 72.5 72.5 h 40.550852 40.55084 v 41.77966 41.77966 h 72.5 72.5 z"
+     id="path861"
+     inkscape:connector-curvature="0" />
 </svg>

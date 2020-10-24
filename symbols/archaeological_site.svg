@@ -1,6 +1,10 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32">
-<circle cx="16" cy="10" r="6"/> 
-<circle cx="8" cy="22" r="6"/> 
-<circle cx="24" cy="22" r="6"/> 
+<?xml version="1.0"?>
+<svg width="32" height="32" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+
+ <g class="layer">
+  <title>Layer 1</title>
+  <circle cx="16" cy="10" fill="#575757" id="svg_1" r="6"/>
+  <circle cx="8" cy="22" fill="#575757" id="svg_2" r="6"/>
+  <circle cx="24" cy="22" fill="#575757" id="svg_3" r="6"/>
+ </g>
 </svg>

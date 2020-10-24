@@ -1,8 +1,15 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg id="svg2" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" height="435" width="435" version="1.0" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" viewBox="0 0 4833.3333 4833.3333">
- <g shape-rendering="auto">
-  <path id="path4138" opacity=".8" fill="none" d="m2416.7 1216.2-1467 2401h2934z" stroke-linejoin="round" color="#000000" isolation="auto" mix-blend-mode="normal" stroke="#fff" solid-color="#000000" image-rendering="auto" white-space="normal" stroke-width="711" color-rendering="auto"/>
-  <path id="path3" color-rendering="auto" color="#000000" isolation="auto" mix-blend-mode="normal" solid-color="#000000" image-rendering="auto" white-space="normal" d="m2416.7 1216.2-1467 2401h2934z"/>
-  <path id="path4140" d="m2416.7 1728.2 991 1621h-1982z" color="#000000" isolation="auto" mix-blend-mode="normal" color-rendering="auto" solid-color="#000000" image-rendering="auto" white-space="normal"/>
+<?xml version="1.0"?>
+<svg width="242" height="199" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet">
+ <metadata>Created by potrace 1.16, written by Peter Selinger 2001-2019</metadata>
+
+ <g class="layer">
+  <title>background</title>
+  <rect fill="none" height="602" id="canvas_background" width="802" x="-1" y="-1"/>
+ </g>
+ <g class="layer">
+  <title>Layer 1</title>
+  <g fill="#000000" id="svg_1" transform="translate(0, 199) scale(0.1, -0.1)">
+   <path d="m1112,1739c-39,-20 -75,-70 -436,-608c-216,-322 -400,-600 -410,-618c-33,-65 -13,-177 41,-225c54,-49 38,-48 897,-48c544,0 814,3 833,11c64,24 123,109 123,179c0,19 -9,54 -20,78c-20,45 -757,1150 -794,1190c-55,62 -156,79 -234,41z" fill="#000000" id="svg_2" stroke="#ffffff" stroke-width="50"/>
+  </g>
  </g>
 </svg>

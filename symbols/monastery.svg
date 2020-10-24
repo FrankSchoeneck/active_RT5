@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="555"
+   height="491"
+   preserveAspectRatio="xMidYMid meet"
+   version="1.1"
+   id="svg15"
+   sodipodi:docname="monastery.svg"
+   inkscape:version="0.92.3 (2405546, 2018-03-11)">
+  <defs
+     id="defs19" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="992"
+     inkscape:window-height="596"
+     id="namedview17"
+     showgrid="false"
+     inkscape:pagecheckerboard="true"
+     inkscape:zoom="0.48065173"
+     inkscape:cx="277.5"
+     inkscape:cy="245.5"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg15" />
+  <metadata
+     id="metadata2">Created by potrace 1.16, written by Peter Selinger 2001-2019<rdf:RDF>
+  <cc:Work
+     rdf:about="">
+    <dc:format>image/svg+xml</dc:format>
+    <dc:type
+       rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+    <dc:title></dc:title>
+  </cc:Work>
+</rdf:RDF>
+</metadata>
+  <g
+     class="layer"
+     id="g7">
+    <title
+       id="title4">background</title>
+    <rect
+       fill="none"
+       height="602"
+       id="canvas_background"
+       width="802"
+       x="-1"
+       y="-1" />
+  </g>
+  <g
+     class="layer"
+     id="g13">
+    <title
+       id="title9">Layer 1</title>
+    <g
+       fill="#575757"
+       id="svg_1"
+       transform="translate(0, 491) scale(0.1, -0.1)">
+      <path
+         d="m2588,4498l-3,-283l-287,-3l-288,-2l0,-190l0,-190l290,0l290,0l0,-380l0,-380l-860,0l-860,0l0,190l0,190l-290,0l-290,0l0,-1620l0,-1620l2485,0l2485,0l0,1620l0,1620l-285,0l-285,0l0,-190l0,-190l-860,0l-860,0l0,380l0,380l285,0l285,0l0,190l0,190l-285,0l-285,0l0,285l0,285l-190,0l-190,0l-2,-282zm-1153,-2288l0,-285l-282,-3l-283,-2l0,290l0,290l283,-2l282,-3l0,-285zm960,0l0,-285l-285,0l-285,0l-3,275c-1,151 0,280 3,288c3,10 65,12 287,10l283,-3l0,-285zm1335,0l0,-290l-285,0l-285,0l0,290l0,290l285,0l285,0l0,-290zm955,0l0,-285l-285,0l-285,0l-3,275c-1,151 0,280 3,288c3,10 65,12 287,10l283,-3l0,-285z"
+         id="svg_2"
+         stroke="#ffffff"
+         stroke-width="150" />
+    </g>
+  </g>
+  <path
+     style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:20.80508423;stroke-linecap:square;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     d="m 95.247458,270.25805 v -19.76483 h 19.764832 19.76483 v 19.76483 19.76483 H 115.01229 95.247458 Z"
+     id="path826"
+     inkscape:connector-curvature="0" />
+  <path
+     style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:20.80508423;stroke-linecap:square;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     d="m 190.95085,270.25805 v -19.76483 h 19.76483 19.76483 v 19.76483 19.76483 h -19.76483 -19.76483 z"
+     id="path828"
+     inkscape:connector-curvature="0" />
+  <path
+     style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:20.80508423;stroke-linecap:square;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     d="m 324.10339,270.25805 v -19.76483 h 19.76483 19.76483 v 19.76483 19.76483 h -19.76483 -19.76483 z"
+     id="path830"
+     inkscape:connector-curvature="0" />
+  <path
+     style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:20.80508423;stroke-linecap:square;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     d="m 419.80678,270.25805 v -19.76483 h 19.76483 19.76483 v 19.76483 19.76483 h -19.76483 -19.76483 z"
+     id="path832"
+     inkscape:connector-curvature="0" />
+</svg>

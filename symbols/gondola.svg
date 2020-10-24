@@ -1,60 +1,15 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<?xml version="1.0"?>
+<svg width="725" height="1201" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet">
+ <metadata>Created by potrace 1.16, written by Peter Selinger 2001-2019</metadata>
 
-<svg
-   xmlns:dc="http://purl.org/dc/elements/1.1/"
-   xmlns:cc="http://creativecommons.org/ns#"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-   xmlns:svg="http://www.w3.org/2000/svg"
-   xmlns="http://www.w3.org/2000/svg"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   version="1.1"
-   id="Layer_1"
-   x="0px"
-   y="0px"
-   width="20px"
-   height="20px"
-   viewBox="0 0 20 20"
-   enable-background="new 0 0 20 20"
-   xml:space="preserve"
-   inkscape:version="0.91 r13725"
-   sodipodi:docname="cable_car.svg"><metadata
-     id="metadata11"><rdf:RDF><cc:Work
-         rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
-           rdf:resource="http://purl.org/dc/dcmitype/StillImage" /></cc:Work></rdf:RDF></metadata><defs
-     id="defs9" /><sodipodi:namedview
-     pagecolor="#ffffff"
-     bordercolor="#666666"
-     borderopacity="1"
-     objecttolerance="10"
-     gridtolerance="10"
-     guidetolerance="10"
-     inkscape:pageopacity="0"
-     inkscape:pageshadow="2"
-     inkscape:window-width="915"
-     inkscape:window-height="593"
-     id="namedview7"
-     showgrid="false"
-     inkscape:zoom="11.8"
-     inkscape:cx="10"
-     inkscape:cy="10"
-     inkscape:window-x="0"
-     inkscape:window-y="0"
-     inkscape:window-maximized="0"
-     inkscape:current-layer="Layer_1" /><path
-     fill-rule="evenodd"
-     clip-rule="evenodd"
-     fill="#FFFFFF"
-     d="M5.64,6.344V4.85c0-0.551,0.449-1.001,1-1.001h1.79V1.002  c0-0.551,0.449-1,1-1h1.142c0.551,0,1,0.449,1,1v2.847h1.789c0.551,0,1,0.45,1,1.001v1.494h0.717c0.263,0,0.488,0.088,0.681,0.268  c1.822,1.695,2.83,4.074,2.83,6.561c0,2.484-1.008,4.863-2.83,6.559c-0.192,0.18-0.418,0.268-0.681,0.268H4.924  c-0.263,0-0.489-0.088-0.682-0.268c-1.822-1.695-2.83-4.074-2.83-6.559c0-2.486,1.008-4.865,2.83-6.561  c0.192-0.18,0.419-0.268,0.682-0.268H5.64z"
-     id="path3" /><path
-     d="m 15.077,7.344 c 1.541,1.435 2.511,3.514 2.511,5.828 0,2.313 -0.97,4.393 -2.511,5.827 l -10.153,0 C 3.382,17.564 2.412,15.484 2.412,13.172 c 0,-2.314 0.97,-4.394 2.512,-5.828 l 10.153,0 0,0 z"
-     id="path4145" /><path
-     d="m 14.401,8.949 -3.619,0 0,4.27 5.199,0 0,-0.047 c 0,-1.561 -0.554,-3.064 -1.58,-4.223 l 0,0 z"
-     id="path4143"
-     style="fill:#ffffff" /><path
-     d="m 9.218,8.949 -3.619,0 c -1.025,1.159 -1.58,2.662 -1.58,4.223 l 0,0.047 5.199,0 0,-4.27 0,0 z"
-     id="path4141"
-     style="fill:#ffffff" /><path
-     d="m 6.64,4.85 2.79,0 0,-3.848 1.142,0 0,3.848 2.789,0 0,1.689 -6.721,0 0,-1.689 z"
-     id="path5" /></svg>
+ <g class="layer">
+  <title>background</title>
+  <rect fill="none" height="602" id="canvas_background" width="802" x="-1" y="-1"/>
+ </g>
+ <g class="layer">
+  <title>Layer 1</title>
+  <g fill="#000000" id="svg_1" transform="translate(0, 1201) scale(0.1, -0.1)">
+   <path d="m5460,11066c-624,-156 -1981,-494 -3015,-751c-1335,-332 -1894,-475 -1928,-493c-58,-31 -107,-83 -144,-154c-26,-49 -28,-62 -28,-163c0,-95 3,-117 23,-157c37,-74 96,-134 170,-170c62,-31 74,-33 162,-32c90,0 159,16 1347,312c688,172 1254,312 1257,312c3,0 6,-558 6,-1240l0,-1240l-1008,-2l-1007,-3l-66,-32c-78,-39 -141,-102 -174,-176c-18,-39 -109,-519 -360,-1892c-335,-1829 -337,-1841 -333,-1946l5,-106l317,-950c346,-1038 337,-1016 441,-1095c28,-21 73,-46 100,-55c47,-17 188,-18 2460,-18l2410,0l65,31c73,35 140,95 168,151c30,58 639,1872 651,1938c28,149 31,126 -323,2072c-368,2020 -338,1881 -434,1978c-26,25 -71,58 -102,73l-55,27l-1010,5l-1010,5l-3,1328l-2,1327l22,10c13,5 624,158 1358,340c734,182 1355,338 1379,347c24,9 67,38 95,64c176,160 158,440 -37,573c-57,39 -147,66 -217,66c-25,-1 -556,-128 -1180,-284zm-2152,-6543l2,-2033l-707,0c-669,0 -710,1 -749,19c-23,10 -50,32 -61,47c-41,58 -262,501 -287,575c-31,92 -48,205 -41,268c3,25 80,712 171,1526c90,814 169,1494 175,1511c13,43 68,93 120,109c36,11 170,13 709,12l665,-2l3,-2032zm2129,2016c38,-14 83,-57 99,-97c21,-48 347,-2947 347,-3087c1,-98 -3,-121 -32,-210c-35,-107 -253,-542 -299,-596c-51,-61 -26,-59 -797,-59l-705,0l0,2030l0,2030l679,0c456,0 689,-4 708,-11z" id="svg_2" stroke="#ffffff" stroke-width="50"/>
+  </g>
+ </g>
+</svg>

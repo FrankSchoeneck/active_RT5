@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<svg width="503" height="389" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet">
+ <metadata>Created by potrace 1.16, written by Peter Selinger 2001-2019</metadata>
+
+ <g class="layer">
+  <title>background</title>
+  <rect fill="none" height="602" id="canvas_background" width="802" x="-1" y="-1"/>
+ </g>
+ <g class="layer">
+  <title>Layer 1</title>
+  <g fill="#575757" id="svg_1" transform="translate(0, 389) scale(0.1, -0.1)">
+   <path d="m2320,3425l0,-285l-290,0l-290,0l0,-190l0,-190l288,-2l287,-3l3,-667l2,-668l190,0l190,0l0,670l0,670l285,0l285,0l0,190l0,190l-285,0l-285,0l0,285l0,285l-190,0l-190,0l0,-285z" id="svg_2" stroke="#ffffff" stroke-width="150"/>
+   <path d="m788,2283l-3,-288l-282,-3l-283,-2l0,-190l0,-190l285,0l285,0l0,-665l0,-665l190,0l190,0l0,665l0,665l285,0l285,0l0,190l0,190l-285,0l-285,0l0,290l0,290l-190,0l-190,0l-2,-287z" id="svg_3" stroke="#ffffff" stroke-width="150"/>
+   <path d="m3840,2280l0,-290l-285,0l-285,0l0,-190l0,-190l285,0l285,0l0,-665l0,-665l195,0l195,0l0,665l0,665l285,0l285,0l0,190l0,190l-285,0l-285,0l0,290l0,290l-195,0l-195,0l0,-290z" id="svg_4" stroke="#ffffff" stroke-width="150"/>
+  </g>
+ </g>
+</svg>
