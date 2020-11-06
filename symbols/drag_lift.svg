@@ -1,11 +1,90 @@
-<?xml version="1.0"?>
-<svg width="721" height="924" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet">
- <metadata>Created by potrace 1.16, written by Peter Selinger 2001-2019</metadata>
-
- <g class="layer">
-  <title>Layer 1</title>
-  <g fill="#000000" id="svg_1" transform="translate(0, 924) scale(0.1, -0.1)">
-   <path d="m6520,9060c-25,-5 -1386,-342 -3025,-749c-2104,-522 -2995,-748 -3032,-767c-66,-33 -127,-99 -161,-172c-23,-49 -27,-70 -27,-152c0,-88 3,-101 33,-162c63,-129 177,-200 322,-201c66,0 225,37 1330,312c690,171 1261,313 1268,316c9,3 12,-655 12,-3270l0,-3275l-500,0l-500,0l-512,342c-282,188 -537,353 -567,366c-115,53 -255,39 -360,-35c-188,-132 -211,-403 -49,-559c69,-67 1186,-801 1253,-824c57,-20 87,-20 1609,-20c1447,1 1554,2 1601,18c63,22 1216,781 1269,836c21,22 51,65 65,95c22,48 26,70 26,151c0,82 -4,103 -27,152c-37,80 -105,149 -181,184c-55,26 -73,29 -157,29c-81,0 -103,-4 -150,-26c-30,-14 -286,-179 -568,-367l-512,-342l-500,0l-500,0l2,3366l3,3367l1360,338c748,186 1381,348 1407,360c102,47 186,172 195,293c20,244 -191,440 -427,396z" id="svg_2" stroke="#ffffff" stroke-width="50"/>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="727.31964"
+   height="946.08331"
+   preserveAspectRatio="xMidYMid meet"
+   version="1.1"
+   id="svg10"
+   sodipodi:docname="drag_lift.svg"
+   inkscape:version="0.92.3 (2405546, 2018-03-11)">
+  <defs
+     id="defs14" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="731"
+     inkscape:window-height="480"
+     id="namedview12"
+     showgrid="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:pagecheckerboard="true"
+     inkscape:zoom="0.25541126"
+     inkscape:cx="363"
+     inkscape:cy="478.65408"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg10" />
+  <metadata
+     id="metadata2">Created by potrace 1.16, written by Peter Selinger 2001-2019<rdf:RDF>
+  <cc:Work
+     rdf:about="">
+    <dc:format>image/svg+xml</dc:format>
+    <dc:type
+       rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+    <dc:title></dc:title>
+  </cc:Work>
+</rdf:RDF>
+</metadata>
+  <g
+     class="layer"
+     id="g8"
+     style="fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:60;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     transform="translate(2.5,12.579138)">
+    <title
+       id="title4">Layer 1</title>
+    <g
+       id="svg_1"
+       transform="matrix(0.1,0,0,-0.1,0,924)"
+       style="fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:600;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1">
+      <path
+         d="M 6520,9060 C 6495,9055 5134,8718 3495,8311 1391,7789 500,7563 463,7544 c -66,-33 -127,-99 -161,-172 -23,-49 -27,-70 -27,-152 0,-88 3,-101 33,-162 63,-129 177,-200 322,-201 66,0 225,37 1330,312 690,171 1261,313 1268,316 9,3 12,-655 12,-3270 V 940 h -500 -500 l -512,342 c -282,188 -537,353 -567,366 -115,53 -255,39 -360,-35 -188,-132 -211,-403 -49,-559 69,-67 1186,-801 1253,-824 57,-20 87,-20 1609,-20 1447,1 1554,2 1601,18 63,22 1216,781 1269,836 21,22 51,65 65,95 22,48 26,70 26,151 0,82 -4,103 -27,152 -37,80 -105,149 -181,184 -55,26 -73,29 -157,29 -81,0 -103,-4 -150,-26 -30,-14 -286,-179 -568,-367 L 4980,940 h -500 -500 l 2,3366 3,3367 1360,338 c 748,186 1381,348 1407,360 102,47 186,172 195,293 20,244 -191,440 -427,396 z"
+         id="svg_2"
+         inkscape:connector-curvature="0"
+         style="fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:600;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    </g>
   </g>
- </g>
+  <g
+     transform="translate(2.5,12.579138)"
+     class="layer"
+     id="g8-0">
+    <title
+       id="title4-7">Layer 1</title>
+    <g
+       id="svg_1-2"
+       transform="matrix(0.1,0,0,-0.1,0,924)"
+       style="fill:#575757">
+      <path
+         d="M 6520,9060 C 6495,9055 5134,8718 3495,8311 1391,7789 500,7563 463,7544 c -66,-33 -127,-99 -161,-172 -23,-49 -27,-70 -27,-152 0,-88 3,-101 33,-162 63,-129 177,-200 322,-201 66,0 225,37 1330,312 690,171 1261,313 1268,316 9,3 12,-655 12,-3270 V 940 h -500 -500 l -512,342 c -282,188 -537,353 -567,366 -115,53 -255,39 -360,-35 -188,-132 -211,-403 -49,-559 69,-67 1186,-801 1253,-824 57,-20 87,-20 1609,-20 1447,1 1554,2 1601,18 63,22 1216,781 1269,836 21,22 51,65 65,95 22,48 26,70 26,151 0,82 -4,103 -27,152 -37,80 -105,149 -181,184 -55,26 -73,29 -157,29 -81,0 -103,-4 -150,-26 -30,-14 -286,-179 -568,-367 L 4980,940 h -500 -500 l 2,3366 3,3367 1360,338 c 748,186 1381,348 1407,360 102,47 186,172 195,293 20,244 -191,440 -427,396 z"
+         id="svg_2-7"
+         inkscape:connector-curvature="0"
+         style="stroke:#ffffff;stroke-width:50" />
+    </g>
+  </g>
 </svg>

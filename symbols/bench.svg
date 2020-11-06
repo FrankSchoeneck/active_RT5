@@ -1,18 +1,61 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 width="20px" height="20px" viewBox="0 0 20 20" enable-background="new 0 0 20 20" xml:space="preserve">
-<path fill-rule="evenodd" clip-rule="evenodd" fill="#FFFFFF" d="M1.044,8.555C1.028,8.481,1.019,8.406,1.019,8.329V7.353
-	c0-0.207,0.064-0.398,0.173-0.557C1.083,6.638,1.019,6.445,1.019,6.239V5.263c0-0.543,0.442-0.984,0.985-0.984H2.06
-	c0.102-0.436,0.494-0.762,0.959-0.762h0.976c0.466,0,0.857,0.326,0.959,0.762h10.092c0.102-0.436,0.494-0.762,0.959-0.762h0.977
-	c0.465,0,0.857,0.326,0.959,0.762h0.057c0.541,0,0.984,0.441,0.984,0.984v0.977c0,0.206-0.064,0.398-0.174,0.557
-	c0.109,0.158,0.174,0.35,0.174,0.557v0.977c0,0.077-0.01,0.152-0.027,0.226h0.045c0.541,0,0.984,0.442,0.984,0.985v1.99
-	c0,0.543-0.443,0.985-0.984,0.985h-0.066v2.983c0,0.543-0.443,0.984-0.984,0.984h-1.953c-0.543,0-0.984-0.441-0.984-0.984v-2.983
-	H4.989v2.983c0,0.543-0.442,0.984-0.985,0.984H2.052c-0.543,0-0.985-0.441-0.985-0.984v-2.983H1.001
-	c-0.542,0-0.984-0.442-0.984-0.985V9.54c0-0.543,0.442-0.985,0.984-0.985H1.044z"/>
-<path fill-rule="evenodd" clip-rule="evenodd" fill="#000001" d="M1.001,9.54h2.017V8.329H2.003V7.353h1.015V6.239H2.003V5.263
-	h1.015V4.501h0.976v0.762h12.01V4.501h0.977v0.762h1.016v0.977h-1.016v1.113h1.016v0.977h-1.016V9.54h2.018v1.99h-1.051v3.969
-	h-1.953V11.53H4.004v3.969H2.052V11.53H1.001V9.54L1.001,9.54z M3.995,6.239v1.113h12.01V6.239H3.995L3.995,6.239z M3.995,8.329
-	V9.54h12.01V8.329H3.995z"/>
-</svg>
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.1"
+   id="Layer_1"
+   x="0px"
+   y="0px"
+   width="20px"
+   height="20px"
+   viewBox="0 0 20 20"
+   enable-background="new 0 0 20 20"
+   xml:space="preserve"
+   sodipodi:docname="bench.svg"
+   inkscape:version="0.92.3 (2405546, 2018-03-11)"><metadata
+   id="metadata11"><rdf:RDF><cc:Work
+       rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
+         rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title></dc:title></cc:Work></rdf:RDF></metadata><defs
+   id="defs9" /><sodipodi:namedview
+   pagecolor="#ffffff"
+   bordercolor="#666666"
+   borderopacity="1"
+   objecttolerance="10"
+   gridtolerance="10"
+   guidetolerance="10"
+   inkscape:pageopacity="0"
+   inkscape:pageshadow="2"
+   inkscape:window-width="917"
+   inkscape:window-height="605"
+   id="namedview7"
+   showgrid="false"
+   inkscape:pagecheckerboard="true"
+   inkscape:zoom="11.8"
+   inkscape:cx="9.749"
+   inkscape:cy="6.249"
+   inkscape:window-x="0"
+   inkscape:window-y="0"
+   inkscape:window-maximized="0"
+   inkscape:current-layer="Layer_1" />
+
+<path
+   d="M1.001,9.54h2.017V8.329H2.003V7.353h1.015V6.239H2.003V5.263  h1.015V4.501h0.976v0.762h12.01V4.501h0.977v0.762h1.016v0.977h-1.016v1.113h1.016v0.977h-1.016V9.54h2.018v1.99h-1.051v3.969  h-1.953V11.53H4.004v3.969H2.052V11.53H1.001V9.54L1.001,9.54z M3.995,6.239v1.113h12.01V6.239H3.995L3.995,6.239z M3.995,8.329  V9.54h12.01V8.329H3.995z"
+   id="path4"
+   style="fill:none;fill-opacity:1;stroke:#ffffff;stroke-opacity:1;stroke-width:1.5;stroke-miterlimit:4;stroke-dasharray:none"
+   clip-rule="evenodd"
+   fill-rule="evenodd"
+   fill="#000001" />
+<path
+   inkscape:connector-curvature="0"
+   d="m 1.0010002,9.54 h 2.017 V 8.329 h -1.015 V 7.353 h 1.015 V 6.239 h -1.015 V 5.263 h 1.015 V 4.501 H 3.994 v 0.762 h 12.01 V 4.501 h 0.977 v 0.762 h 1.016 V 6.24 h -1.016 v 1.113 h 1.016 V 8.33 h -1.016 v 1.21 h 2.018 v 1.99 h -1.051 v 3.969 H 15.995 V 11.53 H 4.004 v 3.969 H 2.0520002 V 11.53 h -1.051 z M 3.995,6.239 v 1.113 h 12.01 V 6.239 Z m 0,2.09 V 9.54 h 12.01 V 8.329 Z"
+   id="path4-5"
+   style="clip-rule:evenodd;fill:#575757;fill-opacity:1;fill-rule:evenodd"
+   inkscape:transform-center-x="-5.2542373"
+   inkscape:transform-center-y="-4.9152542" /></svg>
