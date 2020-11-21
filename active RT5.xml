@@ -692,7 +692,7 @@
   </rule>
   <rule e="way" k="building" v="~" zoom-min="15">
     <rule e="way" k="amenity" v="place_of_worship">
-      <area fill="#C3C3C3" stroke="#818181" stroke-width="0.1"/>
+      <area fill="#c7c7c7" stroke="#b0b0b0" stroke-width="0.2"/>
     </rule>
   </rule>
   <rule e="way" k="building" v="~" zoom-min="17">
@@ -701,11 +701,11 @@
     </rule>
   </rule>
   <rule e="way" k="building" v="*" zoom-min="15">
-    <area fill="#C3C3C3" stroke="#BDBDBD" stroke-width="0.1"/>
+    <area fill="#c7c7c7" stroke="#b0b0b0" stroke-width="0.2"/>
   </rule>
   <rule e="way" k="building" v="construction" zoom-min="15">
-    <area fill="#C3C3C3" stroke="#BDBDBD" stroke-width="0.1"/>
-    <line stroke="#C0F8F8F8" stroke-width="0.2" stroke-dasharray="2,2"/>
+    <area fill="#c7c7c7" stroke="#b0b0b0" stroke-width="0.2"/>
+    <line stroke="#C0F8F8F8" stroke-width="0.3" stroke-dasharray="2,2"/>
   </rule>
   <rule e="way" k="building" v="*" zoom-min="18">
     <caption k="name" position="below" dy="8" font-style="bold" font-family="sans_serif" font-size="8" fill="#333333" stroke="#ffffff" stroke-width="1.0"/>
@@ -1010,16 +1010,16 @@
           </rule>
         </rule>
         <rule e="way" k="highway" v="tertiary_link" zoom-min="11">
-          <line stroke="#ffffff" stroke-width="1.0"/>
+          <line stroke="#ffffff" stroke-width="1.4"/>
         </rule>
         <rule e="way" k="highway" v="secondary_link" zoom-min="9">
-          <line stroke="#FFF2C7" stroke-width="1.0"/>
+          <line stroke="#FFF2C7" stroke-width="1.4"/>
         </rule>
         <rule e="way" k="highway" v="primary_link" zoom-min="9">
-          <line stroke="#FFE58F" stroke-width="1.0"/>
+          <line stroke="#FFE58F" stroke-width="1.4"/>
         </rule>
         <rule e="way" k="highway" v="trunk_link" zoom-min="11">
-          <line stroke="#FFE58F" stroke-width="1.0"/>
+          <line stroke="#FFE58F" stroke-width="1.4"/>
         </rule>
         <rule e="way" k="highway" v="motorway_link" zoom-min="11">
           <line stroke="#F7AA58" stroke-width="1.0"/>
@@ -1058,6 +1058,9 @@
         </rule>
         <rule e="way" k="access" v="permit" zoom-min="12">
           <line stroke="#88DD0000" stroke-width="1.0" stroke-dasharray="1,12" stroke-linecap="round"/>
+        </rule>
+        <rule e="way" k="oneway" v="yes|1" zoom-min="16">
+          <lineSymbol src="file:/symbols/oneway_arrow.svg" symbol-percent="40" align-center="true" repeat="true" repeat-gap="100" repeat-start="0"/>
         </rule>
       </rule>
     </rule>
