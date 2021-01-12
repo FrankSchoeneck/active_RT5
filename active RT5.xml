@@ -122,9 +122,15 @@
     </rule>
     <rule e="way" k="landuse" v="industrial">
       <area fill="#DBDBDB" stroke="#e4e4e4" stroke-width="0.2"/>
+      <rule e="way" k="*" v="*" zoom-min="15" zoom-max="17">
+        <caption k="name" font-style="normal" font-size="10" fill="#5A5A5A" stroke="#FFFFFF" stroke-width="1.5"/>
+      </rule>
     </rule>
     <rule e="way" k="landuse" v="landfill">
       <area fill="#EFF5E1" stroke="#556b2f" stroke-width="0.2"/>
+      <rule e="way" k="*" v="*" zoom-min="14" zoom-max="16">
+        <caption k="name" font-style="italic" font-size="10" fill="#333333" stroke="#FFFFFF" stroke-width="0.5"/>
+      </rule>
     </rule>
     <rule e="way" k="landuse" v="quarry">
       <area fill="#E7E9EB" stroke="#556b2f" stroke-width="0.2"/>
@@ -143,14 +149,14 @@
     <area fill="#E2ECC5" stroke="#6fc18e"/>
   </rule>
   <rule e="way" k="leisure|landuse" v="park|village_green|recreation_ground" zoom-min="15">
-    <caption k="name" font-style="normal" font-size="10" fill="#1f5c1b" stroke="#FFFFFF" stroke-width="1.5"/>
+    <caption k="name" font-style="normal" font-size="10" fill="#333333" stroke="#FFFFFF" stroke-width="1.5"/>
   </rule>
   <rule e="way" k="natural|landuse" v="forest|wood" zoom-min="8">
-    <rule e="way" k="*" v="*" zoom-max="12">
-      <area fill="#D9E8C7"/>
+    <rule e="way" k="*" v="*" zoom-max="13">
+      <area fill="#C9E0B4"/>
     </rule>
-    <rule e="way" k="*" v="*" zoom-min="13">
-      <area fill="#CBE0B3"/>
+    <rule e="way" k="*" v="*" zoom-min="14">
+      <area fill="#C9E0B4"/>
       <rule e="any" k="wood|leaf_type" v="coniferous|needleleaved">
         <area src="file:/patterns/wood_coniferous.svg" symbol-width="40"/>
       </rule>
@@ -162,7 +168,7 @@
       </rule>
     </rule>
     <rule e="way" k="*" v="*" zoom-min="12" zoom-max="14">
-      <caption k="name" font-style="bold" font-size="11" fill="#164526" stroke="#FFFFFF" stroke-width="1.5"/>
+      <caption k="name" font-style="italic" font-size="12" fill="#77856D" stroke="#FFFFFF" stroke-width="1.5"/>
     </rule>
   </rule>
   <rule e="way" k="landuse" v="orchard">
@@ -173,6 +179,9 @@
   </rule>
   <rule e="way" k="landuse" v="military" zoom-min="8" closed="yes">
     <area fill="#F0DCD8"/>
+    <rule e="way" k="*" v="*" zoom-min="14" zoom-max="16">
+      <caption k="name" font-style="normal" font-size="10" fill="#F0846E" stroke="#FFFFFF" stroke-width="1.5"/>
+    </rule>
   </rule>
   <rule e="way" k="landuse" v="grass" zoom-min="10" closed="yes">
     <area fill="#DAE5C1"/>
@@ -192,7 +201,7 @@
     <area src="file:/patterns/cemetery.svg" symbol-width="40"/>
     <symbol id="cemetery" src="file:/symbols/cemetery.svg" symbol-percent="110"/>
     <rule e="any" k="*" v="*" zoom-min="15">
-      <caption symbol-id="cemetery" k="name" font-style="normal" font-family="sans_serif" font-size="10" fill="#333333" stroke="#ffffff" stroke-width="1.0"/>
+      <caption symbol-id="cemetery" k="name" font-style="normal" font-family="sans_serif" font-size="10" fill="#333333" stroke="#ffffff" stroke-width="1.5"/>
     </rule>
   </rule>
   <rule e="way" k="amenity" v="school|college|university">
@@ -726,7 +735,7 @@
           <line stroke="#575757" stroke-width="2.0" stroke-linecap="butt"/>
         </rule>
         <rule e="way" k="highway" v="trunk" zoom-min="6">
-          <line stroke="#575757" stroke-width="2.0" stroke-linecap="butt"/>
+          <line stroke="#575757" stroke-width="2.2" stroke-linecap="butt"/>
         </rule>
         <rule e="way" k="highway" v="trunk_link" zoom-min="11">
           <line stroke="#575757" stroke-width="2.0" stroke-linecap="butt"/>
@@ -851,9 +860,6 @@
           <rule e="way" k="highway" v="construction" zoom-min="11">
             <line stroke="#575757" stroke-width="1.2" stroke-linecap="round"/>
           </rule>
-          <rule e="way" k="access" v="private|acc_no|destination" zoom-min="11">
-            <line stroke="#575757" stroke-width="1.2" stroke-linecap="round"/>
-          </rule>
           <rule e="way" k="highway" v="service|road" zoom-min="11">
             <line stroke="#575757" stroke-width="1.2" stroke-linecap="round"/>
           </rule>
@@ -863,23 +869,36 @@
           <rule e="way" k="highway" v="living_street" zoom-min="11">
             <line stroke="#575757" stroke-width="1.2" stroke-linecap="round"/>
           </rule>
+          <rule e="way" k="access" v="private|destination" zoom-min="11">
+            <rule e="way" k="highway" v="pedestrian|service|road|living_street|residential|unclassified|construction">
+              <line stroke="#575757" stroke-width="1.2" stroke-linecap="round"/>
+            </rule>
+          </rule>
+          <rule e="way" k="access" v="acc_no" zoom-min="11">
+            <rule e="way" k="highway" v="pedestrian|service|road|living_street|residential|unclassified|construction">
+              <line stroke="#C3C3C3" stroke-width="1.2" stroke-linecap="round"/>
+            </rule>
+          </rule>
           <rule e="way" k="highway" v="tertiary|tertiary_link|raceway" zoom-min="11">
             <line stroke="#575757" stroke-width="1.8" stroke-linecap="butt"/>
           </rule>
           <rule e="way" k="highway" v="secondary|secondary_link" zoom-min="9">
             <line stroke="#575757" stroke-width="2.0" stroke-linecap="butt"/>
           </rule>
-          <rule e="way" k="highway" v="primary|primary_link" zoom-min="9">
+          <rule e="way" k="highway" v="primary" zoom-min="9">
+            <line stroke="#575757" stroke-width="2.2" stroke-linecap="butt"/>
+          </rule>
+          <rule e="way" k="highway" v="primary_link" zoom-min="9">
             <line stroke="#575757" stroke-width="2.0" stroke-linecap="butt"/>
           </rule>
           <rule e="way" k="highway" v="trunk_link" zoom-min="11">
             <line stroke="#575757" stroke-width="2.0" stroke-linecap="butt"/>
           </rule>
           <rule e="way" k="highway" v="trunk" zoom-min="6">
-            <line stroke="#575757" stroke-width="2.0" stroke-linecap="butt"/>
+            <line stroke="#575757" stroke-width="2.2" stroke-linecap="butt"/>
           </rule>
           <rule e="way" k="highway" v="motorway_link" zoom-min="11">
-            <line stroke="#575757" stroke-width="1.8" stroke-linecap="butt"/>
+            <line stroke="#575757" stroke-width="2.0" stroke-linecap="butt"/>
           </rule>
           <rule e="way" k="highway" v="motorway" zoom-min="6">
             <line stroke="#575757" stroke-width="2.4" stroke-linecap="butt"/>
@@ -934,7 +953,7 @@
         </rule>
         <rule e="way" k="highway" v="track|byway" zoom-min="13">
           <rule e="way" k="tracktype" v="grade4|grade5" zoom-min="12">
-            <line stroke="#53534e" stroke-width="0.4" stroke-dasharray="8,6" stroke-linecap="butt" scale="stroke"/>
+            <line stroke="#53534e" stroke-width="0.4" stroke-dasharray="14,6" stroke-linecap="butt" scale="stroke"/>
           </rule>
           <rule e="way" k="tracktype" v="grade3" zoom-min="12">
             <line stroke="#53534e" stroke-width="0.4"/>
@@ -979,12 +998,6 @@
             <pathText k="name" font-family="sans_serif" font-style="normal" font-size="7" fill="#393935" stroke="#FFFFFF" stroke-width="2.0"/>
           </rule>
         </rule>
-        <rule e="way" k="access" v="private|acc_no|destination" zoom-min="11">
-          <line stroke="#CCCCCC" stroke-width="0.8"/>
-          <rule e="way" k="*" v="*" zoom-min="16">
-            <pathText k="name" font-family="sans_serif" font-style="normal" font-size="8" fill="#393935" stroke="#FFFFFF" stroke-width="3.0"/>
-          </rule>
-        </rule>
         <rule e="way" k="highway" v="service|road" zoom-min="11">
           <line stroke="#ffffff" stroke-width="0.8"/>
           <rule e="way" k="*" v="*" zoom-min="16">
@@ -1009,6 +1022,38 @@
             <pathText k="name" font-family="sans_serif" font-style="normal" font-size="8" fill="#393935" stroke="#FFFFFF" stroke-width="3.0"/>
           </rule>
         </rule>
+        <rule e="way" k="access" v="private|acc_no|destination" zoom-min="11">
+          <rule e="way" k="highway" v="turning_circle|mini_roundabout|pedestrian|service|road|living_street|residential|unclassified|construction">
+            <line stroke="#DBDBDB" stroke-width="0.8"/>
+            <rule e="way" k="*" v="*" zoom-min="16">
+              <pathText k="name" font-family="sans_serif" font-style="normal" font-size="8" fill="#393935" stroke="#FFFFFF" stroke-width="3.0"/>
+            </rule>
+          </rule>
+          <rule e="way" k="highway" v="path|footway">
+            <line stroke="#9F9F9F" stroke-width="0.4" stroke-dasharray="8,6" stroke-linecap="butt" scale="stroke"/>
+            <rule e="way" k="*" v="*" zoom-min="16">
+              <pathText k="name" font-family="sans_serif" font-style="normal" font-size="8" fill="#393935" stroke="#FFFFFF" stroke-width="3.0"/>
+            </rule>
+          </rule>
+          <rule e="way" k="tracktype" v="grade1|grade2">
+            <line stroke="#DBDBDB" stroke-width="0.8"/>
+            <rule e="way" k="*" v="*" zoom-min="16">
+              <pathText k="name" font-family="sans_serif" font-style="normal" font-size="8" fill="#393935" stroke="#FFFFFF" stroke-width="3.0"/>
+            </rule>
+          </rule>
+          <rule e="way" k="tracktype" v="grade3">
+            <line stroke="#9F9F9F" stroke-width="0.4"/>
+            <rule e="way" k="*" v="*" zoom-min="16">
+              <pathText k="name" font-family="sans_serif" font-style="normal" font-size="8" fill="#393935" stroke="#FFFFFF" stroke-width="3.0"/>
+            </rule>
+          </rule>
+          <rule e="way" k="tracktype" v="grade4|grade5">
+            <line stroke="#9F9F9F" stroke-width="0.4" stroke-dasharray="14,6" stroke-linecap="butt" scale="stroke"/>
+            <rule e="way" k="*" v="*" zoom-min="16">
+              <pathText k="name" font-family="sans_serif" font-style="normal" font-size="8" fill="#393935" stroke="#FFFFFF" stroke-width="3.0"/>
+            </rule>
+          </rule>
+        </rule>
         <rule e="way" k="highway" v="tertiary_link" zoom-min="11">
           <line stroke="#ffffff" stroke-width="1.4"/>
         </rule>
@@ -1022,7 +1067,7 @@
           <line stroke="#FFE58F" stroke-width="1.4"/>
         </rule>
         <rule e="way" k="highway" v="motorway_link" zoom-min="11">
-          <line stroke="#F7AA58" stroke-width="1.0"/>
+          <line stroke="#F7AA58" stroke-width="1.4"/>
         </rule>
         <rule e="way" k="highway" v="tertiary|raceway" zoom-min="11">
           <line stroke="#ffffff" stroke-width="1.4"/>
@@ -1036,21 +1081,21 @@
           </rule>
         </rule>
         <rule e="way" k="highway" v="primary" zoom-min="9">
-          <line stroke="#FFE58F" stroke-width="1.4"/>
+          <line stroke="#FFE58F" stroke-width="1.6"/>
           <pathText k="name" font-family="sans_serif" font-style="normal" font-size="9" fill="#000000" stroke="#FFFFFF" stroke-width="2.0"/>
           <rule e="way" k="network|hknetwork" v="~" zoom-min="14">
             <pathText k="ref" repeat-start="50" repeat-gap="200" font-family="sans_serif" font-style="normal" font-size="8" fill="#000000" stroke="#FFFFFF" stroke-width="2.0"/>
           </rule>
         </rule>
         <rule e="way" k="highway" v="trunk" zoom-min="6">
-          <line stroke="#FFE58F" stroke-width="1.4"/>
+          <line stroke="#FFE58F" stroke-width="1.6"/>
           <pathText k="name" font-family="sans_serif" font-style="normal" font-size="9" fill="#000000" stroke="#FFFFFF" stroke-width="2.0"/>
           <rule e="way" k="network|hknetwork" v="~" zoom-min="14">
             <pathText k="ref" repeat-start="50" repeat-gap="200" font-family="sans_serif" font-style="normal" font-size="10" fill="#000000" stroke="#FFFFFF" stroke-width="2.0"/>
           </rule>
         </rule>
         <rule e="way" k="highway" v="motorway" zoom-min="6">
-          <line stroke="#F7AA58" stroke-width="1.6" stroke-linecap="butt"/>
+          <line stroke="#F7AA58" stroke-width="1.8" stroke-linecap="butt"/>
           <pathText k="ref" repeat-start="50" repeat-gap="400" font-family="sans_serif" font-style="bold" font-size="12" fill="#000000" stroke="#FFFFFF" stroke-width="2.0"/>
         </rule>
         <rule e="way" k="toll" v="yes|tl_yes" zoom-min="12">
@@ -1060,7 +1105,7 @@
           <line stroke="#88DD0000" stroke-width="1.0" stroke-dasharray="1,12" stroke-linecap="round"/>
         </rule>
         <rule e="way" k="oneway" v="yes|1" zoom-min="16">
-          <lineSymbol src="file:/symbols/oneway_arrow.svg" symbol-percent="40" align-center="true" repeat="true" repeat-gap="100" repeat-start="0"/>
+          <lineSymbol src="file:/symbols/oneway_arrow.svg" symbol-percent="35" align-center="true" repeat="true" repeat-gap="100" repeat-start="2"/>
         </rule>
       </rule>
     </rule>
@@ -1115,7 +1160,10 @@
     <pathText k="name" font-style="italic" font-size="10" dy="-1" fill="#1E71C6" stroke="#ffffff" stroke-width="0.5"/>
   </rule>
   <rule e="way" k="power" v="*" zoom-min="11">
-    <rule e="way" k="power" v="generator|station|sub_station|substation">
+    <rule e="way" k="power" v="generator">
+      <area fill="#DBDCDC"/>
+    </rule>
+    <rule e="way" k="power" v="station|sub_station|substation">
       <area fill="#C7C7C7"/>
     </rule>
     <rule e="way" k="power" v="line" zoom-min="12" cat="landscapefeat">
@@ -1198,8 +1246,8 @@
     <rule e="way" k="protect_class" v="1|2|3|4|~|pr_1|pr_2|pr_3|pr_4" zoom-min="14">
       <line stroke="#6bb96c" stroke-width="0.8" stroke-linecap="butt"/>
     </rule>
-    <rule e="way" k="boundary" v="national_park|protect_class" zoom-min="13" zoom-max="15">
-      <caption k="name" font-style="normal" font-family="sans_serif" font-size="10" fill="#164526" stroke="#ffffff" stroke-width="1.5"/>
+    <rule e="way" k="boundary" v="national_park|protect_class" zoom-min="15" zoom-max="18">
+      <caption k="name" font-style="bold" font-size="10" fill="#688F37" stroke="#FFFFFF" stroke-width="1.5"/>
     </rule>
   </rule>
   <rule e="way" k="aerialway" v="*" zoom-min="12">
@@ -1272,7 +1320,7 @@
       <line stroke="#545454" stroke-width="0.05" stroke-linecap="butt"/>
     </rule>
     <rule e="way" k="barrier" v="wall">
-      <line stroke="#C3C3C3" stroke-width="0.3" stroke-linecap="butt"/>
+      <line stroke="#C3C3C3" stroke-width="0.5" stroke-linecap="butt"/>
     </rule>
     <rule e="way" k="barrier" v="retaining_wall">
       <line stroke="#888888" stroke-width="0.05" stroke-linecap="butt"/>
@@ -1462,12 +1510,6 @@
       <symbol id="id_cave_entrance" src="file:/symbols/cave_entrance.svg" symbol-percent="80"/>
       <rule e="node" k="natural" v="*" zoom-min="15">
         <caption symbol-id="id_cave_entrance" k="name" font-style="bold" font-family="sans_serif" font-size="8" fill="#333333" stroke="#ffffff" stroke-width="0.5"/>
-      </rule>
-    </rule>
-    <rule e="node" k="natural" v="tree" zoom-min="14" cat="landscapefeat">
-      <symbol id="id_tree" src="file:/symbols/tree.svg" symbol-percent="60"/>
-      <rule e="node" k="natural" v="*" zoom-min="16">
-        <caption symbol-id="id_tree" k="name" dy="-4" font-style="normal" font-family="sans_serif" font-size="8" fill="#164526" stroke="#FFFFFF" stroke-width="0.5"/>
       </rule>
     </rule>
     <rule e="node" k="natural" v="rock|stone|nat_stone" cat="landscapefeat">
@@ -1696,13 +1738,13 @@
   <rule e="any" k="leisure" v="playground" zoom-min="16">
     <symbol id="id_playground" src="file:/symbols/playground.svg" symbol-percent="100"/>
     <rule e="any" k="*" v="*" zoom-min="16">
-      <caption symbol-id="id_playground" k="name" dy="-4" font-style="bold" font-family="sans_serif" font-size="9" fill="#333333" stroke="#ffffff" stroke-width="0.5"/>
+      <caption symbol-id="id_playground" k="name" dy="-4" font-style="normal" font-family="sans_serif" font-size="8" fill="#333333" stroke="#ffffff" stroke-width="1.5"/>
     </rule>
   </rule>
   <rule e="node" k="leisure" v="picnic_table" zoom-min="16">
     <symbol id="id_picnic_table" src="file:/symbols/picnic_site.svg" symbol-percent="70"/>
     <rule e="any" k="*" v="*" zoom-min="16">
-      <caption symbol-id="id_picnic_table" k="name" dy="-4" font-style="bold" font-family="sans_serif" font-size="9" fill="#333333" stroke="#ffffff" stroke-width="0.5"/>
+      <caption symbol-id="id_picnic_table" k="name" dy="-4" font-style="normal" font-family="sans_serif" font-size="8" fill="#333333" stroke="#ffffff" stroke-width="1.5"/>
     </rule>
   </rule>
   <rule e="any" k="man_made" v="lighthouse" zoom-min="12">
