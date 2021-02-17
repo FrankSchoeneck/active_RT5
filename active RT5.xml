@@ -25,7 +25,7 @@
       <name lang="en" value="Hiking Nodes"/>
       <cat id="hikingnodes"/>
     </layer>
-    <layer id="L_contourlines" enabled="false" visible="false">
+    <layer id="L_contourlines" enabled="true" visible="false">
       <name lang="de" value="Höhenlinien"/>
       <name lang="en" value="Contour lines"/>
       <cat id="contourlines"/>
@@ -333,6 +333,9 @@
         <line stroke="#73dcff" stroke-width="0.3"/>
         <area fill="#50ff7396"/>
       </rule>
+      <rule e="way" k="natural" v="tree_row">
+        <line stroke="#CBE0B3" stroke-width="0.7" stroke-linecap="round"/>
+      </rule>
     </rule>
     <rule e="any" k="natural" v="valley|canyon|peninsula" zoom-min="11">
       <rule e="node" k="*" v="*">
@@ -517,11 +520,8 @@
     </rule>
   </rule>
   <rule e="way" k="contour_ext" v="*" zoom-min="14" zoom-max="14" cat="contourlines">
-    <rule e="way" k="contour_ext" v="elevation_minor">
-      <line stroke="#A9641B" stroke-width="0.1"/>
-    </rule>
     <rule e="way" k="contour_ext" v="elevation_medium|elevation_major">
-      <line stroke="#A9641B" stroke-width="0.3"/>
+      <line stroke="#A9641B" stroke-width="0.2"/>
       <pathText k="ele" font-style="bold" font-size="8" fill="#A9641B" stroke="#a0ffffff" stroke-width="1" repeat-start="50" repeat-gap="150" rotate="false"/>
     </rule>
   </rule>
@@ -1077,21 +1077,21 @@
           <line stroke="#FFF2C7" stroke-width="1.4"/>
           <pathText k="name" font-family="sans_serif" font-style="normal" font-size="8" fill="#000000" stroke="#FFFFFF" stroke-width="2.0"/>
           <rule e="way" k="network|hknetwork" v="~" zoom-min="14">
-            <pathText k="ref" repeat-start="50" repeat-gap="200" font-family="sans_serif" font-style="normal" font-size="8" fill="#000000" stroke="#FFFFFF" stroke-width="2.0"/>
+            <pathText k="ref" repeat-start="50" repeat-gap="200" font-family="sans_serif" font-style="bold" font-size="8" fill="#000000" stroke="#FFFFFF" stroke-width="2.0"/>
           </rule>
         </rule>
         <rule e="way" k="highway" v="primary" zoom-min="9">
           <line stroke="#FFE58F" stroke-width="1.6"/>
           <pathText k="name" font-family="sans_serif" font-style="normal" font-size="9" fill="#000000" stroke="#FFFFFF" stroke-width="2.0"/>
           <rule e="way" k="network|hknetwork" v="~" zoom-min="14">
-            <pathText k="ref" repeat-start="50" repeat-gap="200" font-family="sans_serif" font-style="normal" font-size="8" fill="#000000" stroke="#FFFFFF" stroke-width="2.0"/>
+            <pathText k="ref" repeat-start="50" repeat-gap="200" font-family="sans_serif" font-style="bold" font-size="9" fill="#000000" stroke="#FFFFFF" stroke-width="2.0"/>
           </rule>
         </rule>
         <rule e="way" k="highway" v="trunk" zoom-min="6">
           <line stroke="#FFE58F" stroke-width="1.6"/>
           <pathText k="name" font-family="sans_serif" font-style="normal" font-size="9" fill="#000000" stroke="#FFFFFF" stroke-width="2.0"/>
           <rule e="way" k="network|hknetwork" v="~" zoom-min="14">
-            <pathText k="ref" repeat-start="50" repeat-gap="200" font-family="sans_serif" font-style="normal" font-size="10" fill="#000000" stroke="#FFFFFF" stroke-width="2.0"/>
+            <pathText k="ref" repeat-start="50" repeat-gap="200" font-family="sans_serif" font-style="bold" font-size="9" fill="#000000" stroke="#FFFFFF" stroke-width="2.0"/>
           </rule>
         </rule>
         <rule e="way" k="highway" v="motorway" zoom-min="6">
