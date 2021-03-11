@@ -25,7 +25,7 @@
       <name lang="en" value="Hiking Nodes"/>
       <cat id="hikingnodes"/>
     </layer>
-    <layer id="L_contourlines" enabled="true" visible="false">
+    <layer id="L_contourlines" enabled="false" visible="false">
       <name lang="de" value="Höhenlinien"/>
       <name lang="en" value="Contour lines"/>
       <cat id="contourlines"/>
@@ -334,7 +334,7 @@
         <area fill="#50ff7396"/>
       </rule>
       <rule e="way" k="natural" v="tree_row">
-        <line stroke="#CBE0B3" stroke-width="0.7" stroke-linecap="round"/>
+        <line stroke="#CBE0B3" stroke-width="0.6" stroke-linecap="round"/>
       </rule>
     </rule>
     <rule e="any" k="natural" v="valley|canyon|peninsula" zoom-min="11">
@@ -2367,18 +2367,18 @@
     <rule e="any" k="osmc_foreground" v="~|no|false">
       <rule e="any" k="osmc_textcolor" v="~|wmtc_black|wmtc_brown|wmtc_purple|wmtc_red|wmtc_green|wmtc_blue|wmtc_orange">
         <rule e="any" k="osmc_text_len" v="wmtl_1|wmtl_2">
-          <caption k="name" priority="3" display="always" font-size="7" position="center" font-style="bold" fill="#000000" stroke="#E5FFFFFF" stroke-width="1.0"/>
+          <caption k="name" priority="4" display="always" font-size="7" position="center" font-style="bold" fill="#000000" stroke="#E5FFFFFF" stroke-width="1.0"/>
         </rule>
         <rule e="any" k="osmc_text_len" v="wmtl_3|wmtl_4">
-          <caption k="name" priority="3" display="always" font-size="6" position="center" font-style="bold" fill="#000000" stroke="#E5FFFFFF" stroke-width="1.0"/>
+          <caption k="name" priority="4" display="always" font-size="6" position="center" font-style="bold" fill="#000000" stroke="#E5FFFFFF" stroke-width="1.0"/>
         </rule>
       </rule>
       <rule e="any" k="osmc_textcolor" v="wmtc_grey|wmtc_white|wmtc_yellow">
         <rule e="any" k="osmc_text_len" v="wmtl_1|wmtl_2">
-          <caption k="name" priority="3" display="always" font-size="7" position="center" font-style="bold" fill="#FFFFFF" stroke="#E5000000" stroke-width="1.0"/>
+          <caption k="name" priority="4" display="always" font-size="7" position="center" font-style="bold" fill="#FFFFFF" stroke="#E5000000" stroke-width="1.0"/>
         </rule>
         <rule e="any" k="osmc_text_len" v="wmtl_3|wmtl_4">
-          <caption k="name" priority="3" display="always" font-size="6" position="center" font-style="bold" fill="#FFFFFF" stroke="#E5000000" stroke-width="1.0"/>
+          <caption k="name" priority="4" display="always" font-size="6" position="center" font-style="bold" fill="#FFFFFF" stroke="#E5000000" stroke-width="1.0"/>
         </rule>
       </rule>
     </rule>
