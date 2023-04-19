@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rendertheme xmlns="http://mapsforge.org/renderTheme" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://mapsforge.org/renderTheme ../renderTheme-V5.xsd" version="5" map-background-outside="#dddddd" map-background="#FAFBFC">
+<rendertheme xmlns="http://mapsforge.org/renderTheme" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://mapsforge.org/renderTheme ../renderTheme.xsd" version="5" map-background-outside="#dddddd" map-background="#FAFBFC">
   <!--
 		active RT5 (active RenderTheme Version 5)
 		Mapsforge Rendertheme for Apps with Mapsforge support and Openandromaps
@@ -201,11 +201,9 @@
     <rule e="way" k="landuse" v="retail|garages|greenfield">
       <area fill="#FFFEFE" stroke="#e4e4e4" stroke-width="0.2"/>
     </rule>
-    <rule e="way" k="landuse" v="farm|farmland" cat="Style_Summer">
-      <area fill="#fffefe"/>
-    </rule>
-    <rule e="way" k="landuse" v="farm|farmland" cat="Style_Winter">
-      <area fill="#fcfdff"/>
+    <rule e="way" k="landuse" v="farm|farmland">
+      <area cat="Style_Summer" fill="#fffefe"/>
+      <area cat="Style_Winter" fill="#fcfdff"/>
     </rule>
     <rule e="way" k="landuse" v="farmyard">
       <area fill="#E7E7E7" stroke="#e4e4e4" stroke-width="0.2"/>
@@ -216,70 +214,51 @@
     <rule e="way" k="landuse" v="brownfield">
       <area fill="#FFFEFE" stroke="#e4e4e4" stroke-width="0.2"/>
     </rule>
-    <rule e="way" k="landuse" v="industrial" cat="Style_Summer">
-      <area fill="#dbdcdc" stroke="#e4e4e4" stroke-width="0.2"/>
+    <rule e="way" k="landuse" v="industrial">
+      <area cat="Style_Summer" fill="#dbdcdc" stroke="#e4e4e4" stroke-width="0.2"/>
+      <area cat="Style_Winter" fill="#ececec" stroke="#e4e4e4" stroke-width="0.2"/>
       <rule e="way" k="*" v="*" zoom-min="15" zoom-max="17">
         <caption k="name" font-style="normal" font-size="10" fill="#5A5A5A" stroke="#FFFFFF" stroke-width="1.5"/>
       </rule>
     </rule>
-    <rule e="way" k="landuse" v="industrial" cat="Style_Winter">
-      <area fill="#ececec" stroke="#e4e4e4" stroke-width="0.2"/>
-      <rule e="way" k="*" v="*" zoom-min="15" zoom-max="17">
-        <caption k="name" font-style="normal" font-size="10" fill="#5A5A5A" stroke="#FFFFFF" stroke-width="1.5"/>
-      </rule>
-    </rule>
-    <rule e="way" k="landuse" v="landfill" cat="Style_Summer">
-      <area fill="#eff5e1" stroke="#556b2f" stroke-width="0.2"/>
+    <rule e="way" k="landuse" v="landfill">
+      <area cat="Style_Summer" fill="#eff5e1" stroke="#556b2f" stroke-width="0.2"/>
+      <area cat="Style_Winter" fill="#fcfdff" stroke="#556b2f" stroke-width="0.2"/>
       <rule e="way" k="*" v="*" zoom-min="14" zoom-max="16">
         <caption k="name" font-style="italic" font-size="10" fill="#333333" stroke="#FFFFFF" stroke-width="0.5"/>
       </rule>
     </rule>
-    <rule e="way" k="landuse" v="landfill" cat="Style_Winter">
-      <area fill="#fcfdff" stroke="#556b2f" stroke-width="0.2"/>
-      <rule e="way" k="*" v="*" zoom-min="14" zoom-max="16">
-        <caption k="name" font-style="italic" font-size="10" fill="#333333" stroke="#FFFFFF" stroke-width="0.5"/>
-      </rule>
-    </rule>
-    <rule e="way" k="landuse" v="quarry" cat="Style_Summer">
-      <area fill="#dae0d9" stroke="#556b2f" stroke-width="0.2"/>
+    <rule e="way" k="landuse" v="quarry">
+      <area cat="Style_Summer" fill="#dae0d9" stroke="#556b2f" stroke-width="0.2"/>
+      <area cat="Style_Winter" fill="#e7e9eb" stroke="#556b2f" stroke-width="0.2"/>
       <rule e="way" k="*" v="*" zoom-min="14">
         <area src="file:/patterns/quarry.svg" symbol-width="40"/>
       </rule>
     </rule>
-    <rule e="way" k="landuse" v="quarry" cat="Style_Winter">
-      <area fill="#e7e9eb" stroke="#556b2f" stroke-width="0.2"/>
-      <rule e="way" k="*" v="*" zoom-min="14">
-        <area src="file:/patterns/quarry.svg" symbol-width="40"/>
-      </rule>
-    </rule>
-    <rule e="way" k="landuse" v="allotments" cat="Style_Summer">
-      <area fill="#e2ecc5" stroke="#556b2f" stroke-width="0.2"/>
-    </rule>
-    <rule e="way" k="landuse" v="allotments" cat="Style_Winter">
-      <area fill="#fcfdff" stroke="#556b2f" stroke-width="0.2"/>
+    <rule e="way" k="landuse" v="allotments">
+      <area cat="Style_Summer" fill="#e2ecc5" stroke="#556b2f" stroke-width="0.2"/>
+      <area cat="Style_Winter" fill="#fcfdff" stroke="#556b2f" stroke-width="0.2"/>
     </rule>
   </rule>
-  <rule e="way" k="landuse" v="village_green" zoom-min="11" cat="Style_Summer">
-    <area fill="#e2ecc5" stroke="#6fc18e"/>
+  <rule e="way" k="landuse" v="village_green" zoom-min="11">
+    <area cat="Style_Summer" fill="#e2ecc5" stroke="#6fc18e"/>
+    <area cat="Style_Winter" fill="#fcfdff" stroke="#6fc18e"/>
   </rule>
-  <rule e="way" k="landuse" v="village_green" zoom-min="11" cat="Style_Winter">
-    <area fill="#fcfdff" stroke="#6fc18e"/>
-  </rule>
-  <rule e="way" k="leisure|landuse" v="recreation_ground" zoom-min="11" cat="Style_Summer">
-    <area fill="#e2ecc5" stroke="#6fc18e"/>
-  </rule>
-  <rule e="way" k="leisure|landuse" v="recreation_ground" zoom-min="11" cat="Style_Winter">
-    <area fill="#fcfdff" stroke="#6fc18e"/>
+  <rule e="way" k="leisure|landuse" v="recreation_ground" zoom-min="11">
+    <area cat="Style_Summer" fill="#e2ecc5" stroke="#6fc18e"/>
+    <area cat="Style_Winter" fill="#fcfdff" stroke="#6fc18e"/>
   </rule>
   <rule e="way" k="landuse" v="village_green|recreation_ground" zoom-min="15">
     <caption k="name" font-style="normal" font-size="10" fill="#333333" stroke="#FFFFFF" stroke-width="1.5"/>
   </rule>
-  <rule e="way" k="natural|landuse" v="forest|wood" zoom-min="8" cat="Style_Summer">
+  <rule e="way" k="natural|landuse" v="forest|wood" zoom-min="8">
     <rule e="way" k="*" v="*" zoom-max="13">
-      <area fill="#C9E0B4"/>
+      <area cat="Style_Summer" fill="#C9E0B4"/>
+      <area cat="Style_Winter" fill="#d9e3f4"/>
     </rule>
     <rule e="way" k="*" v="*" zoom-min="14">
-      <area fill="#C9E0B4"/>
+      <area cat="Style_Summer" fill="#C9E0B4"/>
+      <area cat="Style_Winter" fill="#d9e3f4"/>
       <rule e="any" k="wood|leaf_type" v="coniferous|needleleaved">
         <area src="file:/patterns/wood_coniferous.svg" symbol-width="40"/>
       </rule>
@@ -294,43 +273,16 @@
       <caption k="name" font-style="italic" font-size="12" fill="#77856D" stroke="#FFFFFF" stroke-width="1.5"/>
     </rule>
   </rule>
-  <rule e="way" k="natural|landuse" v="forest|wood" zoom-min="8" cat="Style_Winter">
-    <rule e="way" k="*" v="*" zoom-max="13">
-      <area fill="#d9e3f4"/>
-    </rule>
-    <rule e="way" k="*" v="*" zoom-min="14">
-      <area fill="#d9e3f4"/>
-      <rule e="any" k="wood|leaf_type" v="coniferous|needleleaved">
-        <area src="file:/patterns/wood_coniferous.svg" symbol-width="40"/>
-      </rule>
-      <rule e="any" k="wood|leaf_type" v="deciduous|broadleaved">
-        <area src="file:/patterns/wood_deciduous.svg" symbol-width="40"/>
-      </rule>
-      <rule e="any" k="wood|leaf_type" v="~|mixed|leafless">
-        <area src="file:/patterns/wood_mixed.svg" symbol-width="40"/>
-      </rule>
-    </rule>
-    <rule e="way" k="*" v="*" zoom-min="12" zoom-max="14">
-      <caption k="name" font-style="italic" font-size="12" fill="#8ba8ac" stroke="#FFFFFF" stroke-width="1.5"/>
-    </rule>
-  </rule>
-  <rule e="way" k="landuse" v="orchard" cat="Style_Summer">
-    <area fill="#ecf3e1"/>
+  <rule e="way" k="landuse" v="orchard">
+    <area cat="Style_Summer" fill="#ecf3e1"/>
+    <area cat="Style_Winter" fill="#fafcff"/>
     <rule e="way" k="*" v="*" zoom-min="14">
       <area src="file:/patterns/orchard.svg" symbol-width="40"/>
     </rule>
   </rule>
-  <rule e="way" k="landuse" v="orchard" cat="Style_Winter">
-    <area fill="#fafcff"/>
-    <rule e="way" k="*" v="*" zoom-min="14">
-      <area src="file:/patterns/orchard.svg" symbol-width="40"/>
-    </rule>
-  </rule>
-  <rule e="way" k="landuse" v="grass" zoom-min="10" closed="yes" cat="Style_Summer">
-    <area fill="#dde7c0"/>
-  </rule>
-  <rule e="way" k="landuse" v="grass" zoom-min="10" closed="yes" cat="Style_Winter">
-    <area fill="#fcfdff"/>
+  <rule e="way" k="landuse" v="grass" zoom-min="10" closed="yes">
+    <area cat="Style_Summer" fill="#dde7c0"/>
+    <area cat="Style_Winter" fill="#fcfdff"/>
   </rule>
   <rule e="way" k="landuse" v="vineyard" zoom-min="10" closed="yes">
     <area fill="#EFECF6"/>
@@ -338,11 +290,14 @@
       <area src="file:/patterns/vineyard.svg" symbol-width="14"/>
     </rule>
   </rule>
-  <rule e="way" k="landuse" v="meadow" zoom-min="12" closed="yes" cat="Style_Summer">
-    <area fill="#fdfefb"/>
+  <rule e="way" k="landuse" v="plant_nursery" zoom-min="11">
+    <area cat="Style_Summer" fill="#e1f0e6"/>
+    <area cat="Style_Winter" fill="#fcfdff"/>
+    <area src="file:/patterns/wood_deciduous.svg" symbol-width="30"/>
   </rule>
-  <rule e="way" k="landuse" v="meadow" zoom-min="12" closed="yes" cat="Style_Winter">
-    <area fill="#fcfdff"/>
+  <rule e="way" k="landuse" v="meadow" zoom-min="12" closed="yes" cat="Style_Summer">
+    <area cat="Style_Summer" fill="#fcfcf2"/>
+    <area cat="Style_Winter" fill="#fcfdff"/>
   </rule>
   <rule e="way" k="landuse" v="cemetery" zoom-min="12" closed="yes" cat="Style_Summer">
     <area fill="#ced3cb"/>
@@ -397,7 +352,8 @@
       <area fill="#fcfdff"/>
     </rule>
     <rule e="way" k="leisure" v="golf_course|common|green">
-      <area fill="#E2ECC5"/>
+      <area fill="#e2ecc5" cat="Style_Summer"/>
+      <area fill="#fcfdff" cat="Style_Winter"/>
     </rule>
     <rule e="way" k="leisure" v="garden" cat="Style_Summer">
       <area fill="#dde7c0"/>
@@ -453,13 +409,287 @@
       <caption k="name" font-style="normal" font-family="sans_serif" font-size="10" fill="#333333" stroke="#ffffff" stroke-width="1.5"/>
     </rule>
   </rule>
+  <rule e="way" k="historic" v="*" zoom-min="10">
+    <rule e="way" k="historic" v="archaeological_site">
+      <area fill="#DBDBDB" stroke="#C3C3C3" stroke-width="0.1"/>
+      <rule e="way" k="building" v="~" zoom-min="12">
+        <line stroke="#70606060" stroke-width="0.2" stroke-dasharray="4,4" stroke-linecap="butt"/>
+      </rule>
+    </rule>
+    <rule e="way" k="historic" v="wayside_shrine">
+      <area fill="#DBDBDB" stroke="#818181" stroke-width="0.1"/>
+    </rule>
+  </rule>
+  <rule e="way" k="amenity" v="hospital" zoom-min="12">
+    <area fill="#EBE3E1" stroke="#DBBDBA" stroke-width="0.1"/>
+  </rule>
+  <rule e="way" k="amenity" v="church|monastery" zoom-min="12">
+    <rule e="way" k="area" v="yes|true">
+      <area fill="#EBE3E1" stroke="#DBBDBA" stroke-width="0.1"/>
+    </rule>
+  </rule>
+  <rule e="any" k="amenity" v="parking" cat="parking" zoom-min="14">
+    <area fill="#F3F3F3"/>
+    <rule e="any" k="access" v="private|acc_no|permit|permissive" cat="parking">
+      <area src="file:/patterns/access-private.svg" symbol-percent="50"/>
+      <symbol src="file:/symbols/parking_private.svg" symbol-percent="50"/>
+    </rule>
+    <rule e="any" k="access" v="destination">
+      <area src="file:/patterns/access-destination.svg" symbol-percent="50"/>
+      <symbol src="file:/symbols/parking_private.svg" symbol-percent="50"/>
+    </rule>
+    <rule e="any" k="access" v="~|yes|public">
+      <rule e="any" k="parking" v="~">
+        <rule e="any" k="fee" v="~">
+          <symbol id="id_parking" src="file:/symbols/parking.svg" symbol-percent="50"/>
+          <rule e="any" k="fee" v="~" zoom-min="16">
+            <caption symbol-id="id_parking" k="name" font-style="normal" font-family="sans_serif" font-size="10" fill="#333333" stroke="#ffffff" stroke-width="1.5"/>
+          </rule>
+        </rule>
+        <rule e="any" k="fee" v="fee_yes">
+          <symbol id="id_parking_fee" src="file:/symbols/parking_fee.svg" symbol-percent="50"/>
+          <rule e="any" k="fee" v="fee_yes" zoom-min="16">
+            <caption symbol-id="id_parking_fee" k="name" font-style="normal" font-family="sans_serif" font-size="10" fill="#333333" stroke="#ffffff" stroke-width="1.5"/>
+          </rule>
+        </rule>
+        <rule e="any" k="parking" v="multi-storey">
+          <symbol src="file:/symbols/parking_multi-storey.svg" symbol-percent="50"/>
+        </rule>
+      </rule>
+    </rule>
+  </rule>
+  <rule e="way" k="amenity" v="grave_yard" zoom-min="14">
+    <area fill="#CDD9CA"/>
+    <line stroke="#515151" stroke-width="0.15" stroke-dasharray="15,15"/>
+    <area src="file:/patterns/cemetery.svg" symbol-width="40"/>
+  </rule>
+  <rule e="way" k="amenity" v="public_bath" zoom-min="14">
+    <line stroke="#515151" stroke-width="0.15" stroke-dasharray="15,15"/>
+    <rule e="any" k="amenity" v="*" zoom-min="15">
+      <caption k="name" font-style="normal" font-family="sans_serif" font-size="10" fill="#333333" stroke="#ffffff" stroke-width="1.5"/>
+    </rule>
+  </rule>
+  <rule e="way" k="admin_level" v="*" cat="boundaries_areas">
+    <rule e="way" k="admin_level" v="4|5|6" zoom-max="12">
+      <line stroke="#995499" stroke-width="1.5" stroke-dasharray="15,5,4,5" stroke-linecap="butt"/>
+      <line stroke="#995499" stroke-width="3" stroke-dasharray="1,13,1,14" stroke-linecap="butt"/>
+    </rule>
+    <rule e="way" k="admin_level" v="4|5|6" zoom-min="13" zoom-max="18">
+      <line stroke="#995499" stroke-width="0.6" stroke-dasharray="15,5,4,5" stroke-linecap="butt"/>
+      <line stroke="#995499" stroke-width="2" stroke-dasharray="1,13,1,14" stroke-linecap="butt"/>
+      <pathText k="name" dy="-2" font-style="normal" font-family="sans_serif" font-size="12" fill="#995499" stroke="#ffffff" stroke-width="2.0"/>
+    </rule>
+    <rule e="way" k="admin_level" v="2" zoom-max="12">
+      <line stroke="#60995499" stroke-width="6" stroke-linecap="butt"/>
+      <line stroke="#995499" stroke-width="1.5" stroke-dasharray="15,5,4,5" stroke-linecap="butt"/>
+      <line stroke="#995499" stroke-width="3" stroke-dasharray="1,13,1,14" stroke-linecap="butt"/>
+    </rule>
+    <rule e="way" k="admin_level" v="2" zoom-min="13" zoom-max="18">
+      <line stroke="#60995499" stroke-width="4" stroke-linecap="butt"/>
+      <line stroke="#995499" stroke-width="0.75" stroke-dasharray="15,5,2,5" stroke-linecap="butt"/>
+      <line stroke="#995499" stroke-width="2" stroke-dasharray="0.5,14,0.5,12" stroke-linecap="butt"/>
+      <pathText k="name" dy="-6" font-style="normal" font-family="sans_serif" font-size="12" fill="#995499" stroke="#ffffff" stroke-width="2.0"/>
+    </rule>
+  </rule>
+  <rule e="way" k="contour_ext" v="*" zoom-max="9" cat="contourlines">
+    <rule e="way" k="contour_ext" v="elevation_major">
+      <line stroke="#A9641B" stroke-width="0.2" curve="cubic"/>
+    </rule>
+  </rule>
+  <rule e="way" k="contour_ext" v="*" zoom-min="10" zoom-max="12" cat="contourlines">
+    <rule e="way" k="contour_ext" v="elevation_medium">
+      <line stroke="#A9641B" stroke-width="0.2" curve="cubic"/>
+    </rule>
+    <rule e="way" k="contour_ext" v="elevation_major">
+      <line stroke="#A9641B" stroke-width="0.4" curve="cubic"/>
+    </rule>
+  </rule>
+  <rule e="way" k="contour_ext" v="*" zoom-min="13" zoom-max="13" cat="contourlines">
+    <rule e="way" k="contour_ext" v="elevation_medium">
+      <line stroke="#A9641B" stroke-width="0.2" curve="cubic"/>
+    </rule>
+    <rule e="way" k="contour_ext" v="elevation_major">
+      <line stroke="#A9641B" stroke-width="0.4" curve="cubic"/>
+      <pathText k="ele" font-style="bold" font-size="7" fill="#A9641B" stroke="#a0ffffff" stroke-width="1" repeat-start="50" repeat-gap="150" rotate="false"/>
+    </rule>
+  </rule>
+  <rule e="way" k="contour_ext" v="*" zoom-min="14" zoom-max="14" cat="contourlines">
+    <rule e="way" k="contour_ext" v="elevation_medium|elevation_major">
+      <line stroke="#A9641B" stroke-width="0.2" curve="cubic"/>
+      <pathText k="ele" font-style="bold" font-size="8" fill="#A9641B" stroke="#a0ffffff" stroke-width="1" repeat-start="50" repeat-gap="150" rotate="false"/>
+    </rule>
+  </rule>
+  <rule e="way" k="contour_ext" v="*" zoom-min="15" zoom-max="15" cat="contourlines">
+    <rule e="way" k="contour_ext" v="elevation_minor" zoom-max="15">
+      <line stroke="#A9641B" stroke-width="0.08" curve="cubic"/>
+    </rule>
+    <rule e="way" k="contour_ext" v="elevation_medium|elevation_major">
+      <line stroke="#A9641B" stroke-width="0.25" curve="cubic"/>
+      <pathText k="ele" font-style="bold" font-size="8" fill="#A9641B" stroke="#a0ffffff" stroke-width="1" repeat-start="100" repeat-gap="150" rotate="false"/>
+    </rule>
+  </rule>
+  <rule e="way" k="contour_ext" v="*" zoom-min="16" zoom-max="16" cat="contourlines">
+    <rule e="way" k="contour_ext" v="elevation_minor">
+      <line stroke="#A9641B" stroke-width="0.06" curve="cubic"/>
+    </rule>
+    <rule e="way" k="contour_ext" v="elevation_medium|elevation_major">
+      <line stroke="#A9641B" stroke-width="0.2" curve="cubic"/>
+      <pathText k="ele" font-style="bold" font-size="9" fill="#A9641B" stroke="#a0ffffff" stroke-width="2" repeat-start="200" repeat-gap="200" rotate="false"/>
+    </rule>
+  </rule>
+  <rule e="way" k="contour_ext" v="*" zoom-min="17" cat="contourlines">
+    <rule e="way" k="contour_ext" v="elevation_minor">
+      <line stroke="#A9641B" stroke-width="0.04" curve="cubic"/>
+    </rule>
+    <rule e="way" k="contour_ext" v="elevation_medium|elevation_major">
+      <line stroke="#A9641B" stroke-width="0.15" curve="cubic"/>
+      <pathText k="ele" font-style="bold" font-size="9" fill="#A9641B" stroke="#a0ffffff" stroke-width="2" repeat-start="200" repeat-gap="200" rotate="false"/>
+    </rule>
+  </rule>
+  <rule e="way" k="aeroway" v="*" zoom-min="8">
+    <rule e="way" k="aeroway" v="aerodrome" closed="yes" zoom-min="11">
+      <area fill="#DADECF"/>
+    </rule>
+    <rule e="way" k="aeroway" v="apron" zoom-min="11">
+      <area fill="#CFCFCF"/>
+    </rule>
+    <rule e="way" k="aeroway" v="terminal" zoom-min="11">
+      <area fill="#C7C7C7" stroke="#BFBFBF" stroke-width="0.1"/>
+    </rule>
+    <rule e="way" k="aeroway" v="*" closed="yes">
+      <rule e="way" k="aeroway" v="taxiway" zoom-min="10">
+        <area fill="#C9C9C9" stroke="#BFBFBF" stroke-width="0.1"/>
+      </rule>
+      <rule e="way" k="aeroway" v="runway" zoom-min="8">
+        <area fill="#C9C9C9" stroke="#BFBFBF" stroke-width="0.1"/>
+      </rule>
+    </rule>
+    <rule e="way" k="aeroway" v="*" closed="no">
+      <rule e="way" k="aeroway" v="taxiway" zoom-min="10">
+        <line stroke="#C9C9C9" stroke-width="2.4" stroke-linecap="butt"/>
+      </rule>
+      <rule e="way" k="aeroway" v="runway" zoom-min="8">
+        <line stroke="#C9C9C9" stroke-width="6.0" stroke-linecap="square"/>
+      </rule>
+    </rule>
+    <rule e="way" k="aeroway" v="aerodrome|apron|terminal" zoom-min="14">
+      <caption k="name" font-family="sans_serif" font-style="normal" font-size="10" fill="#333333" stroke="#ffffff" stroke-width="0.5"/>
+    </rule>
+    <rule e="way" k="aeroway" v="taxiway|runway" zoom-min="14">
+      <pathText k="ref" font-family="sans_serif" font-style="normal" font-size="8" fill="#333333" stroke="#FFFFFF" stroke-width="0.5"/>
+    </rule>
+  </rule>
+  <rule e="way" k="natural" v="*">
+    <rule e="way" k="natural" v="*" zoom-min="6">
+      <rule e="way" k="natural" v="glacier" closed="yes">
+        <area fill="#50D3E9FF"/>
+        <area src="file:/patterns/glacier.svg"/>
+      </rule>
+      <rule e="way" k="natural" v="grassland" closed="yes">
+        <area fill="#E7E7E7" stroke="#b7c7b9" cat="Style_Summer"/>
+        <area fill="#fcfdff" stroke="#b7c7b9" cat="Style_Winter"/>
+      </rule>
+      <rule e="way" k="natural" v="fell" closed="yes">
+        <area fill="#D4E5EB"/>
+      </rule>
+      <rule e="way" k="natural" v="rock" closed="yes">
+        <area fill="#D4E5EB"/>
+        <area src="file:/patterns/rock.svg" symbol-width="32"/>
+      </rule>
+      <rule e="way" k="natural" v="scree|shingle" closed="yes">
+        <area fill="#D4E5EB"/>
+        <area src="file:/patterns/scree.svg" symbol-width="32"/>
+      </rule>
+    </rule>
+    <rule e="way" k="natural" v="*" zoom-min="10">
+      <rule e="way" k="natural" v="sand">
+        <area fill="#fffce4"/>
+      </rule>
+      <rule e="way" k="natural" v="crater" closed="no">
+        <line stroke="#8c4600" stroke-width="0.7" stroke-linecap="butt"/>
+      </rule>
+      <rule e="way" k="natural" v="crater" closed="yes">
+        <area fill="#308c4600"/>
+      </rule>
+    </rule>
+    <rule e="way" k="natural" v="*" zoom-min="11">
+      <rule e="way" k="natural" v="marsh|wetland" closed="yes" cat="Style_Summer">
+        <area fill="#e0e5d6"/>
+        <area src="file:/patterns/marsh.svg" symbol-width="40"/>
+      </rule>
+      <rule e="way" k="natural" v="marsh|wetland" closed="yes" cat="Style_Winter">
+        <area fill="#fcfdff"/>
+        <area src="file:/patterns/marsh.svg" symbol-width="40"/>
+      </rule>
+      <rule e="way" k="natural" v="beach" closed="yes">
+        <area fill="#fffce4"/>
+      </rule>
+      <rule e="way" k="natural" v="heath" closed="yes">
+        <area fill="#DCE0DA"/>
+        <area src="file:/patterns/heath.svg" symbol-width="40"/>
+      </rule>
+      <rule e="way" k="natural" v="scrub" closed="yes" cat="Style_Summer">
+        <area fill="#e1edd5"/>
+      </rule>
+      <rule e="way" k="natural" v="scrub" closed="yes" cat="Style_Winter">
+        <area fill="#e8f2e2"/>
+      </rule>
+    </rule>
+    <rule e="way" k="natural" v="*" zoom-min="12">
+      <rule e="way" k="natural" v="cliff|earth_bank" closed="no" cat="landscapefeat">
+        <line stroke="#70606060" stroke-width="1.0" stroke-linecap="butt" curve="cubic"/>
+        <pathText k="name" font-style="bold" font-family="sans_serif" font-size="19" fill="#333333" stroke="#FFFFFF" stroke-width="1.5"/>
+        <rule e="way" k="natural" v="*" zoom-min="13">
+          <lineSymbol dy="0.5" src="file:/symbols/cliff.svg" repeat="true" repeat-gap="1" repeat-start="1" rotate="true" align-center="true" symbol-percent="30"/>
+        </rule>
+      </rule>
+      <rule e="way" k="natural" v="cliff|earth_bank" closed="yes" cat="landscapefeat">
+        <line stroke="#70606060" stroke-width="1.0" stroke-linecap="butt" curve="cubic"/>
+        <caption k="name" font-style="bold_italic" font-family="sans_serif" font-size="19" fill="#333333" stroke="#FFFFFF" stroke-width="1.5"/>
+      </rule>
+      <rule e="way" k="natural" v="crevasse" closed="no">
+        <line stroke="#73dcff" stroke-width="0.7" stroke-linecap="butt"/>
+        <line stroke="#ff7396" stroke-width="0.5" stroke-dasharray="2,2" stroke-linecap="butt"/>
+      </rule>
+      <rule e="way" k="natural" v="crevasse" closed="yes">
+        <line stroke="#73dcff" stroke-width="0.3"/>
+        <area fill="#50ff7396"/>
+      </rule>
+      <rule e="way" k="natural" v="tree_row" cat="Style_Summer">
+        <line stroke="#CBE0B3" stroke-width="0.7" stroke-linecap="round"/>
+      </rule>
+      <rule e="way" k="natural" v="tree_row" cat="Style_Winter">
+        <line stroke="#d9e3f4" stroke-width="0.7" stroke-linecap="round"/>
+      </rule>
+    </rule>
+    <rule e="any" k="natural" v="valley|canyon|peninsula" zoom-min="11">
+      <rule e="node" k="*" v="*">
+        <caption k="name" font-style="italic" font-family="sans_serif" font-size="10" fill="#888888" stroke="#888888" stroke-width="0.8"/>
+      </rule>
+      <rule e="way" k="*" v="*" zoom-max="13">
+        <caption k="name" font-style="bold_italic" font-family="sans_serif" font-size="10" fill="#333333" stroke="#FFFFFF" stroke-width="0.8"/>
+      </rule>
+      <rule e="way" k="*" v="*" zoom-min="14">
+        <pathText k="name" font-style="bold_italic" font-family="sans_serif" font-size="10" fill="#333333" stroke="#FFFFFF" stroke-width="0.8"/>
+      </rule>
+    </rule>
+    <rule e="any" k="natural" v="bay" zoom-min="12">
+      <caption k="name" font-style="normal" font-family="sans_serif" font-size="10" fill="#333333" stroke="#FFFFFF" stroke-width="1.5"/>
+    </rule>
+    <rule e="way" k="natural" v="beach" zoom-min="15">
+      <caption k="name" font-style="normal" font-family="sans_serif" font-size="8" fill="#333333" stroke="#FFFFFF" stroke-width="0.8"/>
+    </rule>
+    <rule e="way" k="natural" v="heath|marsh|wetland|scrub" zoom-min="15">
+      <caption k="name" font-style="normal" font-family="sans_serif" font-size="8" fill="#333333" stroke="#FFFFFF" stroke-width="0.8"/>
+    </rule>
+  </rule>
   <rule e="way" k="waterway" v="*">
     <rule e="way" k="waterway" v="drain|ditch">
       <rule e="way" k="intermittent|seasonal" v="~">
-        <line stroke="#59A0D8" stroke-width="0.4"/>
+        <line stroke="#59A0D8" stroke-width="0.4" curve="cubic"/>
       </rule>
       <rule e="way" k="intermittent|seasonal" v="wwi_yes|seas_yes" zoom-min="13">
-        <line stroke="#59A0D8" stroke-width="0.4" stroke-dasharray="3,6"/>
+        <line stroke="#59A0D8" stroke-width="0.4" stroke-dasharray="3,6" curve="cubic"/>
       </rule>
     </rule>
     <rule e="way" k="waterway" v="canal">
@@ -476,15 +706,15 @@
     <rule e="way" k="waterway" v="stream" zoom-min="11">
       <rule e="way" k="*" v="*" zoom-min="11" zoom-max="12">
         <rule e="way" k="intermittent|seasonal" v="~">
-          <line stroke="#59A0D8" stroke-width="0.4"/>
+          <line stroke="#59A0D8" stroke-width="0.4" curve="cubic"/>
         </rule>
       </rule>
       <rule e="way" k="*" v="*" zoom-min="14">
         <rule e="way" k="intermittent|seasonal" v="~">
-          <line stroke="#59A0D8" stroke-width="0.2"/>
+          <line stroke="#59A0D8" stroke-width="0.2" curve="cubic"/>
         </rule>
         <rule e="way" k="intermittent|seasonal" v="wwi_yes|seas_yes">
-          <line stroke="#59A0D8" stroke-width="0.2" stroke-dasharray="3,6"/>
+          <line stroke="#59A0D8" stroke-width="0.2" stroke-dasharray="3,6" curve="cubic"/>
         </rule>
         <pathText k="name" dy="-1" repeat-gap="300" font-style="normal" font-size="9" fill="#035FBC" stroke="#ffffff" stroke-width="0.5"/>
       </rule>
@@ -549,159 +779,6 @@
   <rule e="way" k="waterway" v="riverbank">
     <area fill="#A2CBED"/>
   </rule>
-  <rule e="way" k="amenity" v="hospital" zoom-min="12">
-    <area fill="#EBE3E1" stroke="#DBBDBA" stroke-width="0.1"/>
-  </rule>
-  <rule e="way" k="amenity" v="church|monastery" zoom-min="12">
-    <rule e="way" k="area" v="yes|true">
-      <area fill="#EBE3E1" stroke="#DBBDBA" stroke-width="0.1"/>
-    </rule>
-  </rule>
-  <rule e="any" k="amenity" v="parking" cat="parking" zoom-min="14">
-    <area fill="#F3F3F3"/>
-    <rule e="any" k="access" v="private|acc_no|permit|permissive" cat="parking">
-      <area src="file:/patterns/access-private.svg" symbol-percent="50"/>
-      <symbol src="file:/symbols/parking_private.svg" symbol-percent="50"/>
-    </rule>
-    <rule e="any" k="access" v="destination">
-      <area src="file:/patterns/access-destination.svg" symbol-percent="50"/>
-      <symbol src="file:/symbols/parking_private.svg" symbol-percent="50"/>
-    </rule>
-    <rule e="any" k="access" v="~|yes|public">
-      <rule e="any" k="parking" v="~">
-        <rule e="any" k="fee" v="~">
-          <symbol id="id_parking" src="file:/symbols/parking.svg" symbol-percent="50"/>
-          <rule e="any" k="fee" v="~" zoom-min="16">
-            <caption symbol-id="id_parking" k="name" font-style="normal" font-family="sans_serif" font-size="10" fill="#333333" stroke="#ffffff" stroke-width="1.5"/>
-          </rule>
-        </rule>
-        <rule e="any" k="fee" v="fee_yes">
-          <symbol id="id_parking_fee" src="file:/symbols/parking_fee.svg" symbol-percent="50"/>
-          <rule e="any" k="fee" v="fee_yes" zoom-min="16">
-            <caption symbol-id="id_parking_fee" k="name" font-style="normal" font-family="sans_serif" font-size="10" fill="#333333" stroke="#ffffff" stroke-width="1.5"/>
-          </rule>
-        </rule>
-        <rule e="any" k="parking" v="multi-storey">
-          <symbol src="file:/symbols/parking_multi-storey.svg" symbol-percent="50"/>
-        </rule>
-      </rule>
-    </rule>
-  </rule>
-  <rule e="way" k="amenity" v="grave_yard" zoom-min="14">
-    <area fill="#CDD9CA"/>
-    <line stroke="#515151" stroke-width="0.15" stroke-dasharray="15,15"/>
-    <area src="file:/patterns/cemetery.svg" symbol-width="40"/>
-  </rule>
-  <rule e="way" k="admin_level" v="*" cat="boundaries_areas">
-    <rule e="way" k="admin_level" v="4|5|6" zoom-max="12">
-      <line stroke="#995499" stroke-width="1.5" stroke-dasharray="15,5,4,5" stroke-linecap="butt"/>
-      <line stroke="#995499" stroke-width="3" stroke-dasharray="1,13,1,14" stroke-linecap="butt"/>
-    </rule>
-    <rule e="way" k="admin_level" v="4|5|6" zoom-min="13" zoom-max="18">
-      <line stroke="#995499" stroke-width="0.6" stroke-dasharray="15,5,4,5" stroke-linecap="butt"/>
-      <line stroke="#995499" stroke-width="2" stroke-dasharray="1,13,1,14" stroke-linecap="butt"/>
-      <pathText k="name" dy="-2" font-style="normal" font-family="sans_serif" font-size="12" fill="#995499" stroke="#ffffff" stroke-width="2.0"/>
-    </rule>
-    <rule e="way" k="admin_level" v="2" zoom-max="12">
-      <line stroke="#60995499" stroke-width="6" stroke-linecap="butt"/>
-      <line stroke="#995499" stroke-width="1.5" stroke-dasharray="15,5,4,5" stroke-linecap="butt"/>
-      <line stroke="#995499" stroke-width="3" stroke-dasharray="1,13,1,14" stroke-linecap="butt"/>
-    </rule>
-    <rule e="way" k="admin_level" v="2" zoom-min="13" zoom-max="18">
-      <line stroke="#60995499" stroke-width="4" stroke-linecap="butt"/>
-      <line stroke="#995499" stroke-width="0.75" stroke-dasharray="15,5,2,5" stroke-linecap="butt"/>
-      <line stroke="#995499" stroke-width="2" stroke-dasharray="0.5,14,0.5,12" stroke-linecap="butt"/>
-      <pathText k="name" dy="-6" font-style="normal" font-family="sans_serif" font-size="12" fill="#995499" stroke="#ffffff" stroke-width="2.0"/>
-    </rule>
-  </rule>
-  <rule e="way" k="contour_ext" v="*" zoom-max="9" cat="contourlines">
-    <rule e="way" k="contour_ext" v="elevation_major">
-      <line stroke="#A9641B" stroke-width="0.2"/>
-    </rule>
-  </rule>
-  <rule e="way" k="contour_ext" v="*" zoom-min="10" zoom-max="12" cat="contourlines">
-    <rule e="way" k="contour_ext" v="elevation_medium">
-      <line stroke="#A9641B" stroke-width="0.2"/>
-    </rule>
-    <rule e="way" k="contour_ext" v="elevation_major">
-      <line stroke="#A9641B" stroke-width="0.4"/>
-    </rule>
-  </rule>
-  <rule e="way" k="contour_ext" v="*" zoom-min="13" zoom-max="13" cat="contourlines">
-    <rule e="way" k="contour_ext" v="elevation_medium">
-      <line stroke="#A9641B" stroke-width="0.2"/>
-    </rule>
-    <rule e="way" k="contour_ext" v="elevation_major">
-      <line stroke="#A9641B" stroke-width="0.4"/>
-      <pathText k="ele" font-style="bold" font-size="7" fill="#A9641B" stroke="#a0ffffff" stroke-width="1" repeat-start="50" repeat-gap="150" rotate="false"/>
-    </rule>
-  </rule>
-  <rule e="way" k="contour_ext" v="*" zoom-min="14" zoom-max="14" cat="contourlines">
-    <rule e="way" k="contour_ext" v="elevation_medium|elevation_major">
-      <line stroke="#A9641B" stroke-width="0.2"/>
-      <pathText k="ele" font-style="bold" font-size="8" fill="#A9641B" stroke="#a0ffffff" stroke-width="1" repeat-start="50" repeat-gap="150" rotate="false"/>
-    </rule>
-  </rule>
-  <rule e="way" k="contour_ext" v="*" zoom-min="15" zoom-max="15" cat="contourlines">
-    <rule e="way" k="contour_ext" v="elevation_minor" zoom-max="15">
-      <line stroke="#A9641B" stroke-width="0.08"/>
-    </rule>
-    <rule e="way" k="contour_ext" v="elevation_medium|elevation_major">
-      <line stroke="#A9641B" stroke-width="0.25"/>
-      <pathText k="ele" font-style="bold" font-size="8" fill="#A9641B" stroke="#a0ffffff" stroke-width="1" repeat-start="100" repeat-gap="150" rotate="false"/>
-    </rule>
-  </rule>
-  <rule e="way" k="contour_ext" v="*" zoom-min="16" zoom-max="16" cat="contourlines">
-    <rule e="way" k="contour_ext" v="elevation_minor">
-      <line stroke="#A9641B" stroke-width="0.06"/>
-    </rule>
-    <rule e="way" k="contour_ext" v="elevation_medium|elevation_major">
-      <line stroke="#A9641B" stroke-width="0.2"/>
-      <pathText k="ele" font-style="bold" font-size="9" fill="#A9641B" stroke="#a0ffffff" stroke-width="2" repeat-start="200" repeat-gap="200" rotate="false"/>
-    </rule>
-  </rule>
-  <rule e="way" k="contour_ext" v="*" zoom-min="17" cat="contourlines">
-    <rule e="way" k="contour_ext" v="elevation_minor">
-      <line stroke="#A9641B" stroke-width="0.04"/>
-    </rule>
-    <rule e="way" k="contour_ext" v="elevation_medium|elevation_major">
-      <line stroke="#A9641B" stroke-width="0.15"/>
-      <pathText k="ele" font-style="bold" font-size="9" fill="#A9641B" stroke="#a0ffffff" stroke-width="2" repeat-start="200" repeat-gap="200" rotate="false"/>
-    </rule>
-  </rule>
-  <rule e="way" k="aeroway" v="*" zoom-min="8">
-    <rule e="way" k="aeroway" v="aerodrome" closed="yes" zoom-min="11">
-      <area fill="#DADECF"/>
-    </rule>
-    <rule e="way" k="aeroway" v="apron" zoom-min="11">
-      <area fill="#CFCFCF"/>
-    </rule>
-    <rule e="way" k="aeroway" v="terminal" zoom-min="11">
-      <area fill="#C7C7C7" stroke="#BFBFBF" stroke-width="0.1"/>
-    </rule>
-    <rule e="way" k="aeroway" v="*" closed="yes">
-      <rule e="way" k="aeroway" v="taxiway" zoom-min="10">
-        <area fill="#C9C9C9" stroke="#BFBFBF" stroke-width="0.1"/>
-      </rule>
-      <rule e="way" k="aeroway" v="runway" zoom-min="8">
-        <area fill="#C9C9C9" stroke="#BFBFBF" stroke-width="0.1"/>
-      </rule>
-    </rule>
-    <rule e="way" k="aeroway" v="*" closed="no">
-      <rule e="way" k="aeroway" v="taxiway" zoom-min="10">
-        <line stroke="#C9C9C9" stroke-width="2.4" stroke-linecap="butt"/>
-      </rule>
-      <rule e="way" k="aeroway" v="runway" zoom-min="8">
-        <line stroke="#C9C9C9" stroke-width="6.0" stroke-linecap="square"/>
-      </rule>
-    </rule>
-    <rule e="way" k="aeroway" v="aerodrome|apron|terminal" zoom-min="14">
-      <caption k="name" font-family="sans_serif" font-style="normal" font-size="10" fill="#333333" stroke="#ffffff" stroke-width="0.5"/>
-    </rule>
-    <rule e="way" k="aeroway" v="taxiway|runway" zoom-min="14">
-      <pathText k="ref" font-family="sans_serif" font-style="normal" font-size="8" fill="#333333" stroke="#FFFFFF" stroke-width="0.5"/>
-    </rule>
-  </rule>
   <rule e="way" k="tunnel" v="~|no|false">
     <rule e="way" k="highway" v="pedestrian" zoom-min="11" closed="no">
       <line stroke="#575757" stroke-width="1.3"/>
@@ -740,109 +817,6 @@
           <caption k="name" font-style="bold" font-size="8" fill="#000000" stroke="#ffffff" stroke-width="3"/>
         </rule>
       </rule>
-    </rule>
-  </rule>
-  <rule e="way" k="natural" v="*">
-    <rule e="way" k="natural" v="*" zoom-min="6">
-      <rule e="way" k="natural" v="glacier" closed="yes">
-        <area fill="#50D3E9FF"/>
-        <area src="file:/patterns/glacier.svg"/>
-      </rule>
-      <rule e="way" k="natural" v="grassland" closed="yes" cat="Style_Summer">
-        <area fill="#E7E7E7" stroke="#b7c7b9"/>
-      </rule>
-      <rule e="way" k="natural" v="grassland" closed="yes" cat="Style_Winter">
-        <area fill="#fcfdff" stroke="#b7c7b9"/>
-      </rule>
-      <rule e="way" k="natural" v="fell" closed="yes">
-        <area fill="#D4E5EB"/>
-      </rule>
-      <rule e="way" k="natural" v="rock" closed="yes">
-        <area fill="#D4E5EB"/>
-        <area src="file:/patterns/rock.svg" symbol-width="32"/>
-      </rule>
-      <rule e="way" k="natural" v="scree|shingle" closed="yes">
-        <area fill="#D4E5EB"/>
-        <area src="file:/patterns/scree.svg" symbol-width="32"/>
-      </rule>
-    </rule>
-    <rule e="way" k="natural" v="*" zoom-min="10">
-      <rule e="way" k="natural" v="crater" closed="no">
-        <line stroke="#8c4600" stroke-width="0.7" stroke-linecap="butt"/>
-      </rule>
-      <rule e="way" k="natural" v="crater" closed="yes">
-        <area fill="#308c4600"/>
-      </rule>
-    </rule>
-    <rule e="way" k="natural" v="*" zoom-min="11">
-      <rule e="way" k="natural" v="marsh|wetland" closed="yes" cat="Style_Summer">
-        <area fill="#e0e5d6"/>
-        <area src="file:/patterns/marsh.svg" symbol-width="40"/>
-      </rule>
-      <rule e="way" k="natural" v="marsh|wetland" closed="yes" cat="Style_Winter">
-        <area fill="#fcfdff"/>
-        <area src="file:/patterns/marsh.svg" symbol-width="40"/>
-      </rule>
-      <rule e="way" k="natural" v="beach" closed="yes">
-        <area fill="#FAFCFD"/>
-      </rule>
-      <rule e="way" k="natural" v="heath" closed="yes">
-        <area fill="#DCE0DA"/>
-        <area src="file:/patterns/heath.svg" symbol-width="40"/>
-      </rule>
-      <rule e="way" k="natural" v="scrub" closed="yes" cat="Style_Summer">
-        <area fill="#e1edd5"/>
-      </rule>
-      <rule e="way" k="natural" v="scrub" closed="yes" cat="Style_Winter">
-        <area fill="#e8f2e2"/>
-      </rule>
-    </rule>
-    <rule e="way" k="natural" v="*" zoom-min="12">
-      <rule e="way" k="natural" v="cliff|earth_bank" closed="no" cat="landscapefeat">
-        <line stroke="#70606060" stroke-width="1.0" stroke-linecap="butt"/>
-        <pathText k="name" font-style="bold" font-family="sans_serif" font-size="19" fill="#333333" stroke="#FFFFFF" stroke-width="1.5"/>
-        <rule e="way" k="natural" v="*" zoom-min="13">
-          <lineSymbol dy="0.5" src="file:/symbols/cliff.svg" repeat="true" repeat-gap="1" repeat-start="1" rotate="true" align-center="true" symbol-percent="30"/>
-        </rule>
-      </rule>
-      <rule e="way" k="natural" v="cliff|earth_bank" closed="yes" cat="landscapefeat">
-        <line stroke="#70606060" stroke-width="1.0" stroke-linecap="butt"/>
-        <caption k="name" font-style="bold_italic" font-family="sans_serif" font-size="19" fill="#333333" stroke="#FFFFFF" stroke-width="1.5"/>
-      </rule>
-      <rule e="way" k="natural" v="crevasse" closed="no">
-        <line stroke="#73dcff" stroke-width="0.7" stroke-linecap="butt"/>
-        <line stroke="#ff7396" stroke-width="0.5" stroke-dasharray="2,2" stroke-linecap="butt"/>
-      </rule>
-      <rule e="way" k="natural" v="crevasse" closed="yes">
-        <line stroke="#73dcff" stroke-width="0.3"/>
-        <area fill="#50ff7396"/>
-      </rule>
-      <rule e="way" k="natural" v="tree_row" cat="Style_Summer">
-        <line stroke="#CBE0B3" stroke-width="0.7" stroke-linecap="round"/>
-      </rule>
-      <rule e="way" k="natural" v="tree_row" cat="Style_Winter">
-        <line stroke="#d9e3f4" stroke-width="0.7" stroke-linecap="round"/>
-      </rule>
-    </rule>
-    <rule e="any" k="natural" v="valley|canyon|peninsula" zoom-min="11">
-      <rule e="node" k="*" v="*">
-        <caption k="name" font-style="italic" font-family="sans_serif" font-size="10" fill="#888888" stroke="#888888" stroke-width="0.8"/>
-      </rule>
-      <rule e="way" k="*" v="*" zoom-max="13">
-        <caption k="name" font-style="bold_italic" font-family="sans_serif" font-size="10" fill="#333333" stroke="#FFFFFF" stroke-width="0.8"/>
-      </rule>
-      <rule e="way" k="*" v="*" zoom-min="14">
-        <pathText k="name" font-style="bold_italic" font-family="sans_serif" font-size="10" fill="#333333" stroke="#FFFFFF" stroke-width="0.8"/>
-      </rule>
-    </rule>
-    <rule e="any" k="natural" v="bay" zoom-min="12">
-      <caption k="name" font-style="normal" font-family="sans_serif" font-size="10" fill="#333333" stroke="#FFFFFF" stroke-width="1.5"/>
-    </rule>
-    <rule e="way" k="natural" v="beach" zoom-min="15">
-      <caption k="name" font-style="normal" font-family="sans_serif" font-size="8" fill="#333333" stroke="#FFFFFF" stroke-width="0.8"/>
-    </rule>
-    <rule e="way" k="natural" v="heath|marsh|wetland|scrub" zoom-min="15">
-      <caption k="name" font-style="normal" font-family="sans_serif" font-size="8" fill="#333333" stroke="#FFFFFF" stroke-width="0.8"/>
     </rule>
   </rule>
   <rule e="way" k="tunnel" v="yes">
@@ -1114,6 +1088,9 @@
           <rule e="way" k="highway" v="living_street" zoom-min="11">
             <line stroke="#575757" stroke-width="1.2" stroke-linecap="round"/>
           </rule>
+          <rule e="way" k="highway" v="busway" zoom-min="11">
+            <line stroke="#575757" stroke-width="1.2" stroke-linecap="round"/>
+          </rule>
           <rule e="way" k="access" v="private|destination" zoom-min="11">
             <rule e="way" k="highway" v="pedestrian|service|road|living_street|residential|unclassified|construction">
               <line stroke="#575757" stroke-width="1.2" stroke-linecap="round"/>
@@ -1217,12 +1194,16 @@
           </rule>
         </rule>
         <rule e="way" k="via_ferrata_flag|via_ferrata_scale" v="set|yes|*" zoom-min="13">
-          <symbol id="id_via_ferrata" src="file:/symbols/via_ferrata.svg" symbol-percent="80"/>
           <line stroke="#FF0000" stroke-width="0.4" stroke-linecap="butt"/>
           <line stroke="#000000" stroke-width="0.4" stroke-dasharray="4,1,0.5,1,0.5,1" stroke-linecap="butt" scale="stroke"/>
-          <rule e="any" k="*" v="*" zoom-min="15">
-            <caption symbol-id="id_via_ferrata" k="name" position="above" font-family="sans_serif" font-style="normal" font-size="9.0" fill="#393935" stroke="#FFFFFF" stroke-width="3.0"/>
-            <pathText k="name" font-family="sans_serif" font-style="normal" font-size="7" fill="#393935" stroke="#FFFFFF" stroke-width="2.0"/>
+          <rule e="any" k="*" v="*" zoom-min="14">
+            <symbol id="id_via_ferrata" src="file:/symbols/via_ferrata.svg" symbol-percent="80"/>
+            <rule e="way" k="*" v="*" zoom-max="15">
+              <caption symbol-id="id_via_ferrata" k="name" position="above" font-family="sans_serif" font-style="normal" font-size="9.0" fill="#393935" stroke="#FFFFFF" stroke-width="3.0"/>
+            </rule>
+            <rule e="way" k="*" v="*" zoom-min="15">
+              <pathText k="name" font-family="sans_serif" font-style="normal" font-size="7" fill="#393935" stroke="#FFFFFF" stroke-width="2.0"/>
+            </rule>
           </rule>
         </rule>
         <rule e="way" k="highway" v="bridleway" zoom-min="13">
@@ -1251,6 +1232,12 @@
         </rule>
         <rule e="way" k="highway" v="residential|unclassified" zoom-min="11">
           <line stroke="#ffffff" stroke-width="0.8"/>
+          <rule e="way" k="*" v="*" zoom-min="16">
+            <pathText k="name" font-family="sans_serif" font-style="normal" font-size="8" fill="#393935" stroke="#FFFFFF" stroke-width="3.0"/>
+          </rule>
+        </rule>
+        <rule e="way" k="highway" v="busway" zoom-min="11">
+          <line stroke="#DBDBDB" stroke-width="0.8"/>
           <rule e="way" k="*" v="*" zoom-min="16">
             <pathText k="name" font-family="sans_serif" font-style="normal" font-size="8" fill="#393935" stroke="#FFFFFF" stroke-width="3.0"/>
           </rule>
@@ -1353,7 +1340,7 @@
     <rule e="way" k="piste:difficulty" v="novice">
       <line stroke="#6600FF00" stroke-width="6" dy="-8" scale="none"/>
       <rule cat="winter_symbol" e="way" k="*" v="*" zoom-min="14">
-        <lineSymbol src="file:ele-res/w_skipiste_lila.svg" symbol-height="24" symbol-width="24" dy="-8" scale="none" priority="-91" repeat-start="0" repeat-gap="100" align-center="true" repeat="true" symbol-percent="100"/>
+        <lineSymbol src="file:/symbols_winter/w_skipiste_lila.svg" symbol-height="24" symbol-width="24" dy="-8" scale="none" priority="-91" repeat-start="0" repeat-gap="100" align-center="true" repeat="true" symbol-percent="100"/>
       </rule>
       <rule cat="winter_reference" e="way" k="*" v="*" zoom-min="14">
         <pathText k="ref" font-size="8" dy="-8" scale="none" display="always" priority="-90" repeat-start="50" repeat-gap="150" font-style="italic" fill="#00FF00" stroke="#E5FFFFFF" stroke-width="3"/>
@@ -1365,7 +1352,7 @@
     <rule e="way" k="piste:difficulty" v="easy">
       <line stroke="#660000FF" stroke-width="6" dy="-8" scale="none"/>
       <rule cat="winter_symbol" e="way" k="*" v="*" zoom-min="14">
-        <lineSymbol src="file:ele-res/w_skipiste_orange.svg" symbol-height="24" symbol-width="24" dy="-8" scale="none" priority="-91" repeat-start="0" repeat-gap="100" align-center="true" repeat="true" symbol-percent="100"/>
+        <lineSymbol src="file:/symbols_winter/w_skipiste_orange.svg" symbol-height="24" symbol-width="24" dy="-8" scale="none" priority="-91" repeat-start="0" repeat-gap="100" align-center="true" repeat="true" symbol-percent="100"/>
       </rule>
       <rule cat="winter_reference" e="way" k="*" v="*" zoom-min="14">
         <pathText k="ref" font-size="8" dy="-8" scale="none" display="always" priority="-90" repeat-start="50" repeat-gap="150" font-style="italic" fill="#0000FF" stroke="#E5FFFFFF" stroke-width="3"/>
@@ -1377,7 +1364,7 @@
     <rule e="way" k="piste:difficulty" v="intermediate">
       <line stroke="#66FF0000" stroke-width="6" dy="-8" scale="none"/>
       <rule cat="winter_symbol" e="way" k="*" v="*" zoom-min="14">
-        <lineSymbol src="file:ele-res/w_skipiste_cyan.svg" symbol-height="24" symbol-width="24" dy="-8" scale="none" priority="-91" repeat-start="0" repeat-gap="100" align-center="true" repeat="true" symbol-percent="100"/>
+        <lineSymbol src="file:/symbols_winter/w_skipiste_cyan.svg" symbol-height="24" symbol-width="24" dy="-8" scale="none" priority="-91" repeat-start="0" repeat-gap="100" align-center="true" repeat="true" symbol-percent="100"/>
       </rule>
       <rule cat="winter_reference" e="way" k="*" v="*" zoom-min="14">
         <pathText k="ref" font-size="8" dy="-8" scale="none" display="always" priority="-90" repeat-start="50" repeat-gap="150" font-style="italic" fill="#FF0000" stroke="#E5FFFFFF" stroke-width="3"/>
@@ -1389,7 +1376,7 @@
     <rule e="way" k="piste:difficulty" v="advanced">
       <line stroke="#66000000" stroke-width="6" dy="-8" scale="none"/>
       <rule cat="winter_symbol" e="way" k="*" v="*" zoom-min="14">
-        <lineSymbol src="file:ele-res/w_skipiste_orange.svg" symbol-height="24" symbol-width="24" dy="-8" scale="none" priority="-191" repeat-start="0" repeat-gap="100" align-center="true" repeat="true" symbol-percent="100"/>
+        <lineSymbol src="file:/symbols_winter/w_skipiste_orange.svg" symbol-height="24" symbol-width="24" dy="-8" scale="none" priority="-191" repeat-start="0" repeat-gap="100" align-center="true" repeat="true" symbol-percent="100"/>
       </rule>
       <rule cat="winter_reference" e="way" k="*" v="*" zoom-min="14">
         <pathText k="ref" font-size="8" dy="-8" scale="none" display="always" priority="-90" repeat-start="50" repeat-gap="150" font-style="italic" fill="#000000" stroke="#E5FFFFFF" stroke-width="3"/>
@@ -1403,7 +1390,7 @@
       <line stroke="#88FF0000" stroke-width="1" dy="-5.5" scale="none"/>
       <line stroke="#88FF0000" stroke-width="1" dy="-10.5" scale="none"/>
       <rule cat="winter_symbol" e="way" k="*" v="*" zoom-min="14">
-        <lineSymbol src="file:ele-res/w_skipiste_blau.svg" symbol-height="24" symbol-width="24" dy="-8" scale="none" priority="-91" repeat-start="0" repeat-gap="100" align-center="true" repeat="true" symbol-percent="100"/>
+        <lineSymbol src="file:/symbols_winter/w_skipiste_blau.svg" symbol-height="24" symbol-width="24" dy="-8" scale="none" priority="-91" repeat-start="0" repeat-gap="100" align-center="true" repeat="true" symbol-percent="100"/>
       </rule>
       <rule cat="winter_reference" e="way" k="*" v="*" zoom-min="14">
         <pathText k="ref" font-size="8" dy="-8" scale="none" display="always" priority="-90" repeat-start="50" repeat-gap="150" font-style="italic" fill="#FFBB00" stroke="#E5FFFFFF" stroke-width="3"/>
@@ -1416,9 +1403,9 @@
       <line stroke="#66FFFF00" stroke-width="6" dy="-8" scale="none"/>
       <line stroke="#88FF0000" stroke-width="1" dy="-5.5" scale="none"/>
       <line stroke="#88FF0000" stroke-width="1" dy="-10.5" scale="none"/>
-      <lineSymbol src="file:ele-res/w_achtung.svg" symbol-height="24" symbol-width="24" dy="-8" scale="none" priority="-80" repeat-start="10" repeat-gap="100" align-center="true" repeat="true" symbol-percent="100"/>
+      <lineSymbol src="file:/symbols_winter/w_achtung.svg" symbol-height="24" symbol-width="24" dy="-8" scale="none" priority="-80" repeat-start="10" repeat-gap="100" align-center="true" repeat="true" symbol-percent="100"/>
       <rule cat="winter_symbol" e="way" k="*" v="*" zoom-min="14">
-        <lineSymbol src="file:ele-res/w_skipiste_blau.svg" symbol-height="24" symbol-width="24" dy="-8" scale="none" priority="-91" repeat-start="0" repeat-gap="100" align-center="true" repeat="true" symbol-percent="100"/>
+        <lineSymbol src="file:/symbols_winter/w_skipiste_blau.svg" symbol-height="24" symbol-width="24" dy="-8" scale="none" priority="-91" repeat-start="0" repeat-gap="100" align-center="true" repeat="true" symbol-percent="100"/>
       </rule>
       <rule cat="winter_reference" e="way" k="*" v="*" zoom-min="14">
         <pathText k="ref" font-size="8" dy="-8" scale="none" display="always" priority="-90" repeat-start="50" repeat-gap="150" font-style="italic" fill="#FFBB00" stroke="#E5FFFFFF" stroke-width="3"/>
@@ -1430,7 +1417,7 @@
     <rule e="way" k="piste:difficulty" v="~">
       <line stroke="#66FF00FF" stroke-width="6" dy="-8" scale="none"/>
       <rule cat="winter_symbol" e="way" k="*" v="*" zoom-min="14">
-        <lineSymbol src="file:ele-res/w_skipiste_gruen.svg" symbol-height="24" symbol-width="24" dy="-8" scale="none" priority="-151" repeat-start="0" repeat-gap="100" align-center="true" repeat="true" symbol-percent="100"/>
+        <lineSymbol src="file:/symbols_winter/w_skipiste_gruen.svg" symbol-height="24" symbol-width="24" dy="-8" scale="none" priority="-151" repeat-start="0" repeat-gap="100" align-center="true" repeat="true" symbol-percent="100"/>
       </rule>
       <rule cat="winter_reference" e="way" k="*" v="*" zoom-min="14">
         <pathText k="ref" font-size="8" dy="-8" scale="none" display="always" priority="-150" repeat-start="50" repeat-gap="150" font-style="italic" fill="#FF00FF" stroke="#E5FFFFFF" stroke-width="3"/>
@@ -1440,14 +1427,14 @@
       </rule>
     </rule>
     <rule e="way" k="piste:grooming" v="backcountry">
-      <lineSymbol src="file:ele-res/w_circle_weiss_ring.svg" symbol-height="8" symbol-width="8" dy="-8" scale="none" priority="-92" repeat-start="0" repeat-gap="20" align-center="true" repeat="true" symbol-percent="100"/>
+      <lineSymbol src="file:/symbols_winter/w_circle_weiss_ring.svg" symbol-height="8" symbol-width="8" dy="-8" scale="none" priority="-92" repeat-start="0" repeat-gap="20" align-center="true" repeat="true" symbol-percent="100"/>
     </rule>
   </rule>
   <rule cat="schischule" e="way" k="piste:type" v="playground" closed="yes" zoom-min="13">
     <line stroke="#6600FF00" stroke-width="1" dy="0" scale="none"/>
     <area fill="#3300FF00"/>
     <rule cat="winter_symbol" e="way" k="*" v="*" zoom-min="14">
-      <lineSymbol src="file:ele-res/w_skipiste_lila.svg" symbol-height="24" symbol-width="24" dy="0" scale="none" priority="-96" repeat-start="0" repeat-gap="100" align-center="true" repeat="true" symbol-percent="100"/>
+      <lineSymbol src="file:/symbols_winter/w_skipiste_lila.svg" symbol-height="24" symbol-width="24" dy="0" scale="none" priority="-96" repeat-start="0" repeat-gap="100" align-center="true" repeat="true" symbol-percent="100"/>
     </rule>
     <rule cat="winter_reference" e="way" k="*" v="*" zoom-min="14">
       <pathText k="ref" font-size="8" dy="0" scale="none" display="always" priority="-95" repeat-start="50" repeat-gap="150" font-style="italic" fill="#00FF00" stroke="#E5FFFFFF" stroke-width="3"/>
@@ -1461,7 +1448,7 @@
       <line stroke="#6600FF00" stroke-width="1" dy="0" scale="none"/>
       <area fill="#3300FF00"/>
       <rule cat="winter_symbol" e="way" k="*" v="*" zoom-min="14">
-        <lineSymbol src="file:ele-res/w_skipiste_lila.svg" symbol-height="24" symbol-width="24" dy="0" scale="none" priority="-96" repeat-start="0" repeat-gap="100" align-center="true" repeat="true" symbol-percent="100"/>
+        <lineSymbol src="file:/symbols_winter/w_skipiste_lila.svg" symbol-height="24" symbol-width="24" dy="0" scale="none" priority="-96" repeat-start="0" repeat-gap="100" align-center="true" repeat="true" symbol-percent="100"/>
       </rule>
       <rule cat="winter_reference" e="way" k="*" v="*" zoom-min="14">
         <pathText k="ref" font-size="8" dy="0" scale="none" display="always" priority="-95" repeat-start="50" repeat-gap="150" font-style="italic" fill="#00FF00" stroke="#E5FFFFFF" stroke-width="3"/>
@@ -1474,7 +1461,7 @@
       <line stroke="#660000FF" stroke-width="1" dy="0" scale="none"/>
       <area fill="#330000FF"/>
       <rule cat="winter_symbol" e="way" k="*" v="*" zoom-min="14">
-        <lineSymbol src="file:ele-res/w_skipiste_orange.svg" symbol-height="24" symbol-width="24" dy="0" scale="none" priority="-96" repeat-start="0" repeat-gap="100" align-center="true" repeat="true" symbol-percent="100"/>
+        <lineSymbol src="file:/symbols_winter/w_skipiste_orange.svg" symbol-height="24" symbol-width="24" dy="0" scale="none" priority="-96" repeat-start="0" repeat-gap="100" align-center="true" repeat="true" symbol-percent="100"/>
       </rule>
       <rule cat="winter_reference" e="way" k="*" v="*" zoom-min="14">
         <pathText k="ref" font-size="8" dy="0" scale="none" display="always" priority="-95" repeat-start="50" repeat-gap="150" font-style="italic" fill="#0000FF" stroke="#E5FFFFFF" stroke-width="3"/>
@@ -1487,7 +1474,7 @@
       <line stroke="#66FF0000" stroke-width="1" dy="0" scale="none"/>
       <area fill="#33FF0000"/>
       <rule cat="winter_symbol" e="way" k="*" v="*" zoom-min="14">
-        <lineSymbol src="file:ele-res/w_skipiste_cyan.svg" symbol-height="24" symbol-width="24" dy="0" scale="none" priority="-96" repeat-start="0" repeat-gap="100" align-center="true" repeat="true" symbol-percent="100"/>
+        <lineSymbol src="file:/symbols_winter/w_skipiste_cyan.svg" symbol-height="24" symbol-width="24" dy="0" scale="none" priority="-96" repeat-start="0" repeat-gap="100" align-center="true" repeat="true" symbol-percent="100"/>
       </rule>
       <rule cat="winter_reference" e="way" k="*" v="*" zoom-min="14">
         <pathText k="ref" font-size="8" dy="0" scale="none" display="always" priority="-95" repeat-start="50" repeat-gap="150" font-style="italic" fill="#FF0000" stroke="#E5FFFFFF" stroke-width="3"/>
@@ -1500,7 +1487,7 @@
       <line stroke="#66000000" stroke-width="1" dy="0" scale="none"/>
       <area fill="#33000000"/>
       <rule cat="winter_symbol" e="way" k="*" v="*" zoom-min="14">
-        <lineSymbol src="file:ele-res/w_skipiste_orange.svg" symbol-height="24" symbol-width="24" dy="0" scale="none" priority="-96" repeat-start="0" repeat-gap="100" align-center="true" repeat="true" symbol-percent="100"/>
+        <lineSymbol src="file:/symbols_winter/w_skipiste_orange.svg" symbol-height="24" symbol-width="24" dy="0" scale="none" priority="-96" repeat-start="0" repeat-gap="100" align-center="true" repeat="true" symbol-percent="100"/>
       </rule>
       <rule cat="winter_reference" e="way" k="*" v="*" zoom-min="14">
         <pathText k="ref" font-size="8" dy="0" scale="none" display="always" priority="-95" repeat-start="50" repeat-gap="150" font-style="italic" fill="#000000" stroke="#E5FFFFFF" stroke-width="3"/>
@@ -1513,7 +1500,7 @@
       <line stroke="#66FFBB00" stroke-width="1" dy="0" scale="none"/>
       <area fill="#33FFBB00"/>
       <rule cat="winter_symbol" e="way" k="*" v="*" zoom-min="14">
-        <lineSymbol src="file:ele-res/w_skipiste_blau.svg" symbol-height="24" symbol-width="24" dy="0" scale="none" priority="-96" repeat-start="0" repeat-gap="100" align-center="true" repeat="true" symbol-percent="100"/>
+        <lineSymbol src="file:/symbols_winter/w_skipiste_blau.svg" symbol-height="24" symbol-width="24" dy="0" scale="none" priority="-96" repeat-start="0" repeat-gap="100" align-center="true" repeat="true" symbol-percent="100"/>
       </rule>
       <rule cat="winter_reference" e="way" k="*" v="*" zoom-min="14">
         <pathText k="ref" font-size="8" dy="0" scale="none" display="always" priority="-95" repeat-start="50" repeat-gap="150" font-style="italic" fill="#FFBB00" stroke="#E5FFFFFF" stroke-width="3"/>
@@ -1525,9 +1512,9 @@
     <rule e="way" k="piste:difficulty" v="freeride">
       <line stroke="#66FFBB00" stroke-width="2" dy="0" scale="none"/>
       <area fill="#33FFFF00"/>
-      <lineSymbol src="file:ele-res/w_achtung.svg" symbol-height="24" symbol-width="24" dy="0" scale="none" priority="-80" repeat-start="10" repeat-gap="100" align-center="true" repeat="true" symbol-percent="100"/>
+      <lineSymbol src="file:/symbols_winter/w_achtung.svg" symbol-height="24" symbol-width="24" dy="0" scale="none" priority="-80" repeat-start="10" repeat-gap="100" align-center="true" repeat="true" symbol-percent="100"/>
       <rule cat="winter_symbol" e="way" k="*" v="*" zoom-min="14">
-        <lineSymbol src="file:ele-res/w_skipiste_blau.svg" symbol-height="24" symbol-width="24" dy="0" scale="none" priority="-96" repeat-start="0" repeat-gap="100" align-center="true" repeat="true" symbol-percent="100"/>
+        <lineSymbol src="file:/symbols_winter/w_skipiste_blau.svg" symbol-height="24" symbol-width="24" dy="0" scale="none" priority="-96" repeat-start="0" repeat-gap="100" align-center="true" repeat="true" symbol-percent="100"/>
       </rule>
       <rule cat="winter_reference" e="way" k="*" v="*" zoom-min="14">
         <pathText k="ref" font-size="8" dy="0" scale="none" display="always" priority="-95" repeat-start="50" repeat-gap="150" font-style="italic" fill="#FFBB00" stroke="#E5FFFFFF" stroke-width="3"/>
@@ -1540,7 +1527,7 @@
       <line stroke="#66FF00FF" stroke-width="1" dy="0" scale="none"/>
       <area fill="#33FF00FF"/>
       <rule cat="winter_symbol" e="way" k="*" v="*" zoom-min="14">
-        <lineSymbol src="file:ele-res/w_skipiste_gruen.svg" symbol-height="24" symbol-width="24" dy="0" scale="none" priority="-96" repeat-start="0" repeat-gap="100" align-center="true" repeat="true" symbol-percent="100"/>
+        <lineSymbol src="file:/symbols_winter/w_skipiste_gruen.svg" symbol-height="24" symbol-width="24" dy="0" scale="none" priority="-96" repeat-start="0" repeat-gap="100" align-center="true" repeat="true" symbol-percent="100"/>
       </rule>
       <rule cat="winter_reference" e="way" k="*" v="*" zoom-min="14">
         <pathText k="ref" font-size="8" dy="0" scale="none" display="always" priority="-95" repeat-start="50" repeat-gap="150" font-style="italic" fill="#FF00FF" stroke="#E5FFFFFF" stroke-width="3"/>
@@ -1550,15 +1537,15 @@
       </rule>
     </rule>
     <rule e="way" k="piste:grooming" v="backcountry">
-      <lineSymbol src="file:ele-res/w_circle_weiss_ring.svg" symbol-height="8" symbol-width="8" dy="0" scale="none" priority="-97" repeat-start="0" repeat-gap="20" align-center="true" repeat="true" symbol-percent="100"/>
+      <lineSymbol src="file:/symbols_winter/w_circle_weiss_ring.svg" symbol-height="8" symbol-width="8" dy="0" scale="none" priority="-97" repeat-start="0" repeat-gap="20" align-center="true" repeat="true" symbol-percent="100"/>
     </rule>
   </rule>
   <rule cat="skitour" e="way" k="piste:type" v="skitour" closed="no" zoom-min="13">
     <rule e="way" k="piste:difficulty" v="novice">
       <line stroke="#4400FF00" stroke-width="6" dy="+8" scale="none"/>
-      <lineSymbol src="file:ele-res/w_circle_gruen_ring.svg" symbol-height="8" symbol-width="8" dy="+8" scale="none" priority="-102" repeat-start="0" repeat-gap="20" align-center="true" repeat="true" symbol-percent="100"/>
+      <lineSymbol src="file:/symbols_winter/w_circle_gruen_ring.svg" symbol-height="8" symbol-width="8" dy="+8" scale="none" priority="-102" repeat-start="0" repeat-gap="20" align-center="true" repeat="true" symbol-percent="100"/>
       <rule cat="winter_symbol" e="way" k="*" v="*" zoom-min="14">
-        <lineSymbol src="file:ele-res/w_skitour_lila.svg" symbol-height="24" symbol-width="24" dy="+8" scale="none" priority="-101" repeat-start="0" repeat-gap="100" align-center="true" repeat="true" symbol-percent="100"/>
+        <lineSymbol src="file:/symbols_winter/w_skitour_lila.svg" symbol-height="24" symbol-width="24" dy="+8" scale="none" priority="-101" repeat-start="0" repeat-gap="100" align-center="true" repeat="true" symbol-percent="100"/>
       </rule>
       <rule cat="winter_reference" e="way" k="*" v="*" zoom-min="14">
         <pathText k="ref" font-size="8" dy="+8" scale="none" display="always" priority="-100" repeat-start="50" repeat-gap="150" font-style="italic" fill="#00FF00" stroke="#E5FFFFFF" stroke-width="3"/>
@@ -1569,9 +1556,9 @@
     </rule>
     <rule e="way" k="piste:difficulty" v="easy">
       <line stroke="#440000FF" stroke-width="6" dy="+8" scale="none"/>
-      <lineSymbol src="file:ele-res/w_circle_blau_ring.svg" symbol-height="8" symbol-width="8" dy="+8" scale="none" priority="-102" repeat-start="0" repeat-gap="20" align-center="true" repeat="true" symbol-percent="100"/>
+      <lineSymbol src="file:/symbols_winter/w_circle_blau_ring.svg" symbol-height="8" symbol-width="8" dy="+8" scale="none" priority="-102" repeat-start="0" repeat-gap="20" align-center="true" repeat="true" symbol-percent="100"/>
       <rule cat="winter_symbol" e="way" k="*" v="*" zoom-min="14">
-        <lineSymbol src="file:ele-res/w_skitour_orange.svg" symbol-height="24" symbol-width="24" dy="+8" scale="none" priority="-101" repeat-start="0" repeat-gap="100" align-center="true" repeat="true" symbol-percent="100"/>
+        <lineSymbol src="file:/symbols_winter/w_skitour_orange.svg" symbol-height="24" symbol-width="24" dy="+8" scale="none" priority="-101" repeat-start="0" repeat-gap="100" align-center="true" repeat="true" symbol-percent="100"/>
       </rule>
       <rule cat="winter_reference" e="way" k="*" v="*" zoom-min="14">
         <pathText k="ref" font-size="8" dy="+8" scale="none" display="always" priority="-100" repeat-start="50" repeat-gap="150" font-style="italic" fill="#0000FF" stroke="#E5FFFFFF" stroke-width="3"/>
@@ -1582,9 +1569,9 @@
     </rule>
     <rule e="way" k="piste:difficulty" v="intermediate">
       <line stroke="#44FF0000" stroke-width="6" dy="+8" scale="none"/>
-      <lineSymbol src="file:ele-res/w_circle_rot_ring.svg" symbol-height="8" symbol-width="8" dy="+8" scale="none" priority="-102" repeat-start="0" repeat-gap="20" align-center="true" repeat="true" symbol-percent="100"/>
+      <lineSymbol src="file:/symbols_winter/w_circle_rot_ring.svg" symbol-height="8" symbol-width="8" dy="+8" scale="none" priority="-102" repeat-start="0" repeat-gap="20" align-center="true" repeat="true" symbol-percent="100"/>
       <rule cat="winter_symbol" e="way" k="*" v="*" zoom-min="14">
-        <lineSymbol src="file:ele-res/w_skitour_cyan.svg" symbol-height="24" symbol-width="24" dy="+8" scale="none" priority="-101" repeat-start="0" repeat-gap="100" align-center="true" repeat="true" symbol-percent="100"/>
+        <lineSymbol src="file:/symbols_winter/w_skitour_cyan.svg" symbol-height="24" symbol-width="24" dy="+8" scale="none" priority="-101" repeat-start="0" repeat-gap="100" align-center="true" repeat="true" symbol-percent="100"/>
       </rule>
       <rule cat="winter_reference" e="way" k="*" v="*" zoom-min="14">
         <pathText k="ref" font-size="8" dy="+8" scale="none" display="always" priority="-100" repeat-start="50" repeat-gap="150" font-style="italic" fill="#FF0000" stroke="#E5FFFFFF" stroke-width="3"/>
@@ -1595,9 +1582,9 @@
     </rule>
     <rule e="way" k="piste:difficulty" v="advanced">
       <line stroke="#44000000" stroke-width="6" dy="+8" scale="none"/>
-      <lineSymbol src="file:ele-res/w_circle_schwarz_ring.svg" symbol-height="8" symbol-width="8" dy="+8" scale="none" priority="-102" repeat-start="0" repeat-gap="20" align-center="true" repeat="true" symbol-percent="100"/>
+      <lineSymbol src="file:/symbols_winter/w_circle_schwarz_ring.svg" symbol-height="8" symbol-width="8" dy="+8" scale="none" priority="-102" repeat-start="0" repeat-gap="20" align-center="true" repeat="true" symbol-percent="100"/>
       <rule cat="winter_symbol" e="way" k="*" v="*" zoom-min="14">
-        <lineSymbol src="file:ele-res/w_skitour_orange.svg" symbol-height="24" symbol-width="24" dy="+8" scale="none" priority="-101" repeat-start="0" repeat-gap="100" align-center="true" repeat="true" symbol-percent="100"/>
+        <lineSymbol src="file:/symbols_winter/w_skitour_orange.svg" symbol-height="24" symbol-width="24" dy="+8" scale="none" priority="-101" repeat-start="0" repeat-gap="100" align-center="true" repeat="true" symbol-percent="100"/>
       </rule>
       <rule cat="winter_reference" e="way" k="*" v="*" zoom-min="14">
         <pathText k="ref" font-size="8" dy="+8" scale="none" display="always" priority="-100" repeat-start="50" repeat-gap="150" font-style="italic" fill="#000000" stroke="#E5FFFFFF" stroke-width="3"/>
@@ -1608,9 +1595,9 @@
     </rule>
     <rule e="way" k="piste:difficulty" v="expert">
       <line stroke="#44FFBB00" stroke-width="6" dy="+8" scale="none"/>
-      <lineSymbol src="file:ele-res/w_circle_orange_ring.svg" symbol-height="8" symbol-width="8" dy="+8" scale="none" priority="-102" repeat-start="0" repeat-gap="20" align-center="true" repeat="true" symbol-percent="100"/>
+      <lineSymbol src="file:/symbols_winter/w_circle_orange_ring.svg" symbol-height="8" symbol-width="8" dy="+8" scale="none" priority="-102" repeat-start="0" repeat-gap="20" align-center="true" repeat="true" symbol-percent="100"/>
       <rule cat="winter_symbol" e="way" k="*" v="*" zoom-min="14">
-        <lineSymbol src="file:ele-res/w_skitour_blau.svg" symbol-height="24" symbol-width="24" dy="+8" scale="none" priority="-101" repeat-start="0" repeat-gap="100" align-center="true" repeat="true" symbol-percent="100"/>
+        <lineSymbol src="file:/symbols_winter/w_skitour_blau.svg" symbol-height="24" symbol-width="24" dy="+8" scale="none" priority="-101" repeat-start="0" repeat-gap="100" align-center="true" repeat="true" symbol-percent="100"/>
       </rule>
       <rule cat="winter_reference" e="way" k="*" v="*" zoom-min="14">
         <pathText k="ref" font-size="8" dy="+8" scale="none" display="always" priority="-100" repeat-start="50" repeat-gap="150" font-style="italic" fill="#FFBB00" stroke="#E5FFFFFF" stroke-width="3"/>
@@ -1623,10 +1610,10 @@
       <line stroke="#44FFFF00" stroke-width="6" dy="+8" scale="none"/>
       <line stroke="#88FFBB00" stroke-width="1" dy="+5.5" scale="none"/>
       <line stroke="#88FFBB00" stroke-width="1" dy="+10.5" scale="none"/>
-      <lineSymbol src="file:ele-res/w_circle_orange_ring.svg" symbol-height="8" symbol-width="8" dy="+8" scale="none" priority="-102" repeat-start="0" repeat-gap="20" align-center="true" repeat="true" symbol-percent="100"/>
-      <lineSymbol src="file:ele-res/w_achtung.svg" symbol-height="24" symbol-width="24" dy="+8" scale="none" priority="-80" repeat-start="10" repeat-gap="100" align-center="true" repeat="true" symbol-percent="100"/>
+      <lineSymbol src="file:/symbols_winter/w_circle_orange_ring.svg" symbol-height="8" symbol-width="8" dy="+8" scale="none" priority="-102" repeat-start="0" repeat-gap="20" align-center="true" repeat="true" symbol-percent="100"/>
+      <lineSymbol src="file:/symbols_winter/w_achtung.svg" symbol-height="24" symbol-width="24" dy="+8" scale="none" priority="-80" repeat-start="10" repeat-gap="100" align-center="true" repeat="true" symbol-percent="100"/>
       <rule cat="winter_symbol" e="way" k="*" v="*" zoom-min="14">
-        <lineSymbol src="file:ele-res/w_skitour_blau.svg" symbol-height="24" symbol-width="24" dy="+8" scale="none" priority="-101" repeat-start="0" repeat-gap="100" align-center="true" repeat="true" symbol-percent="100"/>
+        <lineSymbol src="file:/symbols_winter/w_skitour_blau.svg" symbol-height="24" symbol-width="24" dy="+8" scale="none" priority="-101" repeat-start="0" repeat-gap="100" align-center="true" repeat="true" symbol-percent="100"/>
       </rule>
       <rule cat="winter_reference" e="way" k="*" v="*" zoom-min="14">
         <pathText k="ref" font-size="8" dy="+8" scale="none" display="always" priority="-100" repeat-start="50" repeat-gap="150" font-style="italic" fill="#FFBB00" stroke="#E5FFFFFF" stroke-width="3"/>
@@ -1637,9 +1624,9 @@
     </rule>
     <rule e="way" k="piste:difficulty" v="~">
       <line stroke="#22FF00FF" stroke-width="6" dy="+8" scale="none"/>
-      <lineSymbol src="file:ele-res/w_circle_lila_ring.svg" symbol-height="8" symbol-width="8" dy="+8" scale="none" priority="-108" repeat-start="0" repeat-gap="20" align-center="true" repeat="true" symbol-percent="100"/>
+      <lineSymbol src="file:/symbols_winter/w_circle_lila_ring.svg" symbol-height="8" symbol-width="8" dy="+8" scale="none" priority="-108" repeat-start="0" repeat-gap="20" align-center="true" repeat="true" symbol-percent="100"/>
       <rule cat="winter_symbol" e="way" k="*" v="*" zoom-min="14">
-        <lineSymbol src="file:ele-res/w_skitour_gruen.svg" symbol-height="24" symbol-width="24" dy="+8" scale="none" priority="-107" repeat-start="0" repeat-gap="100" align-center="true" repeat="true" symbol-percent="100"/>
+        <lineSymbol src="file:/symbols_winter/w_skitour_gruen.svg" symbol-height="24" symbol-width="24" dy="+8" scale="none" priority="-107" repeat-start="0" repeat-gap="100" align-center="true" repeat="true" symbol-percent="100"/>
       </rule>
       <rule cat="winter_reference" e="way" k="*" v="*" zoom-min="14">
         <pathText k="ref" font-size="8" dy="+8" scale="none" display="always" priority="-106" repeat-start="75" repeat-gap="150" font-style="italic" fill="#FF00FF" stroke="#E5FFFFFF" stroke-width="3"/>
@@ -1653,9 +1640,9 @@
     <rule e="way" k="piste:difficulty" v="novice">
       <line stroke="#5500FF00" stroke-width="1" dy="0" scale="none"/>
       <area fill="#3300FF00"/>
-      <lineSymbol src="file:ele-res/w_circle_gruen_ring.svg" symbol-height="8" symbol-width="8" dy="0" scale="none" priority="-107" repeat-start="0" repeat-gap="20" align-center="true" repeat="true" symbol-percent="100"/>
+      <lineSymbol src="file:/symbols_winter/w_circle_gruen_ring.svg" symbol-height="8" symbol-width="8" dy="0" scale="none" priority="-107" repeat-start="0" repeat-gap="20" align-center="true" repeat="true" symbol-percent="100"/>
       <rule cat="winter_symbol" e="way" k="*" v="*" zoom-min="14">
-        <lineSymbol src="file:ele-res/w_skitour_lila.svg" symbol-height="24" symbol-width="24" dy="0" priority="-106" scale="none" repeat-start="0" repeat-gap="100" align-center="true" repeat="true" symbol-percent="100"/>
+        <lineSymbol src="file:/symbols_winter/w_skitour_lila.svg" symbol-height="24" symbol-width="24" dy="0" priority="-106" scale="none" repeat-start="0" repeat-gap="100" align-center="true" repeat="true" symbol-percent="100"/>
       </rule>
       <rule cat="winter_reference" e="way" k="*" v="*" zoom-min="14">
         <pathText k="ref" font-size="8" dy="0" scale="none" display="always" priority="-105" repeat-start="50" repeat-gap="150" font-style="italic" fill="#00FF00" stroke="#E5FFFFFF" stroke-width="3"/>
@@ -1667,9 +1654,9 @@
     <rule e="way" k="piste:difficulty" v="easy">
       <line stroke="#550000FF" stroke-width="1" dy="0" scale="none"/>
       <area fill="#330000FF"/>
-      <lineSymbol src="file:ele-res/w_circle_blau_ring.svg" symbol-height="8" symbol-width="8" dy="0" scale="none" priority="-107" repeat-start="0" repeat-gap="20" align-center="true" repeat="true" symbol-percent="100"/>
+      <lineSymbol src="file:/symbols_winter/w_circle_blau_ring.svg" symbol-height="8" symbol-width="8" dy="0" scale="none" priority="-107" repeat-start="0" repeat-gap="20" align-center="true" repeat="true" symbol-percent="100"/>
       <rule cat="winter_symbol" e="way" k="*" v="*" zoom-min="14">
-        <lineSymbol src="file:ele-res/w_skitour_orange.svg" symbol-height="24" symbol-width="24" dy="0" scale="none" priority="-106" repeat-start="0" repeat-gap="100" align-center="true" repeat="true" symbol-percent="100"/>
+        <lineSymbol src="file:/symbols_winter/w_skitour_orange.svg" symbol-height="24" symbol-width="24" dy="0" scale="none" priority="-106" repeat-start="0" repeat-gap="100" align-center="true" repeat="true" symbol-percent="100"/>
       </rule>
       <rule cat="winter_reference" e="way" k="*" v="*" zoom-min="14">
         <pathText k="ref" font-size="8" dy="0" scale="none" display="always" priority="-105" repeat-start="50" repeat-gap="150" font-style="italic" fill="#0000FF" stroke="#E5FFFFFF" stroke-width="3"/>
@@ -1681,9 +1668,9 @@
     <rule e="way" k="piste:difficulty" v="intermediate">
       <line stroke="#55FF0000" stroke-width="1" dy="0" scale="none"/>
       <area fill="#33FF0000"/>
-      <lineSymbol src="file:ele-res/w_circle_rot_ring.svg" symbol-height="8" symbol-width="8" dy="0" scale="none" priority="-107" repeat-start="0" repeat-gap="20" align-center="true" repeat="true" symbol-percent="100"/>
+      <lineSymbol src="file:/symbols_winter/w_circle_rot_ring.svg" symbol-height="8" symbol-width="8" dy="0" scale="none" priority="-107" repeat-start="0" repeat-gap="20" align-center="true" repeat="true" symbol-percent="100"/>
       <rule cat="winter_symbol" e="way" k="*" v="*" zoom-min="14">
-        <lineSymbol src="file:ele-res/w_skitour_cyan.svg" symbol-height="24" symbol-width="24" dy="0" scale="none" priority="-106" repeat-start="0" repeat-gap="100" align-center="true" repeat="true" symbol-percent="100"/>
+        <lineSymbol src="file:/symbols_winter/w_skitour_cyan.svg" symbol-height="24" symbol-width="24" dy="0" scale="none" priority="-106" repeat-start="0" repeat-gap="100" align-center="true" repeat="true" symbol-percent="100"/>
       </rule>
       <rule cat="winter_reference" e="way" k="*" v="*" zoom-min="14">
         <pathText k="ref" font-size="8" dy="0" scale="none" display="always" priority="-105" repeat-start="50" repeat-gap="150" font-style="italic" fill="#FF0000" stroke="#E5FFFFFF" stroke-width="3"/>
@@ -1695,9 +1682,9 @@
     <rule e="way" k="piste:difficulty" v="advanced">
       <line stroke="#55000000" stroke-width="1" dy="0" scale="none"/>
       <area fill="#33000000"/>
-      <lineSymbol src="file:ele-res/w_circle_schwarz_ring.svg" symbol-height="8" symbol-width="8" dy="0" scale="none" priority="-107" repeat-start="0" repeat-gap="20" align-center="true" repeat="true" symbol-percent="100"/>
+      <lineSymbol src="file:/symbols_winter/w_circle_schwarz_ring.svg" symbol-height="8" symbol-width="8" dy="0" scale="none" priority="-107" repeat-start="0" repeat-gap="20" align-center="true" repeat="true" symbol-percent="100"/>
       <rule cat="winter_symbol" e="way" k="*" v="*" zoom-min="14">
-        <lineSymbol src="file:ele-res/w_skitour_orange.svg" symbol-height="24" symbol-width="24" dy="0" scale="none" priority="-106" repeat-start="0" repeat-gap="100" align-center="true" repeat="true" symbol-percent="100"/>
+        <lineSymbol src="file:/symbols_winter/w_skitour_orange.svg" symbol-height="24" symbol-width="24" dy="0" scale="none" priority="-106" repeat-start="0" repeat-gap="100" align-center="true" repeat="true" symbol-percent="100"/>
       </rule>
       <rule cat="winter_reference" e="way" k="*" v="*" zoom-min="14">
         <pathText k="ref" font-size="8" dy="0" scale="none" display="always" priority="-105" repeat-start="50" repeat-gap="150" font-style="italic" fill="#000000" stroke="#E5FFFFFF" stroke-width="3"/>
@@ -1709,9 +1696,9 @@
     <rule e="way" k="piste:difficulty" v="expert">
       <line stroke="#66FFBB00" stroke-width="1" dy="0" scale="none"/>
       <area fill="#33FFBB00"/>
-      <lineSymbol src="file:ele-res/w_circle_orange_ring.svg" symbol-height="8" symbol-width="8" dy="0" scale="none" priority="-107" repeat-start="0" repeat-gap="20" align-center="true" repeat="true" symbol-percent="100"/>
+      <lineSymbol src="file:/symbols_winter/w_circle_orange_ring.svg" symbol-height="8" symbol-width="8" dy="0" scale="none" priority="-107" repeat-start="0" repeat-gap="20" align-center="true" repeat="true" symbol-percent="100"/>
       <rule cat="winter_symbol" e="way" k="*" v="*" zoom-min="14">
-        <lineSymbol src="file:ele-res/w_skitour_blau.svg" symbol-height="24" symbol-width="24" dy="0" scale="none" priority="-106" repeat-start="0" repeat-gap="100" align-center="true" repeat="true" symbol-percent="100"/>
+        <lineSymbol src="file:/symbols_winter/w_skitour_blau.svg" symbol-height="24" symbol-width="24" dy="0" scale="none" priority="-106" repeat-start="0" repeat-gap="100" align-center="true" repeat="true" symbol-percent="100"/>
       </rule>
       <rule cat="winter_reference" e="way" k="*" v="*" zoom-min="14">
         <pathText k="ref" font-size="8" dy="0" scale="none" display="always" priority="-105" repeat-start="50" repeat-gap="150" font-style="italic" fill="#FFBB00" stroke="#E5FFFFFF" stroke-width="3"/>
@@ -1723,10 +1710,10 @@
     <rule e="way" k="piste:difficulty" v="freeride">
       <line stroke="#66FFBB00" stroke-width="2" dy="0" scale="none"/>
       <area fill="#33FFFF00"/>
-      <lineSymbol src="file:ele-res/w_circle_orange_ring.svg" symbol-height="8" symbol-width="8" dy="0" scale="none" priority="-107" repeat-start="0" repeat-gap="20" align-center="true" repeat="true" symbol-percent="100"/>
-      <lineSymbol src="file:ele-res/w_achtung.svg" symbol-height="24" symbol-width="24" dy="0" scale="none" priority="-80" repeat-start="10" repeat-gap="100" align-center="true" repeat="true" symbol-percent="100"/>
+      <lineSymbol src="file:/symbols_winter/w_circle_orange_ring.svg" symbol-height="8" symbol-width="8" dy="0" scale="none" priority="-107" repeat-start="0" repeat-gap="20" align-center="true" repeat="true" symbol-percent="100"/>
+      <lineSymbol src="file:/symbols_winter/w_achtung.svg" symbol-height="24" symbol-width="24" dy="0" scale="none" priority="-80" repeat-start="10" repeat-gap="100" align-center="true" repeat="true" symbol-percent="100"/>
       <rule cat="winter_symbol" e="way" k="*" v="*" zoom-min="14">
-        <lineSymbol src="file:ele-res/w_skitour_blau.svg" symbol-height="24" symbol-width="24" dy="0" scale="none" priority="-106" repeat-start="0" repeat-gap="100" align-center="true" repeat="true" symbol-percent="100"/>
+        <lineSymbol src="file:/symbols_winter/w_skitour_blau.svg" symbol-height="24" symbol-width="24" dy="0" scale="none" priority="-106" repeat-start="0" repeat-gap="100" align-center="true" repeat="true" symbol-percent="100"/>
       </rule>
       <rule cat="winter_reference" e="way" k="*" v="*" zoom-min="14">
         <pathText k="ref" font-size="8" dy="0" scale="none" display="always" priority="-105" repeat-start="50" repeat-gap="150" font-style="italic" fill="#FFBB00" stroke="#E5FFFFFF" stroke-width="3"/>
@@ -1738,9 +1725,9 @@
     <rule e="way" k="piste:difficulty" v="~">
       <line stroke="#55FF00FF" stroke-width="1" dy="0" scale="none"/>
       <area fill="#33FF00FF"/>
-      <lineSymbol src="file:ele-res/w_circle_lila_ring.svg" symbol-height="8" symbol-width="8" dy="0" scale="none" priority="-107" repeat-start="0" repeat-gap="20" align-center="true" repeat="true" symbol-percent="100"/>
+      <lineSymbol src="file:/symbols_winter/w_circle_lila_ring.svg" symbol-height="8" symbol-width="8" dy="0" scale="none" priority="-107" repeat-start="0" repeat-gap="20" align-center="true" repeat="true" symbol-percent="100"/>
       <rule cat="winter_symbol" e="way" k="*" v="*" zoom-min="14">
-        <lineSymbol src="file:ele-res/w_skitour_gruen.svg" symbol-height="24" symbol-width="24" dy="0" scale="none" priority="-106" repeat-start="0" repeat-gap="100" align-center="true" repeat="true" symbol-percent="100"/>
+        <lineSymbol src="file:/symbols_winter/w_skitour_gruen.svg" symbol-height="24" symbol-width="24" dy="0" scale="none" priority="-106" repeat-start="0" repeat-gap="100" align-center="true" repeat="true" symbol-percent="100"/>
       </rule>
       <rule cat="winter_reference" e="way" k="*" v="*" zoom-min="14">
         <pathText k="ref" font-size="8" dy="0" scale="none" display="always" priority="-105" repeat-start="50" repeat-gap="150" font-style="italic" fill="#FF00FF" stroke="#E5FFFFFF" stroke-width="3"/>
@@ -1756,7 +1743,7 @@
         <line stroke="#AA00FF00" stroke-width="6" dy="-8" scale="none"/>
         <line stroke="#AAFFFFFF" stroke-width="2" dy="-8" scale="none" stroke-dasharray="5,40"/>
         <rule cat="winter_symbol" e="way" k="*" v="*" zoom-min="14">
-          <lineSymbol src="file:ele-res/w_langlauf_lila.svg" symbol-height="24" symbol-width="24" dy="-8" scale="none" priority="-111" repeat-start="0" repeat-gap="100" align-center="true" repeat="true" symbol-percent="100"/>
+          <lineSymbol src="file:/symbols_winter/w_langlauf_lila.svg" symbol-height="24" symbol-width="24" dy="-8" scale="none" priority="-111" repeat-start="0" repeat-gap="100" align-center="true" repeat="true" symbol-percent="100"/>
         </rule>
         <rule cat="winter_reference" e="way" k="*" v="*" zoom-min="14">
           <pathText k="ref" font-size="8" dy="-8" scale="none" display="always" priority="-110" repeat-start="50" repeat-gap="150" font-style="italic" fill="#00FF00" stroke="#E5FFFFFF" stroke-width="3"/>
@@ -1769,7 +1756,7 @@
         <line stroke="#AA00FF00" stroke-width="6" dy="-8" scale="none"/>
         <line stroke="#AAFFFFFF" stroke-width="2" dy="-8" scale="none" stroke-dasharray="5,5"/>
         <rule cat="winter_symbol" e="way" k="*" v="*" zoom-min="14">
-          <lineSymbol src="file:ele-res/w_langlauf_lila.svg" symbol-height="24" symbol-width="24" dy="-8" scale="none" priority="-111" repeat-start="0" repeat-gap="100" align-center="true" repeat="true" symbol-percent="100"/>
+          <lineSymbol src="file:/symbols_winter/w_langlauf_lila.svg" symbol-height="24" symbol-width="24" dy="-8" scale="none" priority="-111" repeat-start="0" repeat-gap="100" align-center="true" repeat="true" symbol-percent="100"/>
         </rule>
         <rule cat="winter_reference" e="way" k="*" v="*" zoom-min="14">
           <pathText k="ref" font-size="8" dy="-8" scale="none" display="always" priority="-110" repeat-start="50" repeat-gap="150" font-style="italic" fill="#00FF00" stroke="#E5FFFFFF" stroke-width="3"/>
@@ -1782,7 +1769,7 @@
         <line stroke="#AA00FF00" stroke-width="6" dy="-8" scale="none"/>
         <line stroke="#AAFFFFFF" stroke-width="2" dy="-8" scale="none" stroke-dasharray="40,5"/>
         <rule cat="winter_symbol" e="way" k="*" v="*" zoom-min="14">
-          <lineSymbol src="file:ele-res/w_langlauf_lila.svg" symbol-height="24" symbol-width="24" dy="-8" scale="none" priority="-111" repeat-start="0" repeat-gap="100" align-center="true" repeat="true" symbol-percent="100"/>
+          <lineSymbol src="file:/symbols_winter/w_langlauf_lila.svg" symbol-height="24" symbol-width="24" dy="-8" scale="none" priority="-111" repeat-start="0" repeat-gap="100" align-center="true" repeat="true" symbol-percent="100"/>
         </rule>
         <rule cat="winter_reference" e="way" k="*" v="*" zoom-min="14">
           <pathText k="ref" font-size="8" dy="-8" scale="none" display="always" priority="-110" repeat-start="50" repeat-gap="150" font-style="italic" fill="#00FF00" stroke="#E5FFFFFF" stroke-width="3"/>
@@ -1795,7 +1782,7 @@
         <line stroke="#AA00FF00" stroke-width="6" dy="-8" scale="none"/>
         <line stroke="#AAFFFFFF" stroke-width="2" dy="-8" scale="none" stroke-dasharray="40,5,5,5,5,5,5,5"/>
         <rule cat="winter_symbol" e="way" k="*" v="*" zoom-min="14">
-          <lineSymbol src="file:ele-res/w_langlauf_lila.svg" symbol-height="24" symbol-width="24" dy="-8" scale="none" priority="-111" repeat-start="0" repeat-gap="100" align-center="true" repeat="true" symbol-percent="100"/>
+          <lineSymbol src="file:/symbols_winter/w_langlauf_lila.svg" symbol-height="24" symbol-width="24" dy="-8" scale="none" priority="-111" repeat-start="0" repeat-gap="100" align-center="true" repeat="true" symbol-percent="100"/>
         </rule>
         <rule cat="winter_reference" e="way" k="*" v="*" zoom-min="14">
           <pathText k="ref" font-size="8" dy="-8" scale="none" display="always" priority="-110" repeat-start="50" repeat-gap="150" font-style="italic" fill="#00FF00" stroke="#E5FFFFFF" stroke-width="3"/>
@@ -1810,7 +1797,7 @@
         <line stroke="#AA0000FF" stroke-width="6" dy="-8" scale="none"/>
         <line stroke="#AAFFFFFF" stroke-width="2" dy="-8" scale="none" stroke-dasharray="5,40"/>
         <rule cat="winter_symbol" e="way" k="*" v="*" zoom-min="14">
-          <lineSymbol src="file:ele-res/w_langlauf_orange.svg" symbol-height="24" symbol-width="24" dy="-8" scale="none" priority="-111" repeat-start="0" repeat-gap="100" align-center="true" repeat="true" symbol-percent="100"/>
+          <lineSymbol src="file:/symbols_winter/w_langlauf_orange.svg" symbol-height="24" symbol-width="24" dy="-8" scale="none" priority="-111" repeat-start="0" repeat-gap="100" align-center="true" repeat="true" symbol-percent="100"/>
         </rule>
         <rule cat="winter_reference" e="way" k="*" v="*" zoom-min="14">
           <pathText k="ref" font-size="8" dy="-8" scale="none" display="always" priority="-110" repeat-start="50" repeat-gap="150" font-style="italic" fill="#0000FF" stroke="#E5FFFFFF" stroke-width="3"/>
@@ -1823,7 +1810,7 @@
         <line stroke="#AA0000FF" stroke-width="6" dy="-8" scale="none"/>
         <line stroke="#AAFFFFFF" stroke-width="2" dy="-8" scale="none" stroke-dasharray="5,5"/>
         <rule cat="winter_symbol" e="way" k="*" v="*" zoom-min="14">
-          <lineSymbol src="file:ele-res/w_langlauf_orange.svg" symbol-height="24" symbol-width="24" dy="-8" scale="none" priority="-111" repeat-start="0" repeat-gap="100" align-center="true" repeat="true" symbol-percent="100"/>
+          <lineSymbol src="file:/symbols_winter/w_langlauf_orange.svg" symbol-height="24" symbol-width="24" dy="-8" scale="none" priority="-111" repeat-start="0" repeat-gap="100" align-center="true" repeat="true" symbol-percent="100"/>
         </rule>
         <rule cat="winter_reference" e="way" k="*" v="*" zoom-min="14">
           <pathText k="ref" font-size="8" dy="-8" scale="none" display="always" priority="-110" repeat-start="50" repeat-gap="150" font-style="italic" fill="#0000FF" stroke="#E5FFFFFF" stroke-width="3"/>
@@ -1836,7 +1823,7 @@
         <line stroke="#AA0000FF" stroke-width="6" dy="-8" scale="none"/>
         <line stroke="#AAFFFFFF" stroke-width="2" dy="-8" scale="none" stroke-dasharray="40,5"/>
         <rule cat="winter_symbol" e="way" k="*" v="*" zoom-min="14">
-          <lineSymbol src="file:ele-res/w_langlauf_orange.svg" symbol-height="24" symbol-width="24" dy="-8" priority="-111" scale="none" repeat-start="0" repeat-gap="100" align-center="true" repeat="true" symbol-percent="100"/>
+          <lineSymbol src="file:/symbols_winter/w_langlauf_orange.svg" symbol-height="24" symbol-width="24" dy="-8" priority="-111" scale="none" repeat-start="0" repeat-gap="100" align-center="true" repeat="true" symbol-percent="100"/>
         </rule>
         <rule cat="winter_reference" e="way" k="*" v="*" zoom-min="14">
           <pathText k="ref" font-size="8" dy="-8" scale="none" display="always" priority="-110" repeat-start="50" repeat-gap="150" font-style="italic" fill="#0000FF" stroke="#E5FFFFFF" stroke-width="3"/>
@@ -1849,7 +1836,7 @@
         <line stroke="#AA0000FF" stroke-width="6" dy="-8" scale="none"/>
         <line stroke="#AAFFFFFF" stroke-width="2" dy="-8" scale="none" stroke-dasharray="40,5,5,5,5,5,5,5"/>
         <rule cat="winter_symbol" e="way" k="*" v="*" zoom-min="14">
-          <lineSymbol src="file:ele-res/w_langlauf_orange.svg" symbol-height="24" symbol-width="24" dy="-8" scale="none" priority="-111" repeat-start="0" repeat-gap="100" align-center="true" repeat="true" symbol-percent="100"/>
+          <lineSymbol src="file:/symbols_winter/w_langlauf_orange.svg" symbol-height="24" symbol-width="24" dy="-8" scale="none" priority="-111" repeat-start="0" repeat-gap="100" align-center="true" repeat="true" symbol-percent="100"/>
         </rule>
         <rule cat="winter_reference" e="way" k="*" v="*" zoom-min="14">
           <pathText k="ref" font-size="8" dy="-8" scale="none" display="always" priority="-110" repeat-start="50" repeat-gap="150" font-style="italic" fill="#0000FF" stroke="#E5FFFFFF" stroke-width="3"/>
@@ -1864,7 +1851,7 @@
         <line stroke="#AAFF0000" stroke-width="6" dy="-8" scale="none"/>
         <line stroke="#AAFFFFFF" stroke-width="2" dy="-8" scale="none" stroke-dasharray="5,40"/>
         <rule cat="winter_symbol" e="way" k="*" v="*" zoom-min="14">
-          <lineSymbol src="file:ele-res/w_langlauf_cyan.svg" symbol-height="24" symbol-width="24" dy="-8" scale="none" priority="-111" repeat-start="0" repeat-gap="100" align-center="true" repeat="true" symbol-percent="100"/>
+          <lineSymbol src="file:/symbols_winter/w_langlauf_cyan.svg" symbol-height="24" symbol-width="24" dy="-8" scale="none" priority="-111" repeat-start="0" repeat-gap="100" align-center="true" repeat="true" symbol-percent="100"/>
         </rule>
         <rule cat="winter_reference" e="way" k="*" v="*" zoom-min="14">
           <pathText k="ref" font-size="8" dy="-8" scale="none" display="always" priority="-110" repeat-start="50" repeat-gap="150" font-style="italic" fill="#FF0000" stroke="#E5FFFFFF" stroke-width="3"/>
@@ -1877,7 +1864,7 @@
         <line stroke="#AAFF0000" stroke-width="6" dy="-8" scale="none"/>
         <line stroke="#AAFFFFFF" stroke-width="2" dy="-8" scale="none" stroke-dasharray="5,5"/>
         <rule cat="winter_symbol" e="way" k="*" v="*" zoom-min="14">
-          <lineSymbol src="file:ele-res/w_langlauf_cyan.svg" symbol-height="24" symbol-width="24" dy="-8" scale="none" priority="-111" repeat-start="0" repeat-gap="100" align-center="true" repeat="true" symbol-percent="100"/>
+          <lineSymbol src="file:/symbols_winter/w_langlauf_cyan.svg" symbol-height="24" symbol-width="24" dy="-8" scale="none" priority="-111" repeat-start="0" repeat-gap="100" align-center="true" repeat="true" symbol-percent="100"/>
         </rule>
         <rule cat="winter_reference" e="way" k="*" v="*" zoom-min="14">
           <pathText k="ref" font-size="8" dy="-8" scale="none" display="always" priority="-110" repeat-start="50" repeat-gap="150" font-style="italic" fill="#FF0000" stroke="#E5FFFFFF" stroke-width="3"/>
@@ -1890,7 +1877,7 @@
         <line stroke="#AAFF0000" stroke-width="6" dy="-8" scale="none"/>
         <line stroke="#AAFFFFFF" stroke-width="2" dy="-8" scale="none" stroke-dasharray="40,5"/>
         <rule cat="winter_symbol" e="way" k="*" v="*" zoom-min="14">
-          <lineSymbol src="file:ele-res/w_langlauf_cyan.svg" symbol-height="24" symbol-width="24" dy="-8" scale="none" priority="-111" repeat-start="0" repeat-gap="100" align-center="true" repeat="true" symbol-percent="100"/>
+          <lineSymbol src="file:/symbols_winter/w_langlauf_cyan.svg" symbol-height="24" symbol-width="24" dy="-8" scale="none" priority="-111" repeat-start="0" repeat-gap="100" align-center="true" repeat="true" symbol-percent="100"/>
         </rule>
         <rule cat="winter_reference" e="way" k="*" v="*" zoom-min="14">
           <pathText k="ref" font-size="8" dy="-8" scale="none" display="always" priority="-110" repeat-start="50" repeat-gap="150" font-style="italic" fill="#FF0000" stroke="#E5FFFFFF" stroke-width="3"/>
@@ -1903,7 +1890,7 @@
         <line stroke="#AAFF0000" stroke-width="6" dy="-8" scale="none"/>
         <line stroke="#AAFFFFFF" stroke-width="2" dy="-8" scale="none" stroke-dasharray="40,5,5,5,5,5,5,5"/>
         <rule cat="winter_symbol" e="way" k="*" v="*" zoom-min="14">
-          <lineSymbol src="file:ele-res/w_langlauf_cyan.svg" symbol-height="24" symbol-width="24" dy="-8" scale="none" priority="-111" repeat-start="0" repeat-gap="100" align-center="true" repeat="true" symbol-percent="100"/>
+          <lineSymbol src="file:/symbols_winter/w_langlauf_cyan.svg" symbol-height="24" symbol-width="24" dy="-8" scale="none" priority="-111" repeat-start="0" repeat-gap="100" align-center="true" repeat="true" symbol-percent="100"/>
         </rule>
         <rule cat="winter_reference" e="way" k="*" v="*" zoom-min="14">
           <pathText k="ref" font-size="8" dy="-8" scale="none" display="always" priority="-110" repeat-start="50" repeat-gap="150" font-style="italic" fill="#FF0000" stroke="#E5FFFFFF" stroke-width="3"/>
@@ -1918,7 +1905,7 @@
         <line stroke="#AA000000" stroke-width="6" dy="-8" scale="none"/>
         <line stroke="#AAFFFF00" stroke-width="2" dy="-8" scale="none" stroke-dasharray="5,40"/>
         <rule cat="winter_symbol" e="way" k="*" v="*" zoom-min="14">
-          <lineSymbol src="file:ele-res/w_langlauf_orange.svg" symbol-height="24" symbol-width="24" dy="-8" scale="none" priority="-111" repeat-start="0" repeat-gap="100" align-center="true" repeat="true" symbol-percent="100"/>
+          <lineSymbol src="file:/symbols_winter/w_langlauf_orange.svg" symbol-height="24" symbol-width="24" dy="-8" scale="none" priority="-111" repeat-start="0" repeat-gap="100" align-center="true" repeat="true" symbol-percent="100"/>
         </rule>
         <rule cat="winter_reference" e="way" k="*" v="*" zoom-min="14">
           <pathText k="ref" font-size="8" dy="-8" scale="none" display="always" priority="-110" repeat-start="50" repeat-gap="150" font-style="italic" fill="#000000" stroke="#E5FFFFFF" stroke-width="3"/>
@@ -1931,7 +1918,7 @@
         <line stroke="#AA000000" stroke-width="6" dy="-8" scale="none"/>
         <line stroke="#AAFFFF00" stroke-width="2" dy="-8" scale="none" stroke-dasharray="5,5"/>
         <rule cat="winter_symbol" e="way" k="*" v="*" zoom-min="14">
-          <lineSymbol src="file:ele-res/w_langlauf_orange.svg" symbol-height="24" symbol-width="24" dy="-8" scale="none" priority="-111" repeat-start="0" repeat-gap="100" align-center="true" repeat="true" symbol-percent="100"/>
+          <lineSymbol src="file:/symbols_winter/w_langlauf_orange.svg" symbol-height="24" symbol-width="24" dy="-8" scale="none" priority="-111" repeat-start="0" repeat-gap="100" align-center="true" repeat="true" symbol-percent="100"/>
         </rule>
         <rule cat="winter_reference" e="way" k="*" v="*" zoom-min="14">
           <pathText k="ref" font-size="8" dy="-8" scale="none" display="always" priority="-110" repeat-start="50" repeat-gap="150" font-style="italic" fill="#000000" stroke="#E5FFFFFF" stroke-width="3"/>
@@ -1944,7 +1931,7 @@
         <line stroke="#AA000000" stroke-width="6" dy="-8" scale="none"/>
         <line stroke="#AAFFFF00" stroke-width="2" dy="-8" scale="none" stroke-dasharray="40,5"/>
         <rule cat="winter_symbol" e="way" k="*" v="*" zoom-min="14">
-          <lineSymbol src="file:ele-res/w_langlauf_orange.svg" symbol-height="24" symbol-width="24" dy="-8" scale="none" priority="-111" repeat-start="0" repeat-gap="100" align-center="true" repeat="true" symbol-percent="100"/>
+          <lineSymbol src="file:/symbols_winter/w_langlauf_orange.svg" symbol-height="24" symbol-width="24" dy="-8" scale="none" priority="-111" repeat-start="0" repeat-gap="100" align-center="true" repeat="true" symbol-percent="100"/>
         </rule>
         <rule cat="winter_reference" e="way" k="*" v="*" zoom-min="14">
           <pathText k="ref" font-size="8" dy="-8" scale="none" display="always" priority="-110" repeat-start="50" repeat-gap="150" font-style="italic" fill="#000000" stroke="#E5FFFFFF" stroke-width="3"/>
@@ -1957,7 +1944,7 @@
         <line stroke="#AA000000" stroke-width="6" dy="-8" scale="none"/>
         <line stroke="#AAFFFF00" stroke-width="2" dy="-8" scale="none" stroke-dasharray="40,5,5,5,5,5,5,5"/>
         <rule cat="winter_symbol" e="way" k="*" v="*" zoom-min="14">
-          <lineSymbol src="file:ele-res/w_langlauf_orange.svg" symbol-height="24" symbol-width="24" dy="-8" scale="none" priority="-111" repeat-start="0" repeat-gap="100" align-center="true" repeat="true" symbol-percent="100"/>
+          <lineSymbol src="file:/symbols_winter/w_langlauf_orange.svg" symbol-height="24" symbol-width="24" dy="-8" scale="none" priority="-111" repeat-start="0" repeat-gap="100" align-center="true" repeat="true" symbol-percent="100"/>
         </rule>
         <rule cat="winter_reference" e="way" k="*" v="*" zoom-min="14">
           <pathText k="ref" font-size="8" dy="-8" scale="none" display="always" priority="-110" repeat-start="50" repeat-gap="150" font-style="italic" fill="#000000" stroke="#E5FFFFFF" stroke-width="3"/>
@@ -1971,9 +1958,9 @@
       <rule e="way" k="piste:grooming" v="~">
         <line stroke="#AA000000" stroke-width="6" dy="-8" scale="none"/>
         <line stroke="#AAFFFF00" stroke-width="2" dy="-8" scale="none" stroke-dasharray="5,40"/>
-        <lineSymbol src="file:ele-res/w_achtung.svg" symbol-height="24" symbol-width="24" dy="-8" priority="-80" scale="none" repeat-start="10" repeat-gap="100" align-center="true" repeat="true" symbol-percent="100"/>
+        <lineSymbol src="file:/symbols_winter/w_achtung.svg" symbol-height="24" symbol-width="24" dy="-8" priority="-80" scale="none" repeat-start="10" repeat-gap="100" align-center="true" repeat="true" symbol-percent="100"/>
         <rule cat="winter_symbol" e="way" k="*" v="*" zoom-min="14">
-          <lineSymbol src="file:ele-res/w_langlauf_orange.svg" symbol-height="24" symbol-width="24" dy="-8" scale="none" priority="-111" repeat-start="0" repeat-gap="100" align-center="true" repeat="true" symbol-percent="100"/>
+          <lineSymbol src="file:/symbols_winter/w_langlauf_orange.svg" symbol-height="24" symbol-width="24" dy="-8" scale="none" priority="-111" repeat-start="0" repeat-gap="100" align-center="true" repeat="true" symbol-percent="100"/>
         </rule>
         <rule cat="winter_reference" e="way" k="*" v="*" zoom-min="14">
           <pathText k="ref" font-size="8" dy="-8" scale="none" display="always" priority="-110" repeat-start="50" repeat-gap="150" font-style="italic" fill="#000000" stroke="#E5FFFFFF" stroke-width="3"/>
@@ -1985,9 +1972,9 @@
       <rule e="way" k="piste:grooming" v="classic|scooter">
         <line stroke="#AA000000" stroke-width="6" dy="-8" scale="none"/>
         <line stroke="#AAFFFF00" stroke-width="2" dy="-8" scale="none" stroke-dasharray="5,5"/>
-        <lineSymbol src="file:ele-res/w_achtung.svg" symbol-height="24" symbol-width="24" dy="-8" priority="-80" scale="none" repeat-start="10" repeat-gap="100" align-center="true" repeat="true" symbol-percent="100"/>
+        <lineSymbol src="file:/symbols_winter/w_achtung.svg" symbol-height="24" symbol-width="24" dy="-8" priority="-80" scale="none" repeat-start="10" repeat-gap="100" align-center="true" repeat="true" symbol-percent="100"/>
         <rule cat="winter_symbol" e="way" k="*" v="*" zoom-min="14">
-          <lineSymbol src="file:ele-res/w_langlauf_orange.svg" symbol-height="24" symbol-width="24" dy="-8" scale="none" priority="-111" repeat-start="0" repeat-gap="100" align-center="true" repeat="true" symbol-percent="100"/>
+          <lineSymbol src="file:/symbols_winter/w_langlauf_orange.svg" symbol-height="24" symbol-width="24" dy="-8" scale="none" priority="-111" repeat-start="0" repeat-gap="100" align-center="true" repeat="true" symbol-percent="100"/>
         </rule>
         <rule cat="winter_reference" e="way" k="*" v="*" zoom-min="14">
           <pathText k="ref" font-size="8" dy="-8" scale="none" display="always" priority="-110" repeat-start="50" repeat-gap="150" font-style="italic" fill="#000000" stroke="#E5FFFFFF" stroke-width="3"/>
@@ -1999,9 +1986,9 @@
       <rule e="way" k="piste:grooming" v="skating">
         <line stroke="#AA000000" stroke-width="6" dy="-8" scale="none"/>
         <line stroke="#AAFFFF00" stroke-width="2" dy="-8" scale="none" stroke-dasharray="40,5"/>
-        <lineSymbol src="file:ele-res/w_achtung.svg" symbol-height="24" symbol-width="24" dy="-8" priority="-80" scale="none" repeat-start="10" repeat-gap="100" align-center="true" repeat="true" symbol-percent="100"/>
+        <lineSymbol src="file:/symbols_winter/w_achtung.svg" symbol-height="24" symbol-width="24" dy="-8" priority="-80" scale="none" repeat-start="10" repeat-gap="100" align-center="true" repeat="true" symbol-percent="100"/>
         <rule cat="winter_symbol" e="way" k="*" v="*" zoom-min="14">
-          <lineSymbol src="file:ele-res/w_langlauf_orange.svg" symbol-height="24" symbol-width="24" dy="-19" scale="none" priority="-111" repeat-start="0" repeat-gap="100" align-center="true" repeat="true" symbol-percent="100"/>
+          <lineSymbol src="file:/symbols_winter/w_langlauf_orange.svg" symbol-height="24" symbol-width="24" dy="-19" scale="none" priority="-111" repeat-start="0" repeat-gap="100" align-center="true" repeat="true" symbol-percent="100"/>
         </rule>
         <rule cat="winter_reference" e="way" k="*" v="*" zoom-min="14">
           <pathText k="ref" font-size="8" dy="-8" scale="none" display="always" priority="-110" repeat-start="50" repeat-gap="150" font-style="italic" fill="#000000" stroke="#E5FFFFFF" stroke-width="3"/>
@@ -2013,9 +2000,9 @@
       <rule e="way" k="piste:grooming" v="classic+skating|classic;skating">
         <line stroke="#AA000000" stroke-width="6" dy="-8" scale="none"/>
         <line stroke="#AAFFFF00" stroke-width="2" dy="-8" scale="none" stroke-dasharray="40,5,5,5,5,5,5,5"/>
-        <lineSymbol src="file:ele-res/w_achtung.svg" symbol-height="24" symbol-width="24" dy="-8" priority="-80" scale="none" repeat-start="10" repeat-gap="100" align-center="true" repeat="true" symbol-percent="100"/>
+        <lineSymbol src="file:/symbols_winter/w_achtung.svg" symbol-height="24" symbol-width="24" dy="-8" priority="-80" scale="none" repeat-start="10" repeat-gap="100" align-center="true" repeat="true" symbol-percent="100"/>
         <rule cat="winter_symbol" e="way" k="*" v="*" zoom-min="14">
-          <lineSymbol src="file:ele-res/w_langlauf_orange.svg" symbol-height="24" symbol-width="24" dy="-8" scale="none" priority="-111" repeat-start="0" repeat-gap="100" align-center="true" repeat="true" symbol-percent="100"/>
+          <lineSymbol src="file:/symbols_winter/w_langlauf_orange.svg" symbol-height="24" symbol-width="24" dy="-8" scale="none" priority="-111" repeat-start="0" repeat-gap="100" align-center="true" repeat="true" symbol-percent="100"/>
         </rule>
         <rule cat="winter_reference" e="way" k="*" v="*" zoom-min="14">
           <pathText k="ref" font-size="8" dy="-8" scale="none" display="always" priority="-110" repeat-start="50" repeat-gap="150" font-style="italic" fill="#000000" stroke="#E5FFFFFF" stroke-width="3"/>
@@ -2030,7 +2017,7 @@
         <line stroke="#33FF00FF" stroke-width="6" dy="-8" scale="none"/>
         <line stroke="#AAFFFFFF" stroke-width="2" dy="-8" scale="none" stroke-dasharray="5,40"/>
         <rule cat="winter_symbol" e="way" k="*" v="*" zoom-min="14">
-          <lineSymbol src="file:ele-res/w_langlauf_gruen.svg" symbol-height="24" symbol-width="24" dy="-8" scale="none" priority="-116" repeat-start="0" repeat-gap="100" align-center="true" repeat="true" symbol-percent="100"/>
+          <lineSymbol src="file:/symbols_winter/w_langlauf_gruen.svg" symbol-height="24" symbol-width="24" dy="-8" scale="none" priority="-116" repeat-start="0" repeat-gap="100" align-center="true" repeat="true" symbol-percent="100"/>
         </rule>
         <rule cat="winter_reference" e="way" k="*" v="*" zoom-min="14">
           <pathText k="ref" font-size="8" dy="-8" scale="none" display="always" priority="-115" repeat-start="50" repeat-gap="150" font-style="italic" fill="#FF00FF" stroke="#E5FFFFFF" stroke-width="3"/>
@@ -2043,7 +2030,7 @@
         <line stroke="#66FF00FF" stroke-width="6" dy="-8" scale="none"/>
         <line stroke="#AAFFFFFF" stroke-width="2" dy="-8" scale="none" stroke-dasharray="5,5"/>
         <rule cat="winter_symbol" e="way" k="*" v="*" zoom-min="14">
-          <lineSymbol src="file:ele-res/w_langlauf_gruen.svg" symbol-height="24" symbol-width="24" dy="-8" scale="none" priority="-116" repeat-start="0" repeat-gap="100" align-center="true" repeat="true" symbol-percent="100"/>
+          <lineSymbol src="file:/symbols_winter/w_langlauf_gruen.svg" symbol-height="24" symbol-width="24" dy="-8" scale="none" priority="-116" repeat-start="0" repeat-gap="100" align-center="true" repeat="true" symbol-percent="100"/>
         </rule>
         <rule cat="winter_reference" e="way" k="*" v="*" zoom-min="14">
           <pathText k="ref" font-size="8" dy="-8" scale="none" display="always" priority="-115" repeat-start="50" repeat-gap="150" font-style="italic" fill="#FF00FF" stroke="#E5FFFFFF" stroke-width="3"/>
@@ -2056,7 +2043,7 @@
         <line stroke="#66FF00FF" stroke-width="6" dy="-8" scale="none"/>
         <line stroke="#AAFFFFFF" stroke-width="2" dy="-8" scale="none" stroke-dasharray="40,5"/>
         <rule cat="winter_symbol" e="way" k="*" v="*" zoom-min="14">
-          <lineSymbol src="file:ele-res/w_langlauf_gruen.svg" symbol-height="24" symbol-width="24" dy="-8" scale="none" priority="-116" repeat-start="0" repeat-gap="100" align-center="true" repeat="true" symbol-percent="100"/>
+          <lineSymbol src="file:/symbols_winter/w_langlauf_gruen.svg" symbol-height="24" symbol-width="24" dy="-8" scale="none" priority="-116" repeat-start="0" repeat-gap="100" align-center="true" repeat="true" symbol-percent="100"/>
         </rule>
         <rule cat="winter_reference" e="way" k="*" v="*" zoom-min="14">
           <pathText k="ref" font-size="8" dy="-8" scale="none" display="always" priority="-115" repeat-start="50" repeat-gap="150" font-style="italic" fill="#FF00FF" stroke="#E5FFFFFF" stroke-width="3"/>
@@ -2069,7 +2056,7 @@
         <line stroke="#66FF00FF" stroke-width="6" dy="-8" scale="none"/>
         <line stroke="#AAFFFFFF" stroke-width="2" dy="-8" scale="none" stroke-dasharray="40,5,5,5,5,5,5,5"/>
         <rule cat="winter_symbol" e="way" k="*" v="*" zoom-min="14">
-          <lineSymbol src="file:ele-res/w_langlauf_gruen.svg" symbol-height="24" symbol-width="24" dy="-8" scale="none" priority="-116" repeat-start="0" repeat-gap="100" align-center="true" repeat="true" symbol-percent="100"/>
+          <lineSymbol src="file:/symbols_winter/w_langlauf_gruen.svg" symbol-height="24" symbol-width="24" dy="-8" scale="none" priority="-116" repeat-start="0" repeat-gap="100" align-center="true" repeat="true" symbol-percent="100"/>
         </rule>
         <rule cat="winter_reference" e="way" k="*" v="*" zoom-min="14">
           <pathText k="ref" font-size="8" dy="-8" scale="none" display="always" priority="-115" repeat-start="50" repeat-gap="150" font-style="italic" fill="#FF00FF" stroke="#E5FFFFFF" stroke-width="3"/>
@@ -2083,9 +2070,9 @@
   <rule cat="schneeschuh" e="way" k="piste:type" v="hike" zoom-min="13">
     <rule e="way" k="piste:grooming" v="classic">
       <line stroke="#449F009F" stroke-width="6" dy="-8" scale="none"/>
-      <lineSymbol src="file:ele-res/w_4eck_violett_weiss.svg" symbol-height="8" symbol-width="8" dy="-8" scale="none" priority="-122" repeat-start="0" repeat-gap="20" align-center="true" repeat="true" symbol-percent="100"/>
+      <lineSymbol src="file:/symbols_winter/w_4eck_violett_weiss.svg" symbol-height="8" symbol-width="8" dy="-8" scale="none" priority="-122" repeat-start="0" repeat-gap="20" align-center="true" repeat="true" symbol-percent="100"/>
       <rule cat="winter_symbol" e="way" k="*" v="*" zoom-min="14">
-        <lineSymbol src="file:ele-res/w_winterwandern_cyan.svg" symbol-height="24" symbol-width="24" dy="-8" scale="none" priority="-121" repeat-start="0" repeat-gap="100" align-center="true" repeat="true" symbol-percent="100"/>
+        <lineSymbol src="file:/symbols_winter/w_winterwandern_cyan.svg" symbol-height="24" symbol-width="24" dy="-8" scale="none" priority="-121" repeat-start="0" repeat-gap="100" align-center="true" repeat="true" symbol-percent="100"/>
       </rule>
       <rule cat="winter_reference" e="way" k="*" v="*" zoom-min="14">
         <pathText k="ref" font-size="8" dy="-8" scale="none" display="always" priority="-120" repeat-start="50" repeat-gap="150" font-style="italic" fill="#9F009F" stroke="#E5FFFFFF" stroke-width="3"/>
@@ -2096,9 +2083,9 @@
     </rule>
     <rule e="way" k="piste:grooming" v="backcountry|~">
       <line stroke="#44FF00FF" stroke-width="6" dy="-8" scale="none"/>
-      <lineSymbol src="file:ele-res/w_4eck_lila_frame.svg" symbol-height="8" symbol-width="8" dy="-8" scale="none" priority="-122" repeat-start="0" repeat-gap="20" align-center="true" repeat="true" symbol-percent="100"/>
+      <lineSymbol src="file:/symbols_winter/w_4eck_lila_frame.svg" symbol-height="8" symbol-width="8" dy="-8" scale="none" priority="-122" repeat-start="0" repeat-gap="20" align-center="true" repeat="true" symbol-percent="100"/>
       <rule cat="winter_symbol" e="way" k="*" v="*" zoom-min="14">
-        <lineSymbol src="file:ele-res/w_schneeschuh_cyan.svg" symbol-height="24" symbol-width="24" dy="-8" scale="none" priority="-121" repeat-start="0" repeat-gap="100" align-center="true" repeat="true" symbol-percent="100"/>
+        <lineSymbol src="file:/symbols_winter/w_schneeschuh_cyan.svg" symbol-height="24" symbol-width="24" dy="-8" scale="none" priority="-121" repeat-start="0" repeat-gap="100" align-center="true" repeat="true" symbol-percent="100"/>
       </rule>
       <rule cat="winter_reference" e="way" k="*" v="*" zoom-min="14">
         <pathText k="ref" font-size="8" dy="-8" scale="none" display="always" priority="-120" repeat-start="50" repeat-gap="150" font-style="italic" fill="#FF00FF" stroke="#E5FFFFFF" stroke-width="3"/>
@@ -2111,9 +2098,9 @@
   <rule cat="rodeln" e="way" k="piste:type" v="sled" closed="no" zoom-min="13">
     <rule e="way" k="piste:grooming" v="classic|~">
       <line stroke="#44FF00FF" stroke-width="6" dy="-8" scale="none"/>
-      <lineSymbol src="file:ele-res/w_3eck_lila_frame.svg" symbol-height="8" symbol-width="8" dy="-8" scale="none" priority="-132" repeat-start="0" repeat-gap="20" align-center="true" repeat="true" symbol-percent="100"/>
+      <lineSymbol src="file:/symbols_winter/w_3eck_lila_frame.svg" symbol-height="8" symbol-width="8" dy="-8" scale="none" priority="-132" repeat-start="0" repeat-gap="20" align-center="true" repeat="true" symbol-percent="100"/>
       <rule cat="winter_symbol" e="way" k="*" v="*" zoom-min="14">
-        <lineSymbol src="file:ele-res/w_rodel_cyan.svg" symbol-height="24" symbol-width="24" dy="-8" scale="none" priority="-131" repeat-start="0" repeat-gap="100" align-center="true" repeat="true" symbol-percent="100"/>
+        <lineSymbol src="file:/symbols_winter/w_rodel_cyan.svg" symbol-height="24" symbol-width="24" dy="-8" scale="none" priority="-131" repeat-start="0" repeat-gap="100" align-center="true" repeat="true" symbol-percent="100"/>
       </rule>
       <rule cat="winter_reference" e="way" k="*" v="*" zoom-min="14">
         <pathText k="ref" font-size="8" dy="-8" scale="none" display="always" priority="-130" repeat-start="50" repeat-gap="150" font-style="italic" fill="#FF00FF" stroke="#E5FFFFFF" stroke-width="3"/>
@@ -2124,9 +2111,9 @@
     </rule>
     <rule e="way" k="piste:grooming" v="backcountry">
       <line stroke="#44FF00FF" stroke-width="6" dy="-8" scale="none"/>
-      <lineSymbol src="file:ele-res/w_3eck_lila_weiss.svg" symbol-height="8" symbol-width="8" dy="-8" scale="none" priority="-132" repeat-start="0" repeat-gap="20" align-center="true" repeat="true" symbol-percent="100"/>
+      <lineSymbol src="file:/symbols_winter/w_3eck_lila_weiss.svg" symbol-height="8" symbol-width="8" dy="-8" scale="none" priority="-132" repeat-start="0" repeat-gap="20" align-center="true" repeat="true" symbol-percent="100"/>
       <rule cat="winter_symbol" e="way" k="*" v="*" zoom-min="14">
-        <lineSymbol src="file:ele-res/w_rodel_cyan.svg" symbol-height="24" symbol-width="24" dy="-8" scale="none" priority="-131" repeat-start="0" repeat-gap="100" align-center="true" repeat="true" symbol-percent="100"/>
+        <lineSymbol src="file:/symbols_winter/w_rodel_cyan.svg" symbol-height="24" symbol-width="24" dy="-8" scale="none" priority="-131" repeat-start="0" repeat-gap="100" align-center="true" repeat="true" symbol-percent="100"/>
       </rule>
       <rule cat="winter_reference" e="way" k="*" v="*" zoom-min="14">
         <pathText k="ref" font-size="8" dy="-8" scale="none" display="always" priority="-130" repeat-start="50" repeat-gap="150" font-style="italic" fill="#FF00FF" stroke="#E5FFFFFF" stroke-width="3"/>
@@ -2140,9 +2127,9 @@
     <rule e="way" k="piste:grooming" v="classic|~">
       <line stroke="#55FF00FF" stroke-width="1" dy="0" scale="none"/>
       <area fill="#33FF00FF"/>
-      <lineSymbol src="file:ele-res/w_3eck_lila_frame.svg" symbol-height="8" symbol-width="8" dy="0" scale="none" priority="-137" repeat-start="0" repeat-gap="20" align-center="true" repeat="true" symbol-percent="100"/>
+      <lineSymbol src="file:/symbols_winter/w_3eck_lila_frame.svg" symbol-height="8" symbol-width="8" dy="0" scale="none" priority="-137" repeat-start="0" repeat-gap="20" align-center="true" repeat="true" symbol-percent="100"/>
       <rule cat="winter_symbol" e="way" k="*" v="*" zoom-min="14">
-        <lineSymbol src="file:ele-res/w_rodel_cyan.svg" symbol-height="24" symbol-width="24" dy="0" scale="none" priority="-136" repeat-start="0" repeat-gap="100" align-center="true" repeat="true" symbol-percent="100"/>
+        <lineSymbol src="file:/symbols_winter/w_rodel_cyan.svg" symbol-height="24" symbol-width="24" dy="0" scale="none" priority="-136" repeat-start="0" repeat-gap="100" align-center="true" repeat="true" symbol-percent="100"/>
       </rule>
       <rule cat="winter_reference" e="way" k="*" v="*" zoom-min="14">
         <pathText k="ref" font-size="8" dy="0" scale="none" display="always" priority="-135" repeat-start="50" repeat-gap="150" font-style="italic" fill="#FF00FF" stroke="#E5FFFFFF" stroke-width="3"/>
@@ -2154,9 +2141,9 @@
     <rule e="way" k="piste:grooming" v="backcountry">
       <line stroke="#55FF00FF" stroke-width="1" dy="0" scale="none"/>
       <area fill="#33FF00FF"/>
-      <lineSymbol src="file:ele-res/w_3eck_lila_weiss.svg" symbol-height="8" symbol-width="8" dy="0" scale="none" priority="-137" repeat-start="0" repeat-gap="20" align-center="true" repeat="true" symbol-percent="100"/>
+      <lineSymbol src="file:/symbols_winter/w_3eck_lila_weiss.svg" symbol-height="8" symbol-width="8" dy="0" scale="none" priority="-137" repeat-start="0" repeat-gap="20" align-center="true" repeat="true" symbol-percent="100"/>
       <rule cat="winter_symbol" e="way" k="*" v="*" zoom-min="14">
-        <lineSymbol src="file:ele-res/w_rodel_cyan.svg" symbol-height="24" symbol-width="24" dy="0" scale="none" priority="-136" repeat-start="0" repeat-gap="100" align-center="true" repeat="true" symbol-percent="100"/>
+        <lineSymbol src="file:/symbols_winter/w_rodel_cyan.svg" symbol-height="24" symbol-width="24" dy="0" scale="none" priority="-136" repeat-start="0" repeat-gap="100" align-center="true" repeat="true" symbol-percent="100"/>
       </rule>
       <rule cat="winter_reference" e="way" k="*" v="*" zoom-min="14">
         <pathText k="ref" font-size="8" dy="0" scale="none" display="always" priority="-135" repeat-start="50" repeat-gap="150" font-style="italic" fill="#FF00FF" stroke="#E5FFFFFF" stroke-width="3"/>
@@ -2168,9 +2155,9 @@
   </rule>
   <rule cat="hundeschlitten" e="way" k="piste:type" v="sleigh" closed="no" zoom-min="13">
     <line stroke="#449F009F" stroke-width="6" dy="+8" scale="none"/>
-    <lineSymbol src="file:ele-res/w_3eck_violett.svg" symbol-height="8" symbol-width="8" dy="+8" scale="none" priority="-142" repeat-start="0" repeat-gap="20" align-center="true" repeat="true" symbol-percent="100"/>
+    <lineSymbol src="file:/symbols_winter/w_3eck_violett.svg" symbol-height="8" symbol-width="8" dy="+8" scale="none" priority="-142" repeat-start="0" repeat-gap="20" align-center="true" repeat="true" symbol-percent="100"/>
     <rule cat="winter_symbol" e="way" k="*" v="*" zoom-min="14">
-      <lineSymbol src="file:ele-res/w_hundeschlitten_cyan.svg" symbol-height="24" symbol-width="24" dy="+8" scale="none" priority="-141" repeat-start="0" repeat-gap="100" align-center="true" repeat="true" symbol-percent="100"/>
+      <lineSymbol src="file:/symbols_winter/w_hundeschlitten_cyan.svg" symbol-height="24" symbol-width="24" dy="+8" scale="none" priority="-141" repeat-start="0" repeat-gap="100" align-center="true" repeat="true" symbol-percent="100"/>
     </rule>
     <rule cat="winter_reference" e="way" k="*" v="*" zoom-min="14">
       <pathText k="ref" font-size="8" dy="+8" scale="none" display="always" priority="-140" repeat-start="50" repeat-gap="150" font-style="italic" fill="#9F009F" stroke="#E5FFFFFF" stroke-width="3"/>
@@ -2182,9 +2169,9 @@
   <rule cat="hundeschlitten" e="way" k="piste:type" v="sleigh" closed="yes" zoom-min="13">
     <line stroke="#559F009F" stroke-width="1" dy="0" scale="none"/>
     <area fill="#339F009F"/>
-    <lineSymbol src="file:ele-res/w_3eck_violett.svg" symbol-height="8" symbol-width="8" dy="0" scale="none" priority="-147" repeat-start="0" repeat-gap="20" align-center="true" repeat="true" symbol-percent="100"/>
+    <lineSymbol src="file:/symbols_winter/w_3eck_violett.svg" symbol-height="8" symbol-width="8" dy="0" scale="none" priority="-147" repeat-start="0" repeat-gap="20" align-center="true" repeat="true" symbol-percent="100"/>
     <rule cat="winter_symbol" e="way" k="*" v="*" zoom-min="14">
-      <lineSymbol src="file:ele-res/w_hundeschlitten_cyan.svg" symbol-height="24" symbol-width="24" dy="0" scale="none" priority="-146" repeat-start="0" repeat-gap="100" align-center="true" repeat="true" symbol-percent="100"/>
+      <lineSymbol src="file:/symbols_winter/w_hundeschlitten_cyan.svg" symbol-height="24" symbol-width="24" dy="0" scale="none" priority="-146" repeat-start="0" repeat-gap="100" align-center="true" repeat="true" symbol-percent="100"/>
     </rule>
     <rule cat="winter_reference" e="way" k="*" v="*" zoom-min="14">
       <pathText k="ref" font-size="8" dy="0" scale="none" display="always" priority="-145" repeat-start="50" repeat-gap="150" font-style="italic" fill="#9F009F" stroke="#E5FFFFFF" stroke-width="3"/>
@@ -2197,7 +2184,7 @@
     <line stroke="#AA00FFFF" stroke-width="6" dy="0" scale="none" stroke-dasharray="10,10"/>
     <line stroke="#AA0000FF" stroke-width="6" dy="0" scale="none" stroke-dasharray="0,10,10,0"/>
     <rule cat="winter_symbol" e="way" k="*" v="*" zoom-min="14">
-      <lineSymbol src="file:ele-res/w_eislauf_orange.svg" dy="0" symbol-height="24" symbol-width="24" scale="none" priority="-151" repeat-start="0" repeat-gap="100" align-center="true" repeat="true" symbol-percent="100"/>
+      <lineSymbol src="file:/symbols_winter/w_eislauf_orange.svg" dy="0" symbol-height="24" symbol-width="24" scale="none" priority="-151" repeat-start="0" repeat-gap="100" align-center="true" repeat="true" symbol-percent="100"/>
     </rule>
     <rule cat="winter_reference" e="way" k="*" v="*" zoom-min="14">
       <pathText k="ref" font-size="8" dy="0" scale="none" display="always" priority="-150" repeat-start="50" repeat-gap="150" font-style="italic" fill="#0000FF" stroke="#E5FFFFFF" stroke-width="3"/>
@@ -2211,7 +2198,7 @@
     <line stroke="#AA0000FF" stroke-width="2" dy="0" scale="none" stroke-dasharray="0,10,10,0"/>
     <area fill="#3300FFFF"/>
     <rule cat="winter_symbol" e="way" k="*" v="*" zoom-min="14">
-      <lineSymbol src="file:ele-res/w_eislauf_orange.svg" symbol-height="24" symbol-width="24" dy="0" scale="none" priority="-156" repeat-start="0" repeat-gap="100" align-center="true" repeat="true" symbol-percent="100"/>
+      <lineSymbol src="file:/symbols_winter/w_eislauf_orange.svg" symbol-height="24" symbol-width="24" dy="0" scale="none" priority="-156" repeat-start="0" repeat-gap="100" align-center="true" repeat="true" symbol-percent="100"/>
     </rule>
     <rule cat="winter_reference" e="way" k="*" v="*" zoom-min="14">
       <pathText k="ref" font-size="8" dy="0" scale="none" display="always" priority="-155" repeat-start="50" repeat-gap="150" font-style="italic" fill="#0000FF" stroke="#E5FFFFFF" stroke-width="3"/>
@@ -2225,7 +2212,7 @@
     <line stroke="#AA0000FF" stroke-width="2" dy="0" scale="none" stroke-dasharray="0,10,10,0"/>
     <area fill="#3300FFFF"/>
     <rule cat="winter_symbol" e="way" k="*" v="*" zoom-min="14">
-      <lineSymbol src="file:ele-res/w_eislauf_orange.svg" symbol-height="24" symbol-width="24" dy="0" scale="none" priority="-156" repeat-start="0" repeat-gap="100" align-center="true" repeat="true" symbol-percent="100"/>
+      <lineSymbol src="file:/symbols_winter/w_eislauf_orange.svg" symbol-height="24" symbol-width="24" dy="0" scale="none" priority="-156" repeat-start="0" repeat-gap="100" align-center="true" repeat="true" symbol-percent="100"/>
     </rule>
     <rule cat="winter_reference" e="way" k="*" v="*" zoom-min="14">
       <pathText k="ref" font-size="8" dy="0" scale="none" display="always" priority="-155" repeat-start="50" repeat-gap="150" font-style="italic" fill="#0000FF" stroke="#E5FFFFFF" stroke-width="3"/>
@@ -2239,7 +2226,7 @@
     <line stroke="#AAFFBB00" stroke-width="2" dy="0" scale="none" stroke-dasharray="0,10,10,0"/>
     <area fill="#33FFFF00"/>
     <rule cat="winter_symbol" e="way" k="*" v="*" zoom-min="14">
-      <lineSymbol src="file:ele-res/w_halfpipe_cyan.svg" symbol-height="24" symbol-width="24" dy="0" scale="none" priority="-161" repeat-start="0" repeat-gap="100" align-center="true" repeat="true" symbol-percent="100"/>
+      <lineSymbol src="file:/symbols_winter/w_halfpipe_cyan.svg" symbol-height="24" symbol-width="24" dy="0" scale="none" priority="-161" repeat-start="0" repeat-gap="100" align-center="true" repeat="true" symbol-percent="100"/>
     </rule>
     <rule cat="winter_reference" e="way" k="*" v="*" zoom-min="14">
       <pathText k="ref" font-size="8" dy="0" scale="none" display="always" priority="-2160" repeat-start="50" repeat-gap="150" font-style="italic" fill="#FFBB00" stroke="#E5FFFFFF" stroke-width="3"/>
@@ -2252,7 +2239,7 @@
     <line stroke="#AAFFFF00" stroke-width="6" dy="0" scale="none" stroke-dasharray="10,10"/>
     <line stroke="#AAFFBB00" stroke-width="6" dy="0" scale="none" stroke-dasharray="0,10,10,0"/>
     <rule cat="winter_symbol" e="way" k="*" v="*" zoom-min="14">
-      <lineSymbol src="file:ele-res/w_halfpipe_cyan.svg" symbol-height="24" symbol-width="24" dy="0" scale="none" priority="-161" repeat-start="0" repeat-gap="100" align-center="true" repeat="true" symbol-percent="100"/>
+      <lineSymbol src="file:/symbols_winter/w_halfpipe_cyan.svg" symbol-height="24" symbol-width="24" dy="0" scale="none" priority="-161" repeat-start="0" repeat-gap="100" align-center="true" repeat="true" symbol-percent="100"/>
     </rule>
     <rule cat="winter_reference" e="way" k="*" v="*" zoom-min="14">
       <pathText k="ref" font-size="8" dy="0" scale="none" display="always" priority="-160" repeat-start="50" repeat-gap="150" font-style="italic" fill="#FFBB00" stroke="#E5FFFFFF" stroke-width="3"/>
@@ -2266,7 +2253,7 @@
     <line stroke="#AAFFBB00" stroke-width="2" dy="0" scale="none" stroke-dasharray="0,10,10,0"/>
     <area fill="#33FFFF00"/>
     <rule cat="winter_symbol" e="way" k="*" v="*" zoom-min="14">
-      <lineSymbol src="file:ele-res/w_halfpipe_cyan.svg" symbol-height="24" symbol-width="24" dy="0" scale="none" priority="-166" repeat-start="0" repeat-gap="100" align-center="true" repeat="true" symbol-percent="100"/>
+      <lineSymbol src="file:/symbols_winter/w_halfpipe_cyan.svg" symbol-height="24" symbol-width="24" dy="0" scale="none" priority="-166" repeat-start="0" repeat-gap="100" align-center="true" repeat="true" symbol-percent="100"/>
     </rule>
     <rule cat="winter_reference" e="way" k="*" v="*" zoom-min="14">
       <pathText k="ref" font-size="8" dy="0" scale="none" display="always" priority="-165" repeat-start="50" repeat-gap="150" font-style="italic" fill="#FFBB00" stroke="#E5FFFFFF" stroke-width="3"/>
@@ -2279,7 +2266,7 @@
     <line stroke="#AAFFFF00" stroke-width="6" dy="0" scale="none" stroke-dasharray="10,10"/>
     <line stroke="#AAFFBB00" stroke-width="6" dy="0" scale="none" stroke-dasharray="0,10,10,0"/>
     <rule cat="winter_symbol" e="way" k="*" v="*" zoom-min="14">
-      <lineSymbol src="file:ele-res/w_halfpipe_cyan.svg" symbol-height="24" symbol-width="24" dy="0" scale="none" priority="-161" repeat-start="0" repeat-gap="100" align-center="true" repeat="true" symbol-percent="100"/>
+      <lineSymbol src="file:/symbols_winter/w_halfpipe_cyan.svg" symbol-height="24" symbol-width="24" dy="0" scale="none" priority="-161" repeat-start="0" repeat-gap="100" align-center="true" repeat="true" symbol-percent="100"/>
     </rule>
     <rule cat="winter_reference" e="way" k="*" v="*" zoom-min="14">
       <pathText k="ref" font-size="8" dy="0" scale="none" display="always" priority="-160" repeat-start="50" repeat-gap="150" font-style="italic" fill="#FFBB00" stroke="#E5FFFFFF" stroke-width="3"/>
@@ -2293,45 +2280,13 @@
     <line stroke="#AAFFBB00" stroke-width="2" dy="0" scale="none" stroke-dasharray="0,10,10,0"/>
     <area fill="#33FFFF00"/>
     <rule cat="winter_symbol" e="way" k="*" v="*" zoom-min="14">
-      <lineSymbol src="file:ele-res/w_halfpipe_cyan.svg" symbol-height="24" symbol-width="24" dy="0" scale="none" priority="-166" repeat-start="0" repeat-gap="100" align-center="true" repeat="true" symbol-percent="100"/>
+      <lineSymbol src="file:/symbols_winter/w_halfpipe_cyan.svg" symbol-height="24" symbol-width="24" dy="0" scale="none" priority="-166" repeat-start="0" repeat-gap="100" align-center="true" repeat="true" symbol-percent="100"/>
     </rule>
     <rule cat="winter_reference" e="way" k="*" v="*" zoom-min="14">
       <pathText k="ref" font-size="8" dy="0" scale="none" display="always" priority="-165" repeat-start="50" repeat-gap="150" font-style="italic" fill="#FFBB00" stroke="#E5FFFFFF" stroke-width="3"/>
     </rule>
     <rule cat="winter_namen" e="way" k="*" v="*" zoom-min="14">
       <pathText k="name" font-size="6" dy="11" scale="none" display="always" priority="-168" repeat-start="50" repeat-gap="500" font-style="italic" fill="#FFBB00" stroke="#E5FFFFFF" stroke-width="3"/>
-    </rule>
-  </rule>
-  <rule e="way" k="aerialway" v="*" zoom-min="11">
-    <rule e="way" k="aerialway" v="cable_car|gondola|chair_lift|mixed_lift">
-      <line stroke="#404040" stroke-width="1" stroke-linecap="butt"/>
-      <line stroke="#404040" stroke-width="4" stroke-dasharray="4,40" stroke-linecap="butt"/>
-    </rule>
-    <rule e="way" k="aerialway" v="drag_lift|t-bar|j-bar|platter" zoom-min="13">
-      <line stroke="#404040" stroke-width="0.8" stroke-linecap="butt"/>
-      <line stroke="#606060" stroke-width="4" stroke-dasharray="4,80" stroke-linecap="butt"/>
-    </rule>
-    <rule e="way" k="aerialway" v="goods|rope_tow|magic_carpet|zip_line" zoom-min="13">
-      <line stroke="#404040" stroke-width="0.6" stroke-linecap="butt"/>
-      <line stroke="#909090" stroke-width="4" stroke-dasharray="4,160" stroke-linecap="butt"/>
-    </rule>
-    <rule cat="aerway" e="way" k="aerialway" v="cable_car" zoom-min="14">
-      <lineSymbol src="file:ele-res/s_cable_car.svg" rotate="false" dy="0" scale="none" align-center="true" repeat="true" repeat-start="0" repeat-gap="100" symbol-height="48" symbol-width="48"/>
-    </rule>
-    <rule cat="aerway" e="way" k="aerialway" v="gondola" zoom-min="14">
-      <lineSymbol src="file:ele-res/s_gondola.svg" rotate="false" dy="0" scale="none" align-center="true" repeat="true" repeat-start="0" repeat-gap="100" symbol-height="48" symbol-width="48"/>
-    </rule>
-    <rule cat="aerway" e="way" k="aerialway" v="chair_lift|mixed_lift" zoom-min="14">
-      <lineSymbol src="file:ele-res/s_chair_lift.svg" rotate="false" dy="0" scale="none" align-center="true" repeat="true" repeat-start="0" repeat-gap="100" symbol-height="48" symbol-width="48"/>
-    </rule>
-    <rule cat="aerway" e="way" k="aerialway" v="drag_lift|t-bar|j-bar|platter|rope_tow|magic_carpet" zoom-min="14">
-      <lineSymbol src="file:ele-res/s_drag_lift.svg" rotate="false" dy="0" scale="none" align-center="true" repeat="true" repeat-start="0" repeat-gap="100" symbol-height="48" symbol-width="48"/>
-    </rule>
-    <rule cat="aerway" e="way" k="aerialway" v="goods" zoom-min="14">
-      <lineSymbol src="file:ele-res/s_goods_lift.svg" rotate="false" dy="0" scale="none" align-center="true" repeat="true" repeat-start="0" repeat-gap="100" symbol-height="48" symbol-width="48"/>
-    </rule>
-    <rule cat="aerway" e="any" k="aerialway" v="cable_car|gondola|chair_lift|mixed_lift|drag_lift|t-bar|j-bar|platter|goods|rope_tow|magic_carpet|zip_line" zoom-min="14">
-      <pathText k="name" dy="-11" scale="none" display="always" font-style="italic" font-size="8" fill="#208080" stroke="#E5FFFFFF" stroke-width="2" repeat-start="50" repeat-gap="300"/>
     </rule>
   </rule>
   <rule e="node" k="railway" v="*" zoom-min="12" cat="pub_transp">
@@ -2362,17 +2317,6 @@
     <symbol src="file:/symbols/bunker.svg" symbol-percent="40"/>
     <rule e="way" k="*" v="*" zoom-min="14">
       <caption k="name" font-style="normal" font-family="sans_serif" font-size="10" fill="#E57A7A" stroke="#ffffff" stroke-width="2.0"/>
-    </rule>
-  </rule>
-  <rule e="way" k="historic" v="*" zoom-min="10">
-    <rule e="way" k="historic" v="archaeological_site">
-      <area fill="#DBDBDB" stroke="#C3C3C3" stroke-width="0.1"/>
-      <rule e="way" k="building" v="~" zoom-min="12">
-        <line stroke="#70606060" stroke-width="0.2" stroke-dasharray="4,4" stroke-linecap="butt"/>
-      </rule>
-    </rule>
-    <rule e="way" k="historic" v="wayside_shrine">
-      <area fill="#DBDBDB" stroke="#818181" stroke-width="0.1"/>
     </rule>
   </rule>
   <rule e="way" k="route" v="ferry" zoom-max="11">
@@ -2409,7 +2353,7 @@
   </rule>
   <rule e="any" k="place" v="locality" zoom-min="15">
     <rule e="any" k="mountain_pass|natural|tourism" v="~">
-      <caption k="name" priority="10" font-style="normal" font-family="sans_serif" font-size="8" fill="#000000" stroke="#ffffff" stroke-width="1.5"/>
+      <caption k="name" priority="10" font-style="normal" font-family="sans_serif" font-size="8" fill="#000000" stroke="#ffffff" stroke-width="1.5" text-wrap-width="110"/>
     </rule>
   </rule>
   <rule e="node" k="place" v="town" zoom-min="8" zoom-max="8">
@@ -2469,35 +2413,12 @@
     <rule e="way" k="protect_class" v="1|2|3|4|~|pr_1|pr_2|pr_3|pr_4" zoom-min="14">
       <line stroke="#6bb96c" stroke-width="0.8" stroke-linecap="butt"/>
     </rule>
-    <rule e="way" k="boundary" v="national_park|protect_class" zoom-min="15" zoom-max="18">
-      <caption k="name" font-style="bold" font-size="10" fill="#688F37" stroke="#FFFFFF" stroke-width="1.5"/>
+    <rule e="way" k="boundary" v="national_park" zoom-min="10" zoom-max="15">
+      <caption k="name" text-transform="uppercase" font-style="bold" font-size="10" fill="#688F37" stroke="#FFFFFF" stroke-width="1.5" text-wrap-width="120"/>
     </rule>
-  </rule>
-  <rule e="way" k="aerialway" v="*" zoom-min="12">
-    <rule e="way" k="aerialway" v="cable_car">
-      <line stroke="#575757" stroke-width="0.75" stroke-linecap="butt"/>
-      <lineSymbol src="file:/symbols/cable_car.svg" symbol-percent="60" repeat="true" repeat-gap="80" priority="10"/>
+    <rule e="way" k="boundary" v="protect_class" zoom-min="15" zoom-max="18">
+      <caption k="name" font-style="bold" font-size="10" fill="#688F37" stroke="#FFFFFF" stroke-width="1.5" text-wrap-width="120"/>
     </rule>
-    <rule e="way" k="aerialway" v="chair_lift">
-      <line stroke="#575757" stroke-width="0.6" stroke-linecap="butt"/>
-      <lineSymbol src="file:/symbols/chair_lift.svg" symbol-percent="70" repeat="true" repeat-gap="60" priority="10"/>
-    </rule>
-    <rule e="way" k="aerialway" v="goods">
-      <line stroke="#575757" stroke-width="0.6" stroke-linecap="butt"/>
-      <lineSymbol src="file:/symbols/goods.svg" symbol-percent="50" repeat="true" repeat-gap="60" priority="10"/>
-    </rule>
-    <rule e="way" k="aerialway" v="gondola">
-      <line stroke="#575757" stroke-width="0.75" stroke-linecap="butt"/>
-      <lineSymbol src="file:/symbols/gondola.svg" symbol-percent="60" repeat="true" repeat-gap="60" priority="10"/>
-    </rule>
-    <rule e="way" k="aerialway" v="drag_lift">
-      <line stroke="#575757" stroke-width="0.6" stroke-linecap="butt"/>
-      <lineSymbol src="file:/symbols/drag_lift.svg" symbol-percent="40" repeat="true" repeat-gap="20" priority="10"/>
-    </rule>
-    <rule e="way" k="aerialway" v="zip_line">
-      <line stroke="#575757" stroke-width="0.6" stroke-linecap="butt"/>
-    </rule>
-    <pathText k="name" dy="-6" font-style="bold" font-size="8" fill="#575757" stroke="#E5FFFFFF" stroke-width="1.0"/>
   </rule>
   <rule e="way" k="man_made|embankment" v="dyke|embankment|emb_yes" zoom-min="12" cat="landscapefeat">
     <line stroke="#6D6D6D" dy="2.2" stroke-width="1.5" stroke-dasharray="0.5,5" stroke-linecap="butt"/>
@@ -2507,7 +2428,7 @@
   </rule>
   <rule e="way" k="man_made" v="cutline" zoom-min="11">
     <rule e="way" k="*" v="*" closed="no">
-      <line stroke="#90EEEFEC" stroke-width="1.4" stroke-linecap="butt"/>
+      <line stroke="#90EEEFEC" stroke-width="2.0" stroke-linecap="butt"/>
     </rule>
     <rule e="way" k="*" v="*" closed="yes">
       <area fill="#90EEEFEC"/>
@@ -2522,8 +2443,14 @@
         <area fill="#E7E7E7" stroke="#d0d0d0" stroke-width="0.2"/>
       </rule>
     </rule>
-    <rule e="way" k="man_made" v="groyne" zoom-min="13">
+    <rule e="way" k="man_made" v="groyne|breakwater" zoom-min="13">
       <line stroke="#E7E7E7" stroke-width="0.6" stroke-linecap="butt"/>
+    </rule>
+    <rule e="way" k="man_made" v="water_tower" zoom-min="12">
+      <symbol id="id_water_tower" src="file:/symbols/tower_observation.svg" symbol-percent="45"/>
+      <rule e="way" k="*" v="*" zoom-min="15">
+        <caption symbol-id="id_water_tower" k="name" font-style="normal" font-family="sans_serif" font-size="9" fill="#333333" stroke="#ffffff" stroke-width="1.0"/>
+      </rule>
     </rule>
     <rule e="way" k="man_made" v="watermill" zoom-min="12">
       <symbol id="id_watermill" src="file:/symbols/watermill.svg" symbol-percent="70"/>
@@ -2537,6 +2464,32 @@
         <caption symbol-id="id_windmill" k="name" font-style="normal" font-family="sans_serif" font-size="9" fill="#333333" stroke="#ffffff" stroke-width="1.5"/>
       </rule>
     </rule>
+  </rule>
+  <rule e="way" k="aerialway" v="*" zoom-min="12">
+    <rule e="way" k="aerialway" v="cable_car">
+      <line stroke="#575757" stroke-width="0.75" stroke-linecap="butt"/>
+      <lineSymbol src="file:/symbols/cable_car.svg" symbol-percent="60" symbol-orientation="auto" repeat="true" repeat-gap="140" repeat-start="100" rotate="false" priority="10"/>
+    </rule>
+    <rule e="way" k="aerialway" v="chair_lift">
+      <line stroke="#575757" stroke-width="0.6" stroke-linecap="butt"/>
+      <lineSymbol src="file:/symbols/chair_lift.svg" symbol-percent="80" symbol-orientation="auto" repeat="true" repeat-gap="100" repeat-start="100" rotate="false" priority="10"/>
+    </rule>
+    <rule e="way" k="aerialway" v="goods">
+      <line stroke="#575757" stroke-width="0.6" stroke-linecap="butt"/>
+      <lineSymbol src="file:/symbols/goods.svg" symbol-percent="50" symbol-orientation="auto" repeat="true" repeat-gap="100" repeat-start="100" rotate="false" priority="10"/>
+    </rule>
+    <rule e="way" k="aerialway" v="gondola">
+      <line stroke="#575757" stroke-width="0.75" stroke-linecap="butt"/>
+      <lineSymbol src="file:/symbols/gondola.svg" symbol-percent="60" symbol-orientation="auto" repeat="true" repeat-gap="100" repeat-start="100" rotate="false" priority="10"/>
+    </rule>
+    <rule e="way" k="aerialway" v="drag_lift">
+      <line stroke="#575757" stroke-width="0.6" stroke-linecap="butt"/>
+      <lineSymbol src="file:/symbols/drag_lift.svg" symbol-percent="40" symbol-orientation="auto" repeat="true" repeat-gap="40" repeat-start="40" rotate="false" priority="10"/>
+    </rule>
+    <rule e="way" k="aerialway" v="zip_line">
+      <line stroke="#575757" stroke-width="0.6" stroke-linecap="butt"/>
+    </rule>
+    <pathText k="name" dy="-2" font-style="bold" font-size="8" fill="#575757" stroke="#E5FFFFFF" stroke-width="1.0"/>
   </rule>
   <rule e="way" k="barrier" v="*" zoom-min="14">
     <rule e="way" k="barrier" v="fence|city_wall">
@@ -3054,7 +3007,7 @@
       </rule>
     </rule>
   </rule>
-  <rule e="any" k="safety_rope|ladder|rungs" v="*" zoom-min="13">
+  <rule e="any" k="safety_rope|ladder|rungs" v="*" zoom-min="14">
     <rule e="any" k="safety_rope" v="sr_yes">
       <symbol src="file:/symbols/safety_rope.svg" display="always" symbol-percent="80"/>
     </rule>
@@ -3065,40 +3018,40 @@
       <symbol src="file:/symbols/rungs.svg" display="always" symbol-percent="80"/>
     </rule>
     <rule e="way" k="safety_rope|ladder|rungs" v="sr_yes|ld_yes|rn_yes" zoom-min="14">
-      <line stroke="#BFBFBF" stroke-width="1.4" stroke-dasharray="1,5" stroke-linecap="round"/>
-      <line stroke="#000000" stroke-width="0.8" stroke-dasharray="1,5" stroke-linecap="round"/>
+      <line stroke="#FF0000" stroke-width="0.4" stroke-linecap="butt"/>
+      <line stroke="#000000" stroke-width="0.4" stroke-dasharray="6,2" stroke-linecap="butt" scale="stroke"/>
     </rule>
   </rule>
   <rule e="any" k="aerialway" v="station" zoom-min="13">
     <caption k="name" font-style="bold" font-size="8.0" fill="#797979" stroke="#ffffff" stroke-width="2.0"/>
   </rule>
-  <rule e="way" k="hknetwork" v="*" cat="hikingtrails">
-    <rule e="way" k="hknetwork" v="iwn|nwn" zoom-min="5" zoom-max="9">
+  <rule e="way" k="network|hknetwork" v="*" cat="hikingtrails">
+    <rule e="way" k="network|hknetwork" v="iwn|nwn" zoom-min="5" zoom-max="9">
       <line stroke="#F2221E" stroke-width="1.8"/>
       <line stroke="#E7B3B3" stroke-width="1.3"/>
     </rule>
-    <rule e="way" k="hknetwork" v="iwn|nwn" zoom-min="10" zoom-max="11">
+    <rule e="way" k="network|hknetwork" v="iwn|nwn" zoom-min="10" zoom-max="11">
       <line stroke="#95F2221E" stroke-width="3.0"/>
       <line stroke="#95E7B3B3" stroke-width="2.0"/>
     </rule>
-    <rule e="way" k="hknetwork" v="own|lwn|rwn" zoom-min="10" zoom-max="11">
+    <rule e="way" k="network|hknetwork" v="own|lwn|rwn" zoom-min="10" zoom-max="11">
       <line stroke="#95db8c8c" stroke-width="2.0"/>
     </rule>
-    <rule e="way" k="hknetwork" v="own|iwn|nwn|lwn|rwn" zoom-min="12">
+    <rule e="way" k="network|hknetwork" v="own|iwn|nwn|lwn|rwn" zoom-min="12">
       <line dy="-0.6" stroke="#80e60707" stroke-width="0.2"/>
       <line stroke="#60f66966" stroke-width="1.0"/>
       <line dy="0.6" stroke="#80e60707" stroke-width="0.2"/>
     </rule>
-    <rule e="way" k="hknetwork" v="own|lwn" zoom-min="13">
+    <rule e="way" k="network|hknetwork" v="own|lwn" zoom-min="13">
       <pathText k="ref_hike" dy="-1.5" font-style="bold" font-size="8" fill="#631f1f" stroke="#ffffff" stroke-width="2.0" repeat-start="50" repeat-gap="300"/>
     </rule>
-    <rule e="way" k="hknetwork" v="rwn" zoom-min="13">
+    <rule e="way" k="network|hknetwork" v="rwn" zoom-min="13">
       <pathText k="ref_hike" dy="-1.5" font-style="bold" font-size="8" fill="#631f1f" stroke="#ffffff" stroke-width="2.0" repeat-start="30" repeat-gap="100"/>
     </rule>
-    <rule e="way" k="hknetwork" v="nwn" zoom-min="11">
+    <rule e="way" k="network|hknetwork" v="nwn" zoom-min="11">
       <pathText k="ref_hike" dy="-1.5" font-style="bold" font-size="8" fill="#631f1f" stroke="#ffffff" stroke-width="2.0" repeat-start="50" repeat-gap="300"/>
     </rule>
-    <rule e="way" k="hknetwork" v="iwn" zoom-min="11">
+    <rule e="way" k="network|hknetwork" v="iwn" zoom-min="11">
       <pathText k="ref_hike" dy="-1.5" font-style="bold" font-size="8" fill="#631f1f" stroke="#ffffff" stroke-width="2.0" repeat-start="50" repeat-gap="300"/>
     </rule>
   </rule>
@@ -3106,7 +3059,7 @@
     <circle radius="7.5" scale-radius="false" fill="#ffffff" stroke="#009900" stroke-width="1.5"/>
     <caption k="addr:housenumber" priority="3" position="center" font-style="bold" font-size="9" fill="#009900" stroke="#E5FFFFFF" stroke-width="2.0"/>
   </rule>
-  <rule e="any" k="osmc" v="osmc_yes" zoom-min="14" cat="trail_markings">
+  <rule e="any" k="osmc" v="yes|osmc_yes" zoom-min="14" cat="trail_markings">
     <rule e="any" k="osmc_background" v="~|no|false">
       <symbol src="file:/osmc/bcg_white.svg" display="always" priority="2" symbol-percent="45"/>
     </rule>
