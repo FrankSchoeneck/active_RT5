@@ -637,14 +637,14 @@
     </rule>
     <rule e="way" k="natural" v="*" zoom-min="12">
       <rule e="way" k="natural" v="cliff|earth_bank" closed="no" cat="landscapefeat">
-        <line stroke="#70606060" stroke-width="1.0" stroke-linecap="butt" curve="cubic"/>
+        <line stroke="#70606060" stroke-width="1.0" stroke-linecap="butt"/>
         <pathText k="name" font-style="bold" font-family="sans_serif" font-size="19" fill="#333333" stroke="#FFFFFF" stroke-width="1.5"/>
         <rule e="way" k="natural" v="*" zoom-min="13">
           <lineSymbol dy="0.5" src="file:/symbols/cliff.svg" repeat="true" repeat-gap="1" repeat-start="1" rotate="true" align-center="true" symbol-percent="30"/>
         </rule>
       </rule>
       <rule e="way" k="natural" v="cliff|earth_bank" closed="yes" cat="landscapefeat">
-        <line stroke="#70606060" stroke-width="1.0" stroke-linecap="butt" curve="cubic"/>
+        <line stroke="#70606060" stroke-width="1.0" stroke-linecap="butt"/>
         <caption k="name" font-style="bold_italic" font-family="sans_serif" font-size="19" fill="#333333" stroke="#FFFFFF" stroke-width="1.5"/>
       </rule>
       <rule e="way" k="natural" v="crevasse" closed="no">
@@ -686,10 +686,10 @@
   <rule e="way" k="waterway" v="*">
     <rule e="way" k="waterway" v="drain|ditch">
       <rule e="way" k="intermittent|seasonal" v="~">
-        <line stroke="#59A0D8" stroke-width="0.4" curve="cubic"/>
+        <line stroke="#59A0D8" stroke-width="0.4"/>
       </rule>
       <rule e="way" k="intermittent|seasonal" v="wwi_yes|seas_yes" zoom-min="13">
-        <line stroke="#59A0D8" stroke-width="0.4" stroke-dasharray="3,6" curve="cubic"/>
+        <line stroke="#59A0D8" stroke-width="0.4" stroke-dasharray="3,6"/>
       </rule>
     </rule>
     <rule e="way" k="waterway" v="canal">
@@ -706,15 +706,15 @@
     <rule e="way" k="waterway" v="stream" zoom-min="11">
       <rule e="way" k="*" v="*" zoom-min="11" zoom-max="12">
         <rule e="way" k="intermittent|seasonal" v="~">
-          <line stroke="#59A0D8" stroke-width="0.4" curve="cubic"/>
+          <line stroke="#59A0D8" stroke-width="0.4"/>
         </rule>
       </rule>
       <rule e="way" k="*" v="*" zoom-min="14">
         <rule e="way" k="intermittent|seasonal" v="~">
-          <line stroke="#59A0D8" stroke-width="0.2" curve="cubic"/>
+          <line stroke="#59A0D8" stroke-width="0.2"/>
         </rule>
         <rule e="way" k="intermittent|seasonal" v="wwi_yes|seas_yes">
-          <line stroke="#59A0D8" stroke-width="0.2" stroke-dasharray="3,6" curve="cubic"/>
+          <line stroke="#59A0D8" stroke-width="0.2" stroke-dasharray="3,6"/>
         </rule>
         <pathText k="name" dy="-1" repeat-gap="300" font-style="normal" font-size="9" fill="#035FBC" stroke="#ffffff" stroke-width="0.5"/>
       </rule>
@@ -2745,6 +2745,12 @@
     <rule e="node" k="amenity" v="drinking_water" zoom-min="15">
       <symbol src="file:/symbols/drinking_water.svg" symbol-percent="60"/>
     </rule>
+    <rule e="node" k="amenity" v="watering_place" zoom-min="15">
+      <symbol id="id_watering_place" src="file:/symbols/water_well.svg" symbol-percent="60"/>
+      <rule e="any" k="*" v="*" zoom-min="16">
+        <caption symbol-id="id_watering_place" k="name" font-style="normal" font-family="sans_serif" font-size="9" fill="#333333" stroke="#ffffff" stroke-width="1.0"/>
+      </rule>
+    </rule>
     <rule e="any" k="amenity" v="hunting_stand" zoom-min="14">
       <symbol src="file:/symbols/hunting_stand.svg" symbol-percent="60"/>
     </rule>
@@ -3063,793 +3069,793 @@
     <rule e="any" k="osmc_background" v="~|no|false">
       <symbol src="file:/osmc/bcg_white.svg" display="always" priority="2" symbol-percent="45"/>
     </rule>
-    <rule e="any" k="osmc_background" v="wmbg_black">
+    <rule e="any" k="osmc_background" v="wmbg_black|black">
       <symbol src="file:/osmc/bcg_black.svg" display="always" priority="2" symbol-percent="45"/>
     </rule>
-    <rule e="any" k="osmc_background" v="wmbg_black_circle">
+    <rule e="any" k="osmc_background" v="wmbg_black_circle|black_circle">
       <symbol src="file:/osmc/bcg_black_circle.svg" display="always" priority="2" symbol-percent="45"/>
     </rule>
-    <rule e="any" k="osmc_background" v="wmbg_black_frame">
+    <rule e="any" k="osmc_background" v="wmbg_black_frame|black_frame">
       <symbol src="file:/osmc/bcg_black_frame.svg" display="always" priority="2" symbol-percent="45"/>
     </rule>
-    <rule e="any" k="osmc_background" v="wmbg_black_round">
+    <rule e="any" k="osmc_background" v="wmbg_black_round|black_round">
       <symbol src="file:/osmc/bcg_black_round.svg" display="always" priority="2" symbol-percent="45"/>
     </rule>
-    <rule e="any" k="osmc_background" v="wmbg_blue">
+    <rule e="any" k="osmc_background" v="wmbg_blue|blue">
       <symbol src="file:/osmc/bcg_blue.svg" display="always" priority="2" symbol-percent="45"/>
     </rule>
-    <rule e="any" k="osmc_background" v="wmbg_blue_circle">
+    <rule e="any" k="osmc_background" v="wmbg_blue_circle|blue_circle">
       <symbol src="file:/osmc/bcg_blue_circle.svg" display="always" priority="2" symbol-percent="45"/>
     </rule>
-    <rule e="any" k="osmc_background" v="wmbg_blue_frame">
+    <rule e="any" k="osmc_background" v="wmbg_blue_frame|blue_frame">
       <symbol src="file:/osmc/bcg_blue_frame.svg" display="always" priority="2" symbol-percent="45"/>
     </rule>
-    <rule e="any" k="osmc_background" v="wmbg_blue_round">
+    <rule e="any" k="osmc_background" v="wmbg_blue_round|blue_round">
       <symbol src="file:/osmc/bcg_blue_round.svg" display="always" priority="2" symbol-percent="45"/>
     </rule>
-    <rule e="any" k="osmc_background" v="wmbg_brown">
+    <rule e="any" k="osmc_background" v="wmbg_brown|brown">
       <symbol src="file:/osmc/bcg_brown.svg" display="always" priority="2" symbol-percent="45"/>
     </rule>
-    <rule e="any" k="osmc_background" v="wmbg_brown_circle">
+    <rule e="any" k="osmc_background" v="wmbg_brown_circle|brown_circle">
       <symbol src="file:/osmc/bcg_brown_circle.svg" display="always" priority="2" symbol-percent="45"/>
     </rule>
-    <rule e="any" k="osmc_background" v="wmbg_brown_frame">
+    <rule e="any" k="osmc_background" v="wmbg_brown_frame|brown_frame">
       <symbol src="file:/osmc/bcg_brown_frame.svg" display="always" priority="2" symbol-percent="45"/>
     </rule>
-    <rule e="any" k="osmc_background" v="wmbg_brown_round">
+    <rule e="any" k="osmc_background" v="wmbg_brown_round|brown_round">
       <symbol src="file:/osmc/bcg_brown_round.svg" display="always" priority="2" symbol-percent="45"/>
     </rule>
-    <rule e="any" k="osmc_background" v="wmbg_green">
+    <rule e="any" k="osmc_background" v="wmbg_green|green">
       <symbol src="file:/osmc/bcg_green.svg" display="always" priority="2" symbol-percent="45"/>
     </rule>
-    <rule e="any" k="osmc_background" v="wmbg_green_circle">
+    <rule e="any" k="osmc_background" v="wmbg_green_circle|green_circle">
       <symbol src="file:/osmc/bcg_green_circle.svg" display="always" priority="2" symbol-percent="45"/>
     </rule>
-    <rule e="any" k="osmc_background" v="wmbg_green_frame">
+    <rule e="any" k="osmc_background" v="wmbg_green_frame|green_frame">
       <symbol src="file:/osmc/bcg_green_frame.svg" display="always" priority="2" symbol-percent="45"/>
     </rule>
-    <rule e="any" k="osmc_background" v="wmbg_green_round">
+    <rule e="any" k="osmc_background" v="wmbg_green_round|green_round">
       <symbol src="file:/osmc/bcg_green_round.svg" display="always" priority="2" symbol-percent="45"/>
     </rule>
-    <rule e="any" k="osmc_background" v="wmbg_orange">
+    <rule e="any" k="osmc_background" v="wmbg_orange|orange">
       <symbol src="file:/osmc/bcg_orange.svg" display="always" priority="2" symbol-percent="45"/>
     </rule>
-    <rule e="any" k="osmc_background" v="wmbg_orange_circle">
+    <rule e="any" k="osmc_background" v="wmbg_orange_circle|orange_circle">
       <symbol src="file:/osmc/bcg_orange_circle.svg" display="always" priority="2" symbol-percent="45"/>
     </rule>
-    <rule e="any" k="osmc_background" v="wmbg_orange_frame">
+    <rule e="any" k="osmc_background" v="wmbg_orange_frame|orange_frame">
       <symbol src="file:/osmc/bcg_orange_frame.svg" display="always" priority="2" symbol-percent="45"/>
     </rule>
-    <rule e="any" k="osmc_background" v="wmbg_orange_round">
+    <rule e="any" k="osmc_background" v="wmbg_orange_round|orange_round">
       <symbol src="file:/osmc/bcg_orange_round.svg" display="always" priority="2" symbol-percent="45"/>
     </rule>
-    <rule e="any" k="osmc_background" v="wmbg_purple">
+    <rule e="any" k="osmc_background" v="wmbg_purple|purple">
       <symbol src="file:/osmc/bcg_purple.svg" display="always" priority="2" symbol-percent="45"/>
     </rule>
-    <rule e="any" k="osmc_background" v="wmbg_purple_circle">
+    <rule e="any" k="osmc_background" v="wmbg_purple_circle|purple_circle">
       <symbol src="file:/osmc/bcg_purple_circle.svg" display="always" priority="2" symbol-percent="45"/>
     </rule>
-    <rule e="any" k="osmc_background" v="wmbg_purple_frame">
+    <rule e="any" k="osmc_background" v="wmbg_purple_frame|purple_frame">
       <symbol src="file:/osmc/bcg_purple_frame.svg" display="always" priority="2" symbol-percent="45"/>
     </rule>
-    <rule e="any" k="osmc_background" v="wmbg_purple_round">
+    <rule e="any" k="osmc_background" v="wmbg_purple_round|purple_round">
       <symbol src="file:/osmc/bcg_purple_round.svg" display="always" priority="2" symbol-percent="45"/>
     </rule>
-    <rule e="any" k="osmc_background" v="wmbg_red">
+    <rule e="any" k="osmc_background" v="wmbg_red|red">
       <symbol src="file:/osmc/bcg_red.svg" display="always" priority="2" symbol-percent="45"/>
     </rule>
-    <rule e="any" k="osmc_background" v="wmbg_red_circle">
+    <rule e="any" k="osmc_background" v="wmbg_red_circle|red_circle">
       <symbol src="file:/osmc/bcg_red_circle.svg" display="always" priority="2" symbol-percent="45"/>
     </rule>
-    <rule e="any" k="osmc_background" v="wmbg_red_frame">
+    <rule e="any" k="osmc_background" v="wmbg_red_frame|red_frame">
       <symbol src="file:/osmc/bcg_red_frame.svg" display="always" priority="2" symbol-percent="45"/>
     </rule>
-    <rule e="any" k="osmc_background" v="wmbg_red_round">
+    <rule e="any" k="osmc_background" v="wmbg_red_round|red_round">
       <symbol src="file:/osmc/bcg_red_round.svg" display="always" priority="2" symbol-percent="45"/>
     </rule>
-    <rule e="any" k="osmc_background" v="wmbg_white">
+    <rule e="any" k="osmc_background" v="wmbg_white|white">
       <symbol src="file:/osmc/bcg_white.svg" display="always" priority="2" symbol-percent="45"/>
     </rule>
-    <rule e="any" k="osmc_background" v="wmbg_white_circle">
+    <rule e="any" k="osmc_background" v="wmbg_white_circle|white_circle">
       <symbol src="file:/osmc/bcg_white_circle.svg" display="always" priority="2" symbol-percent="45"/>
     </rule>
-    <rule e="any" k="osmc_background" v="wmbg_white_frame">
+    <rule e="any" k="osmc_background" v="wmbg_white_frame|white_frame">
       <symbol src="file:/osmc/bcg_white_frame.svg" display="always" priority="2" symbol-percent="45"/>
     </rule>
-    <rule e="any" k="osmc_background" v="wmbg_white_round">
+    <rule e="any" k="osmc_background" v="wmbg_white_round|white_round">
       <symbol src="file:/osmc/bcg_white_round.svg" display="always" priority="2" symbol-percent="45"/>
     </rule>
-    <rule e="any" k="osmc_background" v="wmbg_yellow">
+    <rule e="any" k="osmc_background" v="wmbg_yellow|yellow">
       <symbol src="file:/osmc/bcg_yellow.svg" display="always" priority="2" symbol-percent="45"/>
     </rule>
-    <rule e="any" k="osmc_background" v="wmbg_yellow_circle">
+    <rule e="any" k="osmc_background" v="wmbg_yellow_circle|yellow_circle">
       <symbol src="file:/osmc/bcg_yellow_circle.svg" display="always" priority="2" symbol-percent="45"/>
     </rule>
-    <rule e="any" k="osmc_background" v="wmbg_yellow_frame">
+    <rule e="any" k="osmc_background" v="wmbg_yellow_frame|yellow_frame">
       <symbol src="file:/osmc/bcg_yellow_frame.svg" display="always" priority="2" symbol-percent="45"/>
     </rule>
-    <rule e="any" k="osmc_background" v="wmbg_yellow_round">
+    <rule e="any" k="osmc_background" v="wmbg_yellow_round|yellow_round">
       <symbol src="file:/osmc/bcg_yellow_round.svg" display="always" priority="2" symbol-percent="45"/>
     </rule>
-    <rule e="any" k="osmc_background" v="wmbg_gray">
+    <rule e="any" k="osmc_background" v="wmbg_gray|gray">
       <symbol src="file:/osmc/bcg_gray.svg" display="always" priority="2" symbol-percent="45"/>
     </rule>
-    <rule e="any" k="osmc_background" v="wmbg_gray_circle">
+    <rule e="any" k="osmc_background" v="wmbg_gray_circle|gray_circle">
       <symbol src="file:/osmc/bcg_gray_circle.svg" display="always" priority="2" symbol-percent="45"/>
     </rule>
-    <rule e="any" k="osmc_background" v="wmbg_gray_frame">
+    <rule e="any" k="osmc_background" v="wmbg_gray_frame|gray_frame">
       <symbol src="file:/osmc/bcg_gray_frame.svg" display="always" priority="2" symbol-percent="45"/>
     </rule>
-    <rule e="any" k="osmc_background" v="wmbg_gray_round">
+    <rule e="any" k="osmc_background" v="wmbg_gray_round|gray_round">
       <symbol src="file:/osmc/bcg_gray_round.svg" display="always" priority="2" symbol-percent="45"/>
     </rule>
-    <rule e="any" k="osmc_foreground" v="wmfg_blue_arch">
+    <rule e="any" k="osmc_foreground" v="wmfg_blue_arch|blue_arch">
       <symbol src="file:/osmc/frg_blue_arch.svg" display="always" priority="3" symbol-percent="45"/>
     </rule>
-    <rule e="any" k="osmc_foreground" v="wmfg_blue_backslash">
+    <rule e="any" k="osmc_foreground" v="wmfg_blue_backslash|blue_backslash">
       <symbol src="file:/osmc/frg_blue_backslash.svg" display="always" priority="3" symbol-percent="45"/>
     </rule>
-    <rule e="any" k="osmc_foreground" v="wmfg_blue_bar">
+    <rule e="any" k="osmc_foreground" v="wmfg_blue_bar|blue_bar">
       <symbol src="file:/osmc/frg_blue_bar.svg" display="always" priority="3" symbol-percent="45"/>
     </rule>
-    <rule e="any" k="osmc_foreground" v="wmfg_blue_bowl">
+    <rule e="any" k="osmc_foreground" v="wmfg_blue_bowl|blue_bowl">
       <symbol src="file:/osmc/frg_blue_bowl.svg" display="always" priority="3" symbol-percent="45"/>
     </rule>
-    <rule e="any" k="osmc_foreground" v="wmfg_blue_circle">
+    <rule e="any" k="osmc_foreground" v="wmfg_blue_circle|blue_circle">
       <symbol src="file:/osmc/frg_blue_circle.svg" display="always" priority="3" symbol-percent="45"/>
     </rule>
-    <rule e="any" k="osmc_foreground" v="wmfg_blue_corner">
+    <rule e="any" k="osmc_foreground" v="wmfg_blue_corner|blue_corner">
       <symbol src="file:/osmc/frg_blue_corner.svg" display="always" priority="3" symbol-percent="45"/>
     </rule>
-    <rule e="any" k="osmc_foreground" v="wmfg_blue_cross">
+    <rule e="any" k="osmc_foreground" v="wmfg_blue_cross|blue_cross">
       <symbol src="file:/osmc/frg_blue_cross.svg" display="always" priority="3" symbol-percent="45"/>
     </rule>
-    <rule e="any" k="osmc_foreground" v="wmfg_blue_diamond">
+    <rule e="any" k="osmc_foreground" v="wmfg_blue_diamond|blue_diamond">
       <symbol src="file:/osmc/frg_blue_diamond.svg" display="always" priority="3" symbol-percent="45"/>
     </rule>
-    <rule e="any" k="osmc_foreground" v="wmfg_blue_dot">
+    <rule e="any" k="osmc_foreground" v="wmfg_blue_dot|blue_dot">
       <symbol src="file:/osmc/frg_blue_dot.svg" display="always" priority="3" symbol-percent="45"/>
     </rule>
-    <rule e="any" k="osmc_foreground" v="wmfg_blue_fork">
+    <rule e="any" k="osmc_foreground" v="wmfg_blue_fork|blue_fork">
       <symbol src="file:/osmc/frg_blue_fork.svg" display="always" priority="3" symbol-percent="45"/>
     </rule>
-    <rule e="any" k="osmc_foreground" v="wmfg_blue_hiker">
+    <rule e="any" k="osmc_foreground" v="wmfg_blue_hiker|blue_hiker">
       <symbol src="file:/osmc/frg_blue_hiker.svg" display="always" priority="3" symbol-percent="45"/>
     </rule>
-    <rule e="any" k="osmc_foreground" v="wmfg_blue_l">
+    <rule e="any" k="osmc_foreground" v="wmfg_blue_l|blue_l">
       <symbol src="file:/osmc/frg_blue_L.svg" display="always" priority="3" symbol-percent="45"/>
     </rule>
-    <rule e="any" k="osmc_foreground" v="wmfg_blue_lower">
+    <rule e="any" k="osmc_foreground" v="wmfg_blue_lower|blue_lower">
       <symbol src="file:/osmc/frg_blue_lower.svg" display="always" priority="3" symbol-percent="45"/>
     </rule>
-    <rule e="any" k="osmc_foreground" v="wmfg_blue_pointer">
+    <rule e="any" k="osmc_foreground" v="wmfg_blue_pointer|blue_pointer">
       <symbol src="file:/osmc/frg_blue_pointer.svg" display="always" priority="3" symbol-percent="45"/>
     </rule>
-    <rule e="any" k="osmc_foreground" v="wmfg_blue_rectangle">
+    <rule e="any" k="osmc_foreground" v="wmfg_blue_rectangle|blue_rectangle">
       <symbol src="file:/osmc/frg_blue_rectangle.svg" display="always" priority="3" symbol-percent="45"/>
     </rule>
-    <rule e="any" k="osmc_foreground" v="wmfg_blue_right">
+    <rule e="any" k="osmc_foreground" v="wmfg_blue_right|blue_right">
       <symbol src="file:/osmc/frg_blue_right.svg" display="always" priority="3" symbol-percent="45"/>
     </rule>
-    <rule e="any" k="osmc_foreground" v="wmfg_blue_slash">
+    <rule e="any" k="osmc_foreground" v="wmfg_blue_slash|blue_slash">
       <symbol src="file:/osmc/frg_blue_slash.svg" display="always" priority="3" symbol-percent="45"/>
     </rule>
-    <rule e="any" k="osmc_foreground" v="wmfg_blue_stripe">
+    <rule e="any" k="osmc_foreground" v="wmfg_blue_stripe|blue_stripe">
       <symbol src="file:/osmc/frg_blue_stripe.svg" display="always" priority="3" symbol-percent="45"/>
     </rule>
-    <rule e="any" k="osmc_foreground" v="wmfg_blue_triangle">
+    <rule e="any" k="osmc_foreground" v="wmfg_blue_triangle|blue_triangle">
       <symbol src="file:/osmc/frg_blue_triangle.svg" display="always" priority="3" symbol-percent="45"/>
     </rule>
-    <rule e="any" k="osmc_foreground" v="wmfg_blue_triangle_line">
+    <rule e="any" k="osmc_foreground" v="wmfg_blue_triangle_line|blue_triangle_line">
       <symbol src="file:/osmc/frg_blue_triangle_line.svg" display="always" priority="3" symbol-percent="45"/>
     </rule>
-    <rule e="any" k="osmc_foreground" v="wmfg_blue_triangle_turned">
+    <rule e="any" k="osmc_foreground" v="wmfg_blue_triangle_turned|blue_triangle_turned">
       <symbol src="file:/osmc/frg_blue_triangle_turned.svg" display="always" priority="3" symbol-percent="45"/>
     </rule>
-    <rule e="any" k="osmc_foreground" v="wmfg_blue_turned_t">
+    <rule e="any" k="osmc_foreground" v="wmfg_blue_turned_t|blue_turned_t">
       <symbol src="file:/osmc/frg_blue_turned_T.svg" display="always" priority="3" symbol-percent="45"/>
     </rule>
-    <rule e="any" k="osmc_foreground" v="wmfg_blue_x">
+    <rule e="any" k="osmc_foreground" v="wmfg_blue_x|blue_x">
       <symbol src="file:/osmc/frg_blue_x.svg" display="always" priority="3" symbol-percent="45"/>
     </rule>
-    <rule e="any" k="osmc_foreground" v="wmfg_red_arch">
+    <rule e="any" k="osmc_foreground" v="wmfg_red_arch|red_arch">
       <symbol src="file:/osmc/frg_red_arch.svg" display="always" priority="3" symbol-percent="45"/>
     </rule>
-    <rule e="any" k="osmc_foreground" v="wmfg_red_backslash">
+    <rule e="any" k="osmc_foreground" v="wmfg_red_backslash|red_backslash">
       <symbol src="file:/osmc/frg_red_backslash.svg" display="always" priority="3" symbol-percent="45"/>
     </rule>
-    <rule e="any" k="osmc_foreground" v="wmfg_red_bar">
+    <rule e="any" k="osmc_foreground" v="wmfg_red_bar|red_bar">
       <symbol src="file:/osmc/frg_red_bar.svg" display="always" priority="3" symbol-percent="45"/>
     </rule>
-    <rule e="any" k="osmc_foreground" v="wmfg_red_circle">
+    <rule e="any" k="osmc_foreground" v="wmfg_red_circle|red_circle">
       <symbol src="file:/osmc/frg_red_circle.svg" display="always" priority="3" symbol-percent="45"/>
     </rule>
-    <rule e="any" k="osmc_foreground" v="wmfg_red_corner">
+    <rule e="any" k="osmc_foreground" v="wmfg_red_corner|red_corner">
       <symbol src="file:/osmc/frg_red_corner.svg" display="always" priority="3" symbol-percent="45"/>
     </rule>
-    <rule e="any" k="osmc_foreground" v="wmfg_red_crest">
+    <rule e="any" k="osmc_foreground" v="wmfg_red_crest|red_crest">
       <symbol src="file:/osmc/frg_red_crest.svg" display="always" priority="3" symbol-percent="45"/>
     </rule>
-    <rule e="any" k="osmc_foreground" v="wmfg_red_cross">
+    <rule e="any" k="osmc_foreground" v="wmfg_red_cross|red_cross">
       <symbol src="file:/osmc/frg_red_cross.svg" display="always" priority="3" symbol-percent="45"/>
     </rule>
-    <rule e="any" k="osmc_foreground" v="wmfg_red_diamond">
+    <rule e="any" k="osmc_foreground" v="wmfg_red_diamond|red_diamond">
       <symbol src="file:/osmc/frg_red_diamond.svg" display="always" priority="3" symbol-percent="45"/>
     </rule>
-    <rule e="any" k="osmc_foreground" v="wmfg_red_diamond_line">
+    <rule e="any" k="osmc_foreground" v="wmfg_red_diamond_line|red_diamond_line">
       <symbol src="file:/osmc/frg_red_diamond_line.svg" display="always" priority="3" symbol-percent="45"/>
     </rule>
-    <rule e="any" k="osmc_foreground" v="wmfg_red_dot">
+    <rule e="any" k="osmc_foreground" v="wmfg_red_dot|red_dot">
       <symbol src="file:/osmc/frg_red_dot.svg" display="always" priority="3" symbol-percent="45"/>
     </rule>
-    <rule e="any" k="osmc_foreground" v="wmfg_red_drop">
+    <rule e="any" k="osmc_foreground" v="wmfg_red_drop|red_drop">
       <symbol src="file:/osmc/frg_red_drop.svg" display="always" priority="3" symbol-percent="45"/>
     </rule>
-    <rule e="any" k="osmc_foreground" v="wmfg_red_drop_line">
+    <rule e="any" k="osmc_foreground" v="wmfg_red_drop_line|red_drop_line">
       <symbol src="file:/osmc/frg_red_drop_line.svg" display="always" priority="3" symbol-percent="45"/>
     </rule>
-    <rule e="any" k="osmc_foreground" v="wmfg_red_fork">
+    <rule e="any" k="osmc_foreground" v="wmfg_red_fork|red_fork">
       <symbol src="file:/osmc/frg_red_fork.svg" display="always" priority="3" symbol-percent="45"/>
     </rule>
-    <rule e="any" k="osmc_foreground" v="wmfg_red_hiker">
+    <rule e="any" k="osmc_foreground" v="wmfg_red_hiker|red_hiker">
       <symbol src="file:/osmc/frg_red_hiker.svg" display="always" priority="3" symbol-percent="45"/>
     </rule>
-    <rule e="any" k="osmc_foreground" v="wmfg_red_l">
+    <rule e="any" k="osmc_foreground" v="wmfg_red_l|red_l">
       <symbol src="file:/osmc/frg_red_L.svg" display="always" priority="3" symbol-percent="45"/>
     </rule>
-    <rule e="any" k="osmc_foreground" v="wmfg_red_lower">
+    <rule e="any" k="osmc_foreground" v="wmfg_red_lower|red_lower">
       <symbol src="file:/osmc/frg_red_lower.svg" display="always" priority="3" symbol-percent="45"/>
     </rule>
-    <rule e="any" k="osmc_foreground" v="wmfg_red_pointer">
+    <rule e="any" k="osmc_foreground" v="wmfg_red_pointer|red_pointer">
       <symbol src="file:/osmc/frg_red_pointer.svg" display="always" priority="3" symbol-percent="45"/>
     </rule>
-    <rule e="any" k="osmc_foreground" v="wmfg_red_rectangle">
+    <rule e="any" k="osmc_foreground" v="wmfg_red_rectangle|red_rectangle">
       <symbol src="file:/osmc/frg_red_rectangle.svg" display="always" priority="3" symbol-percent="45"/>
     </rule>
-    <rule e="any" k="osmc_foreground" v="wmfg_red_right">
+    <rule e="any" k="osmc_foreground" v="wmfg_red_right|red_right">
       <symbol src="file:/osmc/frg_red_right.svg" display="always" priority="3" symbol-percent="45"/>
     </rule>
-    <rule e="any" k="osmc_foreground" v="wmfg_red_shell">
+    <rule e="any" k="osmc_foreground" v="wmfg_red_shell|red_shell">
       <symbol src="file:/osmc/frg_red_shell.svg" display="always" priority="3" symbol-percent="45"/>
     </rule>
-    <rule e="any" k="osmc_foreground" v="wmfg_red_slash">
+    <rule e="any" k="osmc_foreground" v="wmfg_red_slash|red_slash">
       <symbol src="file:/osmc/frg_red_slash.svg" display="always" priority="3" symbol-percent="45"/>
     </rule>
-    <rule e="any" k="osmc_foreground" v="wmfg_red_stripe">
+    <rule e="any" k="osmc_foreground" v="wmfg_red_stripe|red_stripe">
       <symbol src="file:/osmc/frg_red_stripe.svg" display="always" priority="3" symbol-percent="45"/>
     </rule>
-    <rule e="any" k="osmc_foreground" v="wmfg_red_triangle">
+    <rule e="any" k="osmc_foreground" v="wmfg_red_triangle|red_triangle">
       <symbol src="file:/osmc/frg_red_triangle.svg" display="always" priority="3" symbol-percent="45"/>
     </rule>
-    <rule e="any" k="osmc_foreground" v="wmfg_red_triangle_line">
+    <rule e="any" k="osmc_foreground" v="wmfg_red_triangle_line|red_triangle_line">
       <symbol src="file:/osmc/frg_red_triangle_line.svg" display="always" priority="3" symbol-percent="45"/>
     </rule>
-    <rule e="any" k="osmc_foreground" v="wmfg_red_triangle_turned">
+    <rule e="any" k="osmc_foreground" v="wmfg_red_triangle_turned|red_triangle_turned">
       <symbol src="file:/osmc/frg_red_triangle_turned.svg" display="always" priority="3" symbol-percent="45"/>
     </rule>
-    <rule e="any" k="osmc_foreground" v="wmfg_red_turned_t">
+    <rule e="any" k="osmc_foreground" v="wmfg_red_turned_t|red_turned_t">
       <symbol src="file:/osmc/frg_red_turned_T.svg" display="always" priority="3" symbol-percent="45"/>
     </rule>
-    <rule e="any" k="osmc_foreground" v="wmfg_red_wheel">
+    <rule e="any" k="osmc_foreground" v="wmfg_red_wheel|red_wheel">
       <symbol src="file:/osmc/frg_red_wheel.svg" display="always" priority="3" symbol-percent="45"/>
     </rule>
-    <rule e="any" k="osmc_foreground" v="wmfg_red_x">
+    <rule e="any" k="osmc_foreground" v="wmfg_red_x|red_x">
       <symbol src="file:/osmc/frg_red_x.svg" display="always" priority="3" symbol-percent="45"/>
     </rule>
-    <rule e="any" k="osmc_foreground" v="wmfg_yellow_arch">
+    <rule e="any" k="osmc_foreground" v="wmfg_yellow_arch|yellow_arch">
       <symbol src="file:/osmc/frg_yellow_arch.svg" display="always" priority="3" symbol-percent="45"/>
     </rule>
-    <rule e="any" k="osmc_foreground" v="wmfg_yellow_backslash">
+    <rule e="any" k="osmc_foreground" v="wmfg_yellow_backslash|yellow_backslash">
       <symbol src="file:/osmc/frg_yellow_backslash.svg" display="always" priority="3" symbol-percent="45"/>
     </rule>
-    <rule e="any" k="osmc_foreground" v="wmfg_yellow_bar">
+    <rule e="any" k="osmc_foreground" v="wmfg_yellow_bar|yellow_bar">
       <symbol src="file:/osmc/frg_yellow_bar.svg" display="always" priority="3" symbol-percent="45"/>
     </rule>
-    <rule e="any" k="osmc_foreground" v="wmfg_yellow_bowl">
+    <rule e="any" k="osmc_foreground" v="wmfg_yellow_bowl|yellow_bowl">
       <symbol src="file:/osmc/frg_yellow_bowl.svg" display="always" priority="3" symbol-percent="45"/>
     </rule>
-    <rule e="any" k="osmc_foreground" v="wmfg_yellow_circle">
+    <rule e="any" k="osmc_foreground" v="wmfg_yellow_circle|yellow_circle">
       <symbol src="file:/osmc/frg_yellow_circle.svg" display="always" priority="3" symbol-percent="45"/>
     </rule>
-    <rule e="any" k="osmc_foreground" v="wmfg_yellow_corner">
+    <rule e="any" k="osmc_foreground" v="wmfg_yellow_corner|yellow_corner">
       <symbol src="file:/osmc/frg_yellow_corner.svg" display="always" priority="3" symbol-percent="45"/>
     </rule>
-    <rule e="any" k="osmc_foreground" v="wmfg_yellow_cross">
+    <rule e="any" k="osmc_foreground" v="wmfg_yellow_cross|yellow_cross">
       <symbol src="file:/osmc/frg_yellow_cross.svg" display="always" priority="3" symbol-percent="45"/>
     </rule>
-    <rule e="any" k="osmc_foreground" v="wmfg_yellow_diamond">
+    <rule e="any" k="osmc_foreground" v="wmfg_yellow_diamond|yellow_diamond">
       <symbol src="file:/osmc/frg_yellow_diamond.svg" display="always" priority="3" symbol-percent="45"/>
     </rule>
-    <rule e="any" k="osmc_foreground" v="wmfg_yellow_diamond_line">
+    <rule e="any" k="osmc_foreground" v="wmfg_yellow_diamond_line|yellow_diamond_line">
       <symbol src="file:/osmc/frg_yellow_diamond_line.svg" display="always" priority="3" symbol-percent="45"/>
     </rule>
-    <rule e="any" k="osmc_foreground" v="wmfg_yellow_dot">
+    <rule e="any" k="osmc_foreground" v="wmfg_yellow_dot|yellow_dot">
       <symbol src="file:/osmc/frg_yellow_dot.svg" display="always" priority="3" symbol-percent="45"/>
     </rule>
-    <rule e="any" k="osmc_foreground" v="wmfg_yellow_fork">
+    <rule e="any" k="osmc_foreground" v="wmfg_yellow_fork|yellow_fork">
       <symbol src="file:/osmc/frg_yellow_fork.svg" display="always" priority="3" symbol-percent="45"/>
     </rule>
-    <rule e="any" k="osmc_foreground" v="wmfg_yellow_hexagon">
+    <rule e="any" k="osmc_foreground" v="wmfg_yellow_hexagon|yellow_hexagon">
       <symbol src="file:/osmc/frg_yellow_hexagon.svg" display="always" priority="3" symbol-percent="45"/>
     </rule>
-    <rule e="any" k="osmc_foreground" v="wmfg_yellow_hiker">
+    <rule e="any" k="osmc_foreground" v="wmfg_yellow_hiker|yellow_hiker">
       <symbol src="file:/osmc/frg_yellow_hiker.svg" display="always" priority="3" symbol-percent="45"/>
     </rule>
-    <rule e="any" k="osmc_foreground" v="wmfg_yellow_l">
+    <rule e="any" k="osmc_foreground" v="wmfg_yellow_l|yellow_l">
       <symbol src="file:/osmc/frg_yellow_L.svg" display="always" priority="3" symbol-percent="45"/>
     </rule>
-    <rule e="any" k="osmc_foreground" v="wmfg_yellow_lower">
+    <rule e="any" k="osmc_foreground" v="wmfg_yellow_lower|yellow_lower">
       <symbol src="file:/osmc/frg_yellow_lower.svg" display="always" priority="3" symbol-percent="45"/>
     </rule>
-    <rule e="any" k="osmc_foreground" v="wmfg_yellow_pointer">
+    <rule e="any" k="osmc_foreground" v="wmfg_yellow_pointer|yellow_pointer">
       <symbol src="file:/osmc/frg_yellow_pointer.svg" display="always" priority="3" symbol-percent="45"/>
     </rule>
-    <rule e="any" k="osmc_foreground" v="wmfg_yellow_rectangle">
+    <rule e="any" k="osmc_foreground" v="wmfg_yellow_rectangle|yellow_rectangle">
       <symbol src="file:/osmc/frg_yellow_rectangle.svg" display="always" priority="3" symbol-percent="45"/>
     </rule>
-    <rule e="any" k="osmc_foreground" v="wmfg_yellow_rectangle_line">
+    <rule e="any" k="osmc_foreground" v="wmfg_yellow_rectangle_line|yellow_rectangle_line">
       <symbol src="file:/osmc/frg_yellow_rectangle_line.svg" display="always" priority="3" symbol-percent="45"/>
     </rule>
-    <rule e="any" k="osmc_foreground" v="wmfg_yellow_right">
+    <rule e="any" k="osmc_foreground" v="wmfg_yellow_right|yellow_right">
       <symbol src="file:/osmc/frg_yellow_right.svg" display="always" priority="3" symbol-percent="45"/>
     </rule>
-    <rule e="any" k="osmc_foreground" v="wmfg_yellow_shell">
+    <rule e="any" k="osmc_foreground" v="wmfg_yellow_shell|yellow_shell">
       <symbol src="file:/osmc/frg_yellow_shell.svg" display="always" priority="3" symbol-percent="45"/>
     </rule>
-    <rule e="any" k="osmc_foreground" v="wmfg_yellow_slash">
+    <rule e="any" k="osmc_foreground" v="wmfg_yellow_slash|yellow_slash">
       <symbol src="file:/osmc/frg_yellow_slash.svg" display="always" priority="3" symbol-percent="45"/>
     </rule>
-    <rule e="any" k="osmc_foreground" v="wmfg_yellow_stripe">
+    <rule e="any" k="osmc_foreground" v="wmfg_yellow_stripe|yellow_stripe">
       <symbol src="file:/osmc/frg_yellow_stripe.svg" display="always" priority="3" symbol-percent="45"/>
     </rule>
-    <rule e="any" k="osmc_foreground" v="wmfg_yellow_triangle">
+    <rule e="any" k="osmc_foreground" v="wmfg_yellow_triangle|yellow_triangle">
       <symbol src="file:/osmc/frg_yellow_triangle.svg" display="always" priority="3" symbol-percent="45"/>
     </rule>
-    <rule e="any" k="osmc_foreground" v="wmfg_yellow_triangle_line">
+    <rule e="any" k="osmc_foreground" v="wmfg_yellow_triangle_line|yellow_triangle_line">
       <symbol src="file:/osmc/frg_yellow_triangle_line.svg" display="always" priority="3" symbol-percent="45"/>
     </rule>
-    <rule e="any" k="osmc_foreground" v="wmfg_yellow_triangle_turned">
-      <symbol src="file:/osmc/frg_yellow_triang_turned.svg" display="always" priority="3" symbol-percent="45"/>
+    <rule e="any" k="osmc_foreground" v="wmfg_yellow_triangle_turned|yellow_triangle_turned">
+      <symbol src="file:/osmc/frg_yellow_triangle_turned.svg" display="always" priority="3" symbol-percent="45"/>
     </rule>
-    <rule e="any" k="osmc_foreground" v="wmfg_yellow_turned_t">
+    <rule e="any" k="osmc_foreground" v="wmfg_yellow_turned_t|yellow_turned_t">
       <symbol src="file:/osmc/frg_yellow_turned_T.svg" display="always" priority="3" symbol-percent="45"/>
     </rule>
-    <rule e="any" k="osmc_foreground" v="wmfg_yellow_x">
+    <rule e="any" k="osmc_foreground" v="wmfg_yellow_x|yellow_x">
       <symbol src="file:/osmc/frg_yellow_x.svg" display="always" priority="3" symbol-percent="45"/>
     </rule>
-    <rule e="any" k="osmc_foreground" v="wmfg_black_arch">
+    <rule e="any" k="osmc_foreground" v="wmfg_black_arch|black_arch|arch">
       <symbol src="file:/osmc/frg_black_arch.svg" display="always" priority="3" symbol-percent="45"/>
     </rule>
-    <rule e="any" k="osmc_foreground" v="wmfg_black_backslash">
+    <rule e="any" k="osmc_foreground" v="wmfg_black_backslash|black_backslash|backslash">
       <symbol src="file:/osmc/frg_black_backslash.svg" display="always" priority="3" symbol-percent="45"/>
     </rule>
-    <rule e="any" k="osmc_foreground" v="wmfg_black_bar">
+    <rule e="any" k="osmc_foreground" v="wmfg_black_bar|black_bar|bar">
       <symbol src="file:/osmc/frg_black_bar.svg" display="always" priority="3" symbol-percent="45"/>
     </rule>
-    <rule e="any" k="osmc_foreground" v="wmfg_black_circle">
+    <rule e="any" k="osmc_foreground" v="wmfg_black_circle|black_circle|circle">
       <symbol src="file:/osmc/frg_black_circle.svg" display="always" priority="3" symbol-percent="45"/>
     </rule>
-    <rule e="any" k="osmc_foreground" v="wmfg_black_corner">
+    <rule e="any" k="osmc_foreground" v="wmfg_black_corner|black_corner|corner">
       <symbol src="file:/osmc/frg_black_corner.svg" display="always" priority="3" symbol-percent="45"/>
     </rule>
-    <rule e="any" k="osmc_foreground" v="wmfg_black_crest">
+    <rule e="any" k="osmc_foreground" v="wmfg_black_crest|black_crest|crest">
       <symbol src="file:/osmc/frg_black_crest.svg" display="always" priority="3" symbol-percent="45"/>
     </rule>
-    <rule e="any" k="osmc_foreground" v="wmfg_black_cross">
+    <rule e="any" k="osmc_foreground" v="wmfg_black_cross|black_cross|cross">
       <symbol src="file:/osmc/frg_black_cross.svg" display="always" priority="3" symbol-percent="45"/>
     </rule>
-    <rule e="any" k="osmc_foreground" v="wmfg_black_diamond">
+    <rule e="any" k="osmc_foreground" v="wmfg_black_diamond|black_diamond|diamond">
       <symbol src="file:/osmc/frg_black_diamond.svg" display="always" priority="3" symbol-percent="45"/>
     </rule>
-    <rule e="any" k="osmc_foreground" v="wmfg_black_diamond_line">
+    <rule e="any" k="osmc_foreground" v="wmfg_black_diamond_line|black_diamond_line|diamond_line">
       <symbol src="file:/osmc/frg_black_diamond_line.svg" display="always" priority="3" symbol-percent="45"/>
     </rule>
-    <rule e="any" k="osmc_foreground" v="wmfg_black_dot">
+    <rule e="any" k="osmc_foreground" v="wmfg_black_dot|black_dot|dot">
       <symbol src="file:/osmc/frg_black_dot.svg" display="always" priority="3" symbol-percent="45"/>
     </rule>
-    <rule e="any" k="osmc_foreground" v="wmfg_black_fork">
+    <rule e="any" k="osmc_foreground" v="wmfg_black_fork|black_fork|fork">
       <symbol src="file:/osmc/frg_black_fork.svg" display="always" priority="3" symbol-percent="45"/>
     </rule>
-    <rule e="any" k="osmc_foreground" v="wmfg_black_hiker">
+    <rule e="any" k="osmc_foreground" v="wmfg_black_hiker|black_hiker|hiker">
       <symbol src="file:/osmc/frg_black_hiker.svg" display="always" priority="3" symbol-percent="45"/>
     </rule>
-    <rule e="any" k="osmc_foreground" v="wmfg_black_horse">
+    <rule e="any" k="osmc_foreground" v="wmfg_black_horse|black_horse|horse">
       <symbol src="file:/osmc/frg_black_horse.svg" display="always" priority="3" symbol-percent="45"/>
     </rule>
-    <rule e="any" k="osmc_foreground" v="wmfg_black_lower">
+    <rule e="any" k="osmc_foreground" v="wmfg_black_lower|black_horse|horse">
       <symbol src="file:/osmc/frg_black_lower.svg" display="always" priority="3" symbol-percent="45"/>
     </rule>
-    <rule e="any" k="osmc_foreground" v="wmfg_black_pointer">
+    <rule e="any" k="osmc_foreground" v="wmfg_black_pointer|black_pointer|pointer">
       <symbol src="file:/osmc/frg_black_pointer.svg" display="always" priority="3" symbol-percent="45"/>
     </rule>
-    <rule e="any" k="osmc_foreground" v="wmfg_black_rectangle">
+    <rule e="any" k="osmc_foreground" v="wmfg_black_rectangle|black_rectangle|rectangle">
       <symbol src="file:/osmc/frg_black_rectangle.svg" display="always" priority="3" symbol-percent="45"/>
     </rule>
-    <rule e="any" k="osmc_foreground" v="wmfg_black_rectangle_line">
+    <rule e="any" k="osmc_foreground" v="wmfg_black_rectangle_line|black_rectangle_line|rectangle_line">
       <symbol src="file:/osmc/frg_black_rectangle_line.svg" display="always" priority="3" symbol-percent="45"/>
     </rule>
-    <rule e="any" k="osmc_foreground" v="wmfg_black_red_diamond">
+    <rule e="any" k="osmc_foreground" v="wmfg_black_red_diamond|black_red_diamond">
       <symbol src="file:/osmc/frg_black_red_diamond.svg" display="always" priority="3" symbol-percent="45"/>
     </rule>
-    <rule e="any" k="osmc_foreground" v="wmfg_black_right">
+    <rule e="any" k="osmc_foreground" v="wmfg_black_right|black_right|right">
       <symbol src="file:/osmc/frg_black_right.svg" display="always" priority="3" symbol-percent="45"/>
     </rule>
-    <rule e="any" k="osmc_foreground" v="wmfg_black_stripe">
+    <rule e="any" k="osmc_foreground" v="wmfg_black_stripe|black_stripe|stripe">
       <symbol src="file:/osmc/frg_black_stripe.svg" display="always" priority="3" symbol-percent="45"/>
     </rule>
-    <rule e="any" k="osmc_foreground" v="wmfg_black_triangle">
+    <rule e="any" k="osmc_foreground" v="wmfg_black_triangle|black_triangle|triangle">
       <symbol src="file:/osmc/frg_black_triangle.svg" display="always" priority="3" symbol-percent="45"/>
     </rule>
-    <rule e="any" k="osmc_foreground" v="wmfg_black_triangle_line">
+    <rule e="any" k="osmc_foreground" v="wmfg_black_triangle_line|black_triangle_line|triangle_line">
       <symbol src="file:/osmc/frg_black_triangle_line.svg" display="always" priority="3" symbol-percent="45"/>
     </rule>
-    <rule e="any" k="osmc_foreground" v="wmfg_black_turned_t">
+    <rule e="any" k="osmc_foreground" v="wmfg_black_turned_t|black_turned_t|turned_t">
       <symbol src="file:/osmc/frg_black_turned_T.svg" display="always" priority="3" symbol-percent="45"/>
     </rule>
-    <rule e="any" k="osmc_foreground" v="wmfg_black_x">
+    <rule e="any" k="osmc_foreground" v="wmfg_black_x|black_x|x">
       <symbol src="file:/osmc/frg_black_x.svg" display="always" priority="3" symbol-percent="45"/>
     </rule>
-    <rule e="any" k="osmc_foreground" v="wmfg_green_arch">
+    <rule e="any" k="osmc_foreground" v="wmfg_green_arch|green_arch">
       <symbol src="file:/osmc/frg_green_arch.svg" display="always" priority="3" symbol-percent="45"/>
     </rule>
-    <rule e="any" k="osmc_foreground" v="wmfg_green_backslash">
+    <rule e="any" k="osmc_foreground" v="wmfg_green_backslash|green_backslash">
       <symbol src="file:/osmc/frg_green_backslash.svg" display="always" priority="3" symbol-percent="45"/>
     </rule>
-    <rule e="any" k="osmc_foreground" v="wmfg_green_bar">
+    <rule e="any" k="osmc_foreground" v="wmfg_green_bar|green_bar">
       <symbol src="file:/osmc/frg_green_bar.svg" display="always" priority="3" symbol-percent="45"/>
     </rule>
-    <rule e="any" k="osmc_foreground" v="wmfg_green_bowl">
+    <rule e="any" k="osmc_foreground" v="wmfg_green_bowl|green_bowl">
       <symbol src="file:/osmc/frg_green_bowl.svg" display="always" priority="3" symbol-percent="45"/>
     </rule>
-    <rule e="any" k="osmc_foreground" v="wmfg_green_circle">
+    <rule e="any" k="osmc_foreground" v="wmfg_green_circle|green_circle">
       <symbol src="file:/osmc/frg_green_circle.svg" display="always" priority="3" symbol-percent="45"/>
     </rule>
-    <rule e="any" k="osmc_foreground" v="wmfg_green_corner">
+    <rule e="any" k="osmc_foreground" v="wmfg_green_corner|green_corner">
       <symbol src="file:/osmc/frg_green_corner.svg" display="always" priority="3" symbol-percent="45"/>
     </rule>
-    <rule e="any" k="osmc_foreground" v="wmfg_green_cross">
+    <rule e="any" k="osmc_foreground" v="wmfg_green_cross|green_cross">
       <symbol src="file:/osmc/frg_green_cross.svg" display="always" priority="3" symbol-percent="45"/>
     </rule>
-    <rule e="any" k="osmc_foreground" v="wmfg_green_diamond">
+    <rule e="any" k="osmc_foreground" v="wmfg_green_diamond|green_diamond">
       <symbol src="file:/osmc/frg_green_diamond.svg" display="always" priority="3" symbol-percent="45"/>
     </rule>
-    <rule e="any" k="osmc_foreground" v="wmfg_green_diamond_line">
+    <rule e="any" k="osmc_foreground" v="wmfg_green_diamond_line|green_diamond_line">
       <symbol src="file:/osmc/frg_green_diamond_line.svg" display="always" priority="3" symbol-percent="45"/>
     </rule>
-    <rule e="any" k="osmc_foreground" v="wmfg_green_dot">
+    <rule e="any" k="osmc_foreground" v="wmfg_green_dot|green_dot">
       <symbol src="file:/osmc/frg_green_dot.svg" display="always" priority="3" symbol-percent="45"/>
     </rule>
-    <rule e="any" k="osmc_foreground" v="wmfg_green_drop_line">
+    <rule e="any" k="osmc_foreground" v="wmfg_green_drop_line|green_drop_line">
       <symbol src="file:/osmc/frg_green_drop_line.svg" display="always" priority="3" symbol-percent="45"/>
     </rule>
-    <rule e="any" k="osmc_foreground" v="wmfg_green_fork">
+    <rule e="any" k="osmc_foreground" v="wmfg_green_fork|green_fork">
       <symbol src="file:/osmc/frg_green_fork.svg" display="always" priority="3" symbol-percent="45"/>
     </rule>
-    <rule e="any" k="osmc_foreground" v="wmfg_green_hiker">
+    <rule e="any" k="osmc_foreground" v="wmfg_green_hiker|green_hiker">
       <symbol src="file:/osmc/frg_green_hiker.svg" display="always" priority="3" symbol-percent="45"/>
     </rule>
-    <rule e="any" k="osmc_foreground" v="wmfg_green_horse">
+    <rule e="any" k="osmc_foreground" v="wmfg_green_horse|green_horse">
       <symbol src="file:/osmc/frg_green_horse.svg" display="always" priority="3" symbol-percent="45"/>
     </rule>
-    <rule e="any" k="osmc_foreground" v="wmfg_green_l">
+    <rule e="any" k="osmc_foreground" v="wmfg_green_l|green_l">
       <symbol src="file:/osmc/frg_green_L.svg" display="always" priority="3" symbol-percent="45"/>
     </rule>
-    <rule e="any" k="osmc_foreground" v="wmfg_green_lower">
+    <rule e="any" k="osmc_foreground" v="wmfg_green_lower|green_lower">
       <symbol src="file:/osmc/frg_green_lower.svg" display="always" priority="3" symbol-percent="45"/>
     </rule>
-    <rule e="any" k="osmc_foreground" v="wmfg_green_pointer">
+    <rule e="any" k="osmc_foreground" v="wmfg_green_pointer|green_pointer">
       <symbol src="file:/osmc/frg_green_pointer.svg" display="always" priority="3" symbol-percent="45"/>
     </rule>
-    <rule e="any" k="osmc_foreground" v="wmfg_green_rectangle">
+    <rule e="any" k="osmc_foreground" v="wmfg_green_rectangle|green_rectangle">
       <symbol src="file:/osmc/frg_green_rectangle.svg" display="always" priority="3" symbol-percent="45"/>
     </rule>
-    <rule e="any" k="osmc_foreground" v="wmfg_green_right">
+    <rule e="any" k="osmc_foreground" v="wmfg_green_right|green_right">
       <symbol src="file:/osmc/frg_green_right.svg" display="always" priority="3" symbol-percent="45"/>
     </rule>
-    <rule e="any" k="osmc_foreground" v="wmfg_green_slash">
+    <rule e="any" k="osmc_foreground" v="wmfg_green_slash|green_slash">
       <symbol src="file:/osmc/frg_green_slash.svg" display="always" priority="3" symbol-percent="45"/>
     </rule>
-    <rule e="any" k="osmc_foreground" v="wmfg_green_stripe">
+    <rule e="any" k="osmc_foreground" v="wmfg_green_stripe|green_stripe">
       <symbol src="file:/osmc/frg_green_stripe.svg" display="always" priority="3" symbol-percent="45"/>
     </rule>
-    <rule e="any" k="osmc_foreground" v="wmfg_green_triangle">
+    <rule e="any" k="osmc_foreground" v="wmfg_green_triangle|green_triangle">
       <symbol src="file:/osmc/frg_green_triangle.svg" display="always" priority="3" symbol-percent="45"/>
     </rule>
-    <rule e="any" k="osmc_foreground" v="wmfg_green_triangle_line">
+    <rule e="any" k="osmc_foreground" v="wmfg_green_triangle_line|green_triangle_line">
       <symbol src="file:/osmc/frg_green_triangle_line.svg" display="always" priority="3" symbol-percent="45"/>
     </rule>
-    <rule e="any" k="osmc_foreground" v="wmfg_green_triangle_turned">
+    <rule e="any" k="osmc_foreground" v="wmfg_green_triangle_turned|green_triangle_turned">
       <symbol src="file:/osmc/frg_green_triangle_turned.svg" display="always" priority="3" symbol-percent="45"/>
     </rule>
-    <rule e="any" k="osmc_foreground" v="wmfg_green_turned_t">
+    <rule e="any" k="osmc_foreground" v="wmfg_green_turned_t|green_turned_t">
       <symbol src="file:/osmc/frg_green_turned_T.svg" display="always" priority="3" symbol-percent="45"/>
     </rule>
-    <rule e="any" k="osmc_foreground" v="wmfg_green_wheel">
+    <rule e="any" k="osmc_foreground" v="wmfg_green_wheel|green_wheel">
       <symbol src="file:/osmc/frg_green_wheel.svg" display="always" priority="3" symbol-percent="45"/>
     </rule>
-    <rule e="any" k="osmc_foreground" v="wmfg_green_x">
+    <rule e="any" k="osmc_foreground" v="wmfg_green_x|green_x">
       <symbol src="file:/osmc/frg_green_x.svg" display="always" priority="3" symbol-percent="45"/>
     </rule>
-    <rule e="any" k="osmc_foreground" v="wmfg_white_arch">
+    <rule e="any" k="osmc_foreground" v="wmfg_white_arch|white_arch">
       <symbol src="file:/osmc/frg_white_arch.svg" display="always" priority="3" symbol-percent="45"/>
     </rule>
-    <rule e="any" k="osmc_foreground" v="wmfg_white_backslash">
+    <rule e="any" k="osmc_foreground" v="wmfg_white_backslash|white_backslash">
       <symbol src="file:/osmc/frg_white_backslash.svg" display="always" priority="3" symbol-percent="45"/>
     </rule>
-    <rule e="any" k="osmc_foreground" v="wmfg_white_bar">
+    <rule e="any" k="osmc_foreground" v="wmfg_white_bar|white_bar">
       <symbol src="file:/osmc/frg_white_bar.svg" display="always" priority="3" symbol-percent="45"/>
     </rule>
-    <rule e="any" k="osmc_foreground" v="wmfg_white_circle">
+    <rule e="any" k="osmc_foreground" v="wmfg_white_circle|white_circle">
       <symbol src="file:/osmc/frg_white_circle.svg" display="always" priority="3" symbol-percent="45"/>
     </rule>
-    <rule e="any" k="osmc_foreground" v="wmfg_white_corner">
+    <rule e="any" k="osmc_foreground" v="wmfg_white_corner|white_corner">
       <symbol src="file:/osmc/frg_white_corner.svg" display="always" priority="3" symbol-percent="45"/>
     </rule>
-    <rule e="any" k="osmc_foreground" v="wmfg_white_cross">
+    <rule e="any" k="osmc_foreground" v="wmfg_white_cross|white_cross">
       <symbol src="file:/osmc/frg_white_cross.svg" display="always" priority="3" symbol-percent="45"/>
     </rule>
-    <rule e="any" k="osmc_foreground" v="wmfg_white_diamond">
+    <rule e="any" k="osmc_foreground" v="wmfg_white_diamond|white_diamond">
       <symbol src="file:/osmc/frg_white_diamond.svg" display="always" priority="3" symbol-percent="45"/>
     </rule>
-    <rule e="any" k="osmc_foreground" v="wmfg_white_diamond_line">
+    <rule e="any" k="osmc_foreground" v="wmfg_white_diamond_line|white_diamond_line">
       <symbol src="file:/osmc/frg_white_diamond_line.svg" display="always" priority="3" symbol-percent="45"/>
     </rule>
-    <rule e="any" k="osmc_foreground" v="wmfg_white_dot">
+    <rule e="any" k="osmc_foreground" v="wmfg_white_dot|white_dot">
       <symbol src="file:/osmc/frg_white_dot.svg" display="always" priority="3" symbol-percent="45"/>
     </rule>
-    <rule e="any" k="osmc_foreground" v="wmfg_white_hiker">
+    <rule e="any" k="osmc_foreground" v="wmfg_white_hiker|white_hiker">
       <symbol src="file:/osmc/frg_white_hiker.svg" display="always" priority="3" symbol-percent="45"/>
     </rule>
-    <rule e="any" k="osmc_foreground" v="wmfg_white_lower">
+    <rule e="any" k="osmc_foreground" v="wmfg_white_lower|white_lower">
       <symbol src="file:/osmc/frg_white_lower.svg" display="always" priority="3" symbol-percent="45"/>
     </rule>
-    <rule e="any" k="osmc_foreground" v="wmfg_white_pointer">
+    <rule e="any" k="osmc_foreground" v="wmfg_white_pointer|white_pointer">
       <symbol src="file:/osmc/frg_white_pointer.svg" display="always" priority="3" symbol-percent="45"/>
     </rule>
-    <rule e="any" k="osmc_foreground" v="wmfg_white_rectangle">
+    <rule e="any" k="osmc_foreground" v="wmfg_white_rectangle|white_rectangle">
       <symbol src="file:/osmc/frg_white_rectangle.svg" display="always" priority="3" symbol-percent="45"/>
     </rule>
-    <rule e="any" k="osmc_foreground" v="wmfg_white_rectangle_line">
+    <rule e="any" k="osmc_foreground" v="wmfg_white_rectangle_line|white_rectangle_line">
       <symbol src="file:/osmc/frg_white_rectangle_line.svg" display="always" priority="3" symbol-percent="45"/>
     </rule>
-    <rule e="any" k="osmc_foreground" v="wmfg_white_red_diamond">
+    <rule e="any" k="osmc_foreground" v="wmfg_white_red_diamond|white_red_diamond">
       <symbol src="file:/osmc/frg_white_red_diamond.svg" display="always" priority="3" symbol-percent="45"/>
     </rule>
-    <rule e="any" k="osmc_foreground" v="wmfg_white_right">
+    <rule e="any" k="osmc_foreground" v="wmfg_white_right|white_right">
       <symbol src="file:/osmc/frg_white_right.svg" display="always" priority="3" symbol-percent="45"/>
     </rule>
-    <rule e="any" k="osmc_foreground" v="wmfg_white_slash">
+    <rule e="any" k="osmc_foreground" v="wmfg_white_slash|white_slash">
       <symbol src="file:/osmc/frg_white_slash.svg" display="always" priority="3" symbol-percent="45"/>
     </rule>
-    <rule e="any" k="osmc_foreground" v="wmfg_white_stripe">
+    <rule e="any" k="osmc_foreground" v="wmfg_white_stripe|white_stripe">
       <symbol src="file:/osmc/frg_white_stripe.svg" display="always" priority="3" symbol-percent="45"/>
     </rule>
-    <rule e="any" k="osmc_foreground" v="wmfg_white_triangle">
+    <rule e="any" k="osmc_foreground" v="wmfg_white_triangle|white_triangle">
       <symbol src="file:/osmc/frg_white_triangle.svg" display="always" priority="3" symbol-percent="45"/>
     </rule>
-    <rule e="any" k="osmc_foreground" v="wmfg_white_triangle_line">
+    <rule e="any" k="osmc_foreground" v="wmfg_white_triangle_line|white_triangle_line">
       <symbol src="file:/osmc/frg_white_triangle_line.svg" display="always" priority="3" symbol-percent="45"/>
     </rule>
-    <rule e="any" k="osmc_foreground" v="wmfg_white_triangle_turned">
+    <rule e="any" k="osmc_foreground" v="wmfg_white_triangle_turned|white_triangle_turned">
       <symbol src="file:/osmc/frg_white_triangle_turned.svg" display="always" priority="3" symbol-percent="45"/>
     </rule>
-    <rule e="any" k="osmc_foreground" v="wmfg_white_turned_t">
+    <rule e="any" k="osmc_foreground" v="wmfg_white_turned_t|white_turned_t">
       <symbol src="file:/osmc/frg_white_turned_T.svg" display="always" priority="3" symbol-percent="45"/>
     </rule>
-    <rule e="any" k="osmc_foreground" v="wmfg_white_x">
+    <rule e="any" k="osmc_foreground" v="wmfg_white_x|white_x">
       <symbol src="file:/osmc/frg_white_x.svg" display="always" priority="3" symbol-percent="45"/>
     </rule>
-    <rule e="any" k="osmc_foreground" v="wmfg_brown_bar">
+    <rule e="any" k="osmc_foreground" v="wmfg_brown_bar|brown_bar">
       <symbol src="file:/osmc/frg_brown_bar.svg" display="always" priority="3" symbol-percent="45"/>
     </rule>
-    <rule e="any" k="osmc_foreground" v="wmfg_brown_diamond">
+    <rule e="any" k="osmc_foreground" v="wmfg_brown_diamond|brown_diamond">
       <symbol src="file:/osmc/frg_brown_diamond.svg" display="always" priority="3" symbol-percent="45"/>
     </rule>
-    <rule e="any" k="osmc_foreground" v="wmfg_brown_dot">
+    <rule e="any" k="osmc_foreground" v="wmfg_brown_dot|brown_dot">
       <symbol src="file:/osmc/frg_brown_dot.svg" display="always" priority="3" symbol-percent="45"/>
     </rule>
-    <rule e="any" k="osmc_foreground" v="wmfg_brown_hiker">
+    <rule e="any" k="osmc_foreground" v="wmfg_brown_hiker|brown_hiker">
       <symbol src="file:/osmc/frg_brown_hiker.svg" display="always" priority="3" symbol-percent="45"/>
     </rule>
-    <rule e="any" k="osmc_foreground" v="wmfg_brown_lower">
+    <rule e="any" k="osmc_foreground" v="wmfg_brown_lower|brown_lower">
       <symbol src="file:/osmc/frg_brown_lower.svg" display="always" priority="3" symbol-percent="45"/>
     </rule>
-    <rule e="any" k="osmc_foreground" v="wmfg_brown_pointer">
+    <rule e="any" k="osmc_foreground" v="wmfg_brown_pointer|brown_pointer">
       <symbol src="file:/osmc/frg_brown_pointer.svg" display="always" priority="3" symbol-percent="45"/>
     </rule>
-    <rule e="any" k="osmc_foreground" v="wmfg_brown_rectangle">
+    <rule e="any" k="osmc_foreground" v="wmfg_brown_rectangle|brown_rectangle">
       <symbol src="file:/osmc/frg_brown_rectangle.svg" display="always" priority="3" symbol-percent="45"/>
     </rule>
-    <rule e="any" k="osmc_foreground" v="wmfg_brown_stripe">
+    <rule e="any" k="osmc_foreground" v="wmfg_brown_stripe|brown_stripe">
       <symbol src="file:/osmc/frg_brown_stripe.svg" display="always" priority="3" symbol-percent="45"/>
     </rule>
-    <rule e="any" k="osmc_foreground" v="wmfg_brown_x">
+    <rule e="any" k="osmc_foreground" v="wmfg_brown_x|brown_x">
       <symbol src="file:/osmc/frg_brown_x.svg" display="always" priority="3" symbol-percent="45"/>
     </rule>
-    <rule e="any" k="osmc_foreground" v="wmfg_gray_bar">
+    <rule e="any" k="osmc_foreground" v="wmfg_gray_bar|gray_bar">
       <symbol src="file:/osmc/frg_gray_bar.svg" display="always" priority="3" symbol-percent="45"/>
     </rule>
-    <rule e="any" k="osmc_foreground" v="wmfg_gray_pointer">
+    <rule e="any" k="osmc_foreground" v="wmfg_gray_pointer|gray_pointer">
       <symbol src="file:/osmc/frg_gray_pointer.svg" display="always" priority="3" symbol-percent="45"/>
     </rule>
-    <rule e="any" k="osmc_foreground" v="wmfg_gray_triangle">
+    <rule e="any" k="osmc_foreground" v="wmfg_gray_triangle|gray_triangle">
       <symbol src="file:/osmc/frg_gray_triangle.svg" display="always" priority="3" symbol-percent="45"/>
     </rule>
-    <rule e="any" k="osmc_foreground" v="wmfg_orange_bar">
+    <rule e="any" k="osmc_foreground" v="wmfg_orange_bar|orange_bar">
       <symbol src="file:/osmc/frg_orange_bar.svg" display="always" priority="3" symbol-percent="45"/>
     </rule>
-    <rule e="any" k="osmc_foreground" v="wmfg_orange_circle">
+    <rule e="any" k="osmc_foreground" v="wmfg_orange_circle|orange_circle">
       <symbol src="file:/osmc/frg_orange_circle.svg" display="always" priority="3" symbol-percent="45"/>
     </rule>
-    <rule e="any" k="osmc_foreground" v="wmfg_orange_cross">
+    <rule e="any" k="osmc_foreground" v="wmfg_orange_cross|orange_cross">
       <symbol src="file:/osmc/frg_orange_cross.svg" display="always" priority="3" symbol-percent="45"/>
     </rule>
-    <rule e="any" k="osmc_foreground" v="wmfg_orange_diamond">
+    <rule e="any" k="osmc_foreground" v="wmfg_orange_diamond|orange_diamond">
       <symbol src="file:/osmc/frg_orange_diamond.svg" display="always" priority="3" symbol-percent="45"/>
     </rule>
-    <rule e="any" k="osmc_foreground" v="wmfg_orange_diamond_line">
+    <rule e="any" k="osmc_foreground" v="wmfg_orange_diamond_line|orange_diamond_line">
       <symbol src="file:/osmc/frg_orange_diamond_line.svg" display="always" priority="3" symbol-percent="45"/>
     </rule>
-    <rule e="any" k="osmc_foreground" v="wmfg_orange_dot">
+    <rule e="any" k="osmc_foreground" v="wmfg_orange_dot|orange_dot">
       <symbol src="file:/osmc/frg_orange_dot.svg" display="always" priority="3" symbol-percent="45"/>
     </rule>
-    <rule e="any" k="osmc_foreground" v="wmfg_orange_hexagon">
-      <symbol src="file:/osmc/frg_orange_hexagone.svg" display="always" priority="3" symbol-percent="45"/>
+    <rule e="any" k="osmc_foreground" v="wmfg_orange_hexagon|orange_hexagon">
+      <symbol src="file:/osmc/frg_orange_hexagon.svg" display="always" priority="3" symbol-percent="45"/>
     </rule>
-    <rule e="any" k="osmc_foreground" v="wmfg_orange_hiker">
+    <rule e="any" k="osmc_foreground" v="wmfg_orange_hiker|orange_hiker">
       <symbol src="file:/osmc/frg_orange_hiker.svg" display="always" priority="3" symbol-percent="45"/>
     </rule>
-    <rule e="any" k="osmc_foreground" v="wmfg_orange_lower">
+    <rule e="any" k="osmc_foreground" v="wmfg_orange_lower|orange_lower">
       <symbol src="file:/osmc/frg_orange_lower.svg" display="always" priority="3" symbol-percent="45"/>
     </rule>
-    <rule e="any" k="osmc_foreground" v="wmfg_orange_pointer">
+    <rule e="any" k="osmc_foreground" v="wmfg_orange_pointer|orange_pointer">
       <symbol src="file:/osmc/frg_orange_pointer.svg" display="always" priority="3" symbol-percent="45"/>
     </rule>
-    <rule e="any" k="osmc_foreground" v="wmfg_orange_rectangle">
+    <rule e="any" k="osmc_foreground" v="wmfg_orange_rectangle|orange_rectangle">
       <symbol src="file:/osmc/frg_orange_rectangle.svg" display="always" priority="3" symbol-percent="45"/>
     </rule>
-    <rule e="any" k="osmc_foreground" v="wmfg_orange_right">
+    <rule e="any" k="osmc_foreground" v="wmfg_orange_right|orange_right">
       <symbol src="file:/osmc/frg_orange_right.svg" display="always" priority="3" symbol-percent="45"/>
     </rule>
-    <rule e="any" k="osmc_foreground" v="wmfg_orange_stripe">
+    <rule e="any" k="osmc_foreground" v="wmfg_orange_stripe|orange_stripe">
       <symbol src="file:/osmc/frg_orange_stripe.svg" display="always" priority="3" symbol-percent="45"/>
     </rule>
-    <rule e="any" k="osmc_foreground" v="wmfg_orange_triangle">
+    <rule e="any" k="osmc_foreground" v="wmfg_orange_triangle|orange_triangle">
       <symbol src="file:/osmc/frg_orange_triangle.svg" display="always" priority="3" symbol-percent="45"/>
     </rule>
-    <rule e="any" k="osmc_foreground" v="wmfg_purple_bar">
+    <rule e="any" k="osmc_foreground" v="wmfg_purple_bar|purple_bar">
       <symbol src="file:/osmc/frg_purple_bar.svg" display="always" priority="3" symbol-percent="45"/>
     </rule>
-    <rule e="any" k="osmc_foreground" v="wmfg_purple_circle">
+    <rule e="any" k="osmc_foreground" v="wmfg_purple_circle|purple_circle">
       <symbol src="file:/osmc/frg_purple_circle.svg" display="always" priority="3" symbol-percent="45"/>
     </rule>
-    <rule e="any" k="osmc_foreground" v="wmfg_purple_diamond">
+    <rule e="any" k="osmc_foreground" v="wmfg_purple_diamond|purple_diamond">
       <symbol src="file:/osmc/frg_purple_diamond.svg" display="always" priority="3" symbol-percent="45"/>
     </rule>
-    <rule e="any" k="osmc_foreground" v="wmfg_purple_dot">
+    <rule e="any" k="osmc_foreground" v="wmfg_purple_dot|purple_dot">
       <symbol src="file:/osmc/frg_purple_dot.svg" display="always" priority="3" symbol-percent="45"/>
     </rule>
-    <rule e="any" k="osmc_foreground" v="wmfg_purple_lower">
+    <rule e="any" k="osmc_foreground" v="wmfg_purple_lower|purple_lower">
       <symbol src="file:/osmc/frg_purple_lower.svg" display="always" priority="3" symbol-percent="45"/>
     </rule>
-    <rule e="any" k="osmc_foreground" v="wmfg_purple_pointer">
+    <rule e="any" k="osmc_foreground" v="wmfg_purple_pointer|purple_pointer">
       <symbol src="file:/osmc/frg_purple_pointer.svg" display="always" priority="3" symbol-percent="45"/>
     </rule>
-    <rule e="any" k="osmc_foreground" v="wmfg_purple_rectangle">
+    <rule e="any" k="osmc_foreground" v="wmfg_purple_rectangle|purple_rectangle">
       <symbol src="file:/osmc/frg_purple_rectangle.svg" display="always" priority="3" symbol-percent="45"/>
     </rule>
-    <rule e="any" k="osmc_foreground" v="wmfg_purple_stripe">
+    <rule e="any" k="osmc_foreground" v="wmfg_purple_stripe|purple_stripe">
       <symbol src="file:/osmc/frg_purple_stripe.svg" display="always" priority="3" symbol-percent="45"/>
     </rule>
-    <rule e="any" k="osmc_foreground" v="wmfg_purple_triangle">
+    <rule e="any" k="osmc_foreground" v="wmfg_purple_triangle|purple_triangle">
       <symbol src="file:/osmc/frg_purple_triangle.svg" display="always" priority="3" symbol-percent="45"/>
     </rule>
-    <rule e="any" k="osmc_foreground" v="wmfg_ammonit">
+    <rule e="any" k="osmc_foreground" v="wmfg_ammonit|wmfg_ammonit">
       <symbol src="file:/osmc/frg_ammonit.svg" display="always" priority="3" symbol-percent="45"/>
     </rule>
-    <rule e="any" k="osmc_foreground" v="wmfg_bridleway">
+    <rule e="any" k="osmc_foreground" v="wmfg_bridleway|bridleway">
       <symbol src="file:/osmc/frg_bridleway.svg" display="always" priority="3" symbol-percent="45"/>
     </rule>
-    <rule e="any" k="osmc_foreground" v="wmfg_heart">
+    <rule e="any" k="osmc_foreground" v="wmfg_heart|heart">
       <symbol src="file:/osmc/frg_heart.svg" display="always" priority="3" symbol-percent="45"/>
     </rule>
-    <rule e="any" k="osmc_foreground" v="wmfg_hiker">
+    <rule e="any" k="osmc_foreground" v="wmfg_hiker|hiker">
       <symbol src="file:/osmc/frg_hiker.svg" display="always" priority="3" symbol-percent="45"/>
     </rule>
-    <rule e="any" k="osmc_foreground" v="wmfg_mine">
+    <rule e="any" k="osmc_foreground" v="wmfg_mine|mine">
       <symbol src="file:/osmc/frg_mine.svg" display="always" priority="3" symbol-percent="45"/>
     </rule>
-    <rule e="any" k="osmc_foreground" v="wmfg_shell">
+    <rule e="any" k="osmc_foreground" v="wmfg_shell|shell">
       <symbol src="file:/osmc/frg_shell.svg" display="always" priority="3" symbol-percent="45"/>
     </rule>
-    <rule e="any" k="osmc_foreground" v="wmfg_shell_modern">
+    <rule e="any" k="osmc_foreground" v="wmfg_shell_modern|shell_modern">
       <symbol src="file:/osmc/frg_shell_modern.svg" display="always" priority="3" symbol-percent="45"/>
     </rule>
-    <rule e="any" k="osmc_foreground" v="wmfg_tower">
+    <rule e="any" k="osmc_foreground" v="wmfg_tower|tower">
       <symbol src="file:/osmc/frg_tower.svg" display="always" priority="3" symbol-percent="45"/>
     </rule>
-    <rule e="any" k="osmc_foreground" v="wmfg_wolfshook">
+    <rule e="any" k="osmc_foreground" v="wmfg_wolfshook|wolfshook">
       <symbol src="file:/osmc/frg_wolfshook.svg" display="always" priority="3" symbol-percent="45"/>
     </rule>
     <rule e="any" k="osmc_foreground" v="~|no|false">
       <rule e="any" k="osmc_textcolor" v="~|wmtc_black">
         <rule e="any" k="osmc_text_len" v="wmtl_1|wmtl_2">
-          <caption k="name" priority="4" display="always" font-size="7" position="center" font-style="bold" fill="#000000" stroke="#E5FFFFFF" stroke-width="1.0"/>
+          <caption k="name" priority="4" display="always" font-size="7" font-style="bold" fill="#000000" stroke="#E5FFFFFF" stroke-width="1.0"/>
         </rule>
         <rule e="any" k="osmc_text_len" v="wmtl_3|wmtl_4|wmtl_5">
-          <caption k="name" priority="4" display="always" font-size="6" position="center" font-style="bold" fill="#000000" stroke="#E5FFFFFF" stroke-width="1.0"/>
+          <caption k="name" priority="4" display="always" font-size="6" font-style="bold" fill="#000000" stroke="#E5FFFFFF" stroke-width="1.0"/>
         </rule>
       </rule>
       <rule e="any" k="osmc_textcolor" v="wmtc_red">
         <rule e="any" k="osmc_text_len" v="wmtl_1|wmtl_2">
-          <caption k="name" priority="4" display="always" font-size="7" position="center" font-style="bold" fill="#FF3333" stroke="#E5FFFFFF" stroke-width="1.0"/>
+          <caption k="name" priority="4" display="always" font-size="7" font-style="bold" fill="#FF3333" stroke="#E5FFFFFF" stroke-width="1.0"/>
         </rule>
         <rule e="any" k="osmc_text_len" v="wmtl_3|wmtl_4|wmtl_5">
-          <caption k="name" priority="4" display="always" font-size="6" position="center" font-style="bold" fill="#FF3333" stroke="#E5FFFFFF" stroke-width="1.0"/>
+          <caption k="name" priority="4" display="always" font-size="6" font-style="bold" fill="#FF3333" stroke="#E5FFFFFF" stroke-width="1.0"/>
         </rule>
       </rule>
       <rule e="any" k="osmc_textcolor" v="wmtc_green">
         <rule e="any" k="osmc_text_len" v="wmtl_1|wmtl_2">
-          <caption k="name" priority="4" display="always" font-size="7" position="center" font-style="bold" fill="#267F00" stroke="#E5FFFFFF" stroke-width="1.0"/>
+          <caption k="name" priority="4" display="always" font-size="7" font-style="bold" fill="#267F00" stroke="#E5FFFFFF" stroke-width="1.0"/>
         </rule>
         <rule e="any" k="osmc_text_len" v="wmtl_3|wmtl_4|wmtl_5">
-          <caption k="name" priority="4" display="always" font-size="6" position="center" font-style="bold" fill="#267F00" stroke="#E5FFFFFF" stroke-width="1.0"/>
+          <caption k="name" priority="4" display="always" font-size="6" font-style="bold" fill="#267F00" stroke="#E5FFFFFF" stroke-width="1.0"/>
         </rule>
       </rule>
       <rule e="any" k="osmc_textcolor" v="wmtc_blue">
         <rule e="any" k="osmc_text_len" v="wmtl_1|wmtl_2">
-          <caption k="name" priority="4" display="always" font-size="7" position="center" font-style="bold" fill="#0242C1" stroke="#E5FFFFFF" stroke-width="1.0"/>
+          <caption k="name" priority="4" display="always" font-size="7" font-style="bold" fill="#0242C1" stroke="#E5FFFFFF" stroke-width="1.0"/>
         </rule>
         <rule e="any" k="osmc_text_len" v="wmtl_3|wmtl_4|wmtl_5">
-          <caption k="name" priority="4" display="always" font-size="6" position="center" font-style="bold" fill="#0242C1" stroke="#E5FFFFFF" stroke-width="1.0"/>
+          <caption k="name" priority="4" display="always" font-size="6" font-style="bold" fill="#0242C1" stroke="#E5FFFFFF" stroke-width="1.0"/>
         </rule>
       </rule>
       <rule e="any" k="osmc_textcolor" v="wmtc_brown">
         <rule e="any" k="osmc_text_len" v="wmtl_1|wmtl_2">
-          <caption k="name" priority="4" display="always" font-size="7" position="center" font-style="bold" fill="#BC6823" stroke="#E5FFFFFF" stroke-width="1.0"/>
+          <caption k="name" priority="4" display="always" font-size="7" font-style="bold" fill="#BC6823" stroke="#E5FFFFFF" stroke-width="1.0"/>
         </rule>
         <rule e="any" k="osmc_text_len" v="wmtl_3|wmtl_4|wmtl_5">
-          <caption k="name" priority="4" display="always" font-size="6" position="center" font-style="bold" fill="#BC6823" stroke="#E5FFFFFF" stroke-width="1.0"/>
+          <caption k="name" priority="4" display="always" font-size="6" font-style="bold" fill="#BC6823" stroke="#E5FFFFFF" stroke-width="1.0"/>
         </rule>
       </rule>
       <rule e="any" k="osmc_textcolor" v="wmtc_orange">
         <rule e="any" k="osmc_text_len" v="wmtl_1|wmtl_2">
-          <caption k="name" priority="4" display="always" font-size="7" position="center" font-style="bold" fill="#EB8D00" stroke="#E5FFFFFF" stroke-width="1.0"/>
+          <caption k="name" priority="4" display="always" font-size="7" font-style="bold" fill="#EB8D00" stroke="#E5FFFFFF" stroke-width="1.0"/>
         </rule>
         <rule e="any" k="osmc_text_len" v="wmtl_3|wmtl_4|wmtl_5">
-          <caption k="name" priority="4" display="always" font-size="6" position="center" font-style="bold" fill="#EB8D00" stroke="#E5FFFFFF" stroke-width="1.0"/>
+          <caption k="name" priority="4" display="always" font-size="6" font-style="bold" fill="#EB8D00" stroke="#E5FFFFFF" stroke-width="1.0"/>
         </rule>
       </rule>
       <rule e="any" k="osmc_textcolor" v="wmtc_purple">
         <rule e="any" k="osmc_text_len" v="wmtl_1|wmtl_2">
-          <caption k="name" priority="4" display="always" font-size="7" position="center" font-style="bold" fill="#C17FFF" stroke="#E5FFFFFF" stroke-width="1.0"/>
+          <caption k="name" priority="4" display="always" font-size="7" font-style="bold" fill="#C17FFF" stroke="#E5FFFFFF" stroke-width="1.0"/>
         </rule>
         <rule e="any" k="osmc_text_len" v="wmtl_3|wmtl_4|wmtl_5">
-          <caption k="name" priority="4" display="always" font-size="6" position="center" font-style="bold" fill="#C17FFF" stroke="#E5FFFFFF" stroke-width="1.0"/>
+          <caption k="name" priority="4" display="always" font-size="6" font-style="bold" fill="#C17FFF" stroke="#E5FFFFFF" stroke-width="1.0"/>
         </rule>
       </rule>
       <rule e="any" k="osmc_textcolor" v="wmtc_white">
         <rule e="any" k="osmc_text_len" v="wmtl_1|wmtl_2">
-          <caption k="name" priority="4" display="always" font-size="7" position="center" font-style="bold" fill="#FFFFFF" stroke="#E5000000" stroke-width="1.0"/>
+          <caption k="name" priority="4" display="always" font-size="7" font-style="bold" fill="#FFFFFF" stroke="#E5000000" stroke-width="1.0"/>
         </rule>
         <rule e="any" k="osmc_text_len" v="wmtl_3|wmtl_4|wmtl_5">
-          <caption k="name" priority="4" display="always" font-size="6" position="center" font-style="bold" fill="#FFFFFF" stroke="#E5000000" stroke-width="1.0"/>
+          <caption k="name" priority="4" display="always" font-size="6" font-style="bold" fill="#FFFFFF" stroke="#E5000000" stroke-width="1.0"/>
         </rule>
       </rule>
       <rule e="any" k="osmc_textcolor" v="wmtc_yellow">
         <rule e="any" k="osmc_text_len" v="wmtl_1|wmtl_2">
-          <caption k="name" priority="4" display="always" font-size="7" position="center" font-style="bold" fill="#F2DB0A" stroke="#E5000000" stroke-width="1.0"/>
+          <caption k="name" priority="4" display="always" font-size="7" font-style="bold" fill="#F2DB0A" stroke="#E5000000" stroke-width="1.0"/>
         </rule>
         <rule e="any" k="osmc_text_len" v="wmtl_3|wmtl_4|wmtl_5">
-          <caption k="name" priority="4" display="always" font-size="6" position="center" font-style="bold" fill="#F2DB0A" stroke="#E5000000" stroke-width="1.0"/>
+          <caption k="name" priority="4" display="always" font-size="6" font-style="bold" fill="#F2DB0A" stroke="#E5000000" stroke-width="1.0"/>
         </rule>
       </rule>
       <rule e="any" k="osmc_textcolor" v="wmtc_grey">
         <rule e="any" k="osmc_text_len" v="wmtl_1|wmtl_2">
-          <caption k="name" priority="4" display="always" font-size="7" position="center" font-style="bold" fill="#CCCCCC" stroke="#E5000000" stroke-width="1.0"/>
+          <caption k="name" priority="4" display="always" font-size="7" font-style="bold" fill="#CCCCCC" stroke="#E5000000" stroke-width="1.0"/>
         </rule>
         <rule e="any" k="osmc_text_len" v="wmtl_3|wmtl_4|wmtl_5">
-          <caption k="name" priority="4" display="always" font-size="6" position="center" font-style="bold" fill="#CCCCCC" stroke="#E5000000" stroke-width="1.0"/>
+          <caption k="name" priority="4" display="always" font-size="6" font-style="bold" fill="#CCCCCC" stroke="#E5000000" stroke-width="1.0"/>
         </rule>
       </rule>
     </rule>
