@@ -824,10 +824,10 @@
   </rule>
   <rule e="way" k="tunnel" v="yes">
     <rule e="way" k="railway" v="subway" zoom-min="13" cat="pub_transp">
-      <line stroke="#50BF8F93" stroke-width="0.5" stroke-dasharray="8,6" stroke-linecap="butt"/>
+      <line stroke="#508c5c60" stroke-width="0.5" stroke-dasharray="8,6" stroke-linecap="butt"/>
     </rule>
     <rule e="way" k="railway" v="tram|light_rail" zoom-min="13" cat="pub_transp">
-      <line stroke="#50BF8F93" stroke-width="0.5" stroke-dasharray="8,6" stroke-linecap="butt"/>
+      <line stroke="#508c5c60" stroke-width="0.5" stroke-dasharray="8,6" stroke-linecap="butt"/>
     </rule>
     <rule e="way" k="railway" v="narrow_gauge" zoom-min="13">
       <line stroke="#90FC0101" stroke-width="0.3" stroke-dasharray="4,4" stroke-linecap="butt"/>
@@ -836,7 +836,7 @@
       <line stroke="#90FC0101" stroke-width="0.3" stroke-dasharray="4,4" stroke-linecap="butt"/>
     </rule>
     <rule e="way" k="railway" v="rail" zoom-min="12">
-      <line stroke="#50BF8F93" stroke-width="0.7" stroke-dasharray="12,8" stroke-linecap="butt"/>
+      <line stroke="#508c5c60" stroke-width="0.7" stroke-dasharray="12,8" stroke-linecap="butt"/>
     </rule>
   </rule>
   <rule e="way" k="railway|public_transport" v="platform" zoom-min="13">
@@ -870,46 +870,46 @@
         </rule>
       </rule>
       <rule e="way" k="railway" v="rail" zoom-min="12" zoom-max="15">
-        <line stroke="#BF8F93" stroke-width="0.4" stroke-linecap="butt"/>
+        <line stroke="#8c5c60" stroke-width="0.4" stroke-linecap="butt"/>
       </rule>
       <rule e="way" k="railway" v="rail" zoom-min="16">
-        <line stroke="#BF8F93" stroke-width="0.7" stroke-linecap="butt"/>
+        <line stroke="#8c5c60" stroke-width="0.7" stroke-linecap="butt"/>
         <line stroke="#FFFFFF" stroke-width="0.5" stroke-dasharray="8,12" stroke-linecap="butt"/>
       </rule>
       <rule e="way" k="railway" v="tram" zoom-min="13" cat="pub_transp">
-        <line stroke="#BF8F93" stroke-width="0.5" stroke-linecap="butt"/>
+        <line stroke="#8c5c60" stroke-width="0.5" stroke-linecap="butt"/>
         <line stroke="#FFFFFF" stroke-width="0.3" stroke-dasharray="6,8" stroke-linecap="butt"/>
       </rule>
       <rule e="way" k="railway" v="subway" zoom-min="13" cat="pub_transp">
-        <line stroke="#BF8F93" stroke-width="0.5" stroke-linecap="butt"/>
+        <line stroke="#8c5c60" stroke-width="0.5" stroke-linecap="butt"/>
         <line stroke="#FFFFFF" stroke-width="0.3" stroke-dasharray="6,8" stroke-linecap="butt"/>
       </rule>
       <rule e="way" k="railway" v="light_rail" zoom-min="13" zoom-max="15">
-        <line stroke="#BF8F93" stroke-width="0.3" stroke-linecap="butt"/>
+        <line stroke="#8c5c60" stroke-width="0.3" stroke-linecap="butt"/>
       </rule>
       <rule e="way" k="railway" v="light_rail" zoom-min="16">
-        <line stroke="#BF8F93" stroke-width="0.5" stroke-linecap="butt"/>
+        <line stroke="#8c5c60" stroke-width="0.5" stroke-linecap="butt"/>
         <line stroke="#FFFFFF" stroke-width="0.3" stroke-dasharray="6,8" stroke-linecap="butt"/>
       </rule>
       <rule e="way" k="railway" v="narrow_gauge" zoom-min="13" zoom-max="15">
-        <line stroke="#BF8F93" stroke-width="0.3" stroke-linecap="butt"/>
+        <line stroke="#8c5c60" stroke-width="0.3" stroke-linecap="butt"/>
       </rule>
       <rule e="way" k="railway" v="narrow_gauge" zoom-min="16">
-        <line stroke="#BF8F93" stroke-width="0.5" stroke-linecap="butt"/>
+        <line stroke="#8c5c60" stroke-width="0.5" stroke-linecap="butt"/>
         <line stroke="#FFFFFF" stroke-width="0.3" stroke-dasharray="6,8" stroke-linecap="butt"/>
       </rule>
       <rule e="way" k="railway" v="funicular" zoom-min="13" zoom-max="15">
-        <line stroke="#BF8F93" stroke-width="0.3" stroke-linecap="butt"/>
+        <line stroke="#8c5c60" stroke-width="0.3" stroke-linecap="butt"/>
       </rule>
       <rule e="way" k="railway" v="funicular" zoom-min="16">
-        <line stroke="#BF8F93" stroke-width="0.5" stroke-linecap="butt"/>
+        <line stroke="#8c5c60" stroke-width="0.5" stroke-linecap="butt"/>
         <line stroke="#FFFFFF" stroke-width="0.3" stroke-dasharray="6,8" stroke-linecap="butt"/>
       </rule>
       <rule e="way" k="railway" v="preserved" zoom-min="13" zoom-max="15">
-        <line stroke="#BF8F93" stroke-width="0.3" stroke-linecap="butt"/>
+        <line stroke="#8c5c60" stroke-width="0.3" stroke-linecap="butt"/>
       </rule>
       <rule e="way" k="railway" v="preserved" zoom-min="16">
-        <line stroke="#BF8F93" stroke-width="0.5" stroke-linecap="butt"/>
+        <line stroke="#8c5c60" stroke-width="0.5" stroke-linecap="butt"/>
         <line stroke="#FFFFFF" stroke-width="0.3" stroke-dasharray="6,8" stroke-linecap="butt"/>
       </rule>
     </rule>
@@ -1066,7 +1066,7 @@
       </rule>
     </rule>
     <rule e="way" k="highway" v="path|footway" zoom-min="13">
-      <rule e="way" k="trail_visibility" v="~|excellent|good|intermediate">
+      <rule e="way" k="trail_visibility" v="~|excellent|good|intermediate|yes|medium|low">
         <rule e="way" k="sac_scale" v="~">
           <line stroke="#53534e" stroke-width="0.4" stroke-dasharray="8,6" stroke-linecap="butt" scale="stroke"/>
         </rule>
@@ -1093,7 +1093,7 @@
           <pathText k="sac_scale" font-family="sans_serif" font-style="normal" font-size="8" fill="#393935" stroke="#FFFFFF" stroke-width="2.0" repeat-start="250" repeat-gap="250"/>
         </rule>
       </rule>
-      <rule e="way" k="trail_visibility" v="bad|horrible|no" zoom-min="13">
+      <rule e="way" k="trail_visibility" v="poor|very_bad|bad|horrible|no" zoom-min="13">
         <line stroke="#44747474" stroke-width="0.3"/>
         <line stroke="#53534e" stroke-width="0.3" stroke-dasharray="2,6" stroke-linecap="butt" scale="stroke"/>
       </rule>
@@ -1248,7 +1248,9 @@
       <caption k="ref" font-family="sans_serif" font-style="normal" font-size="11" fill="#20202f" stroke="#F7AA58" stroke-width="7" position="below"/>
     </rule>
     <rule e="way" k="toll" v="yes" zoom-min="12">
-      <line stroke="#88DD0000" stroke-width="1.0" stroke-dasharray="1,12" stroke-linecap="round"/>
+      <rule e="way" k="highway" v="*">
+        <line stroke="#88DD0000" stroke-width="1.0" stroke-dasharray="1,12" stroke-linecap="round"/>
+      </rule>
     </rule>
     <rule e="way" k="access" v="permit" zoom-min="12">
       <line stroke="#88DD0000" stroke-width="1.0" stroke-dasharray="1,12" stroke-linecap="round"/>
@@ -2283,19 +2285,19 @@
     <rule e="node" k="railway" v="station" zoom-min="13">
       <symbol id="id_station" src="file:/symbols/railway_station.svg" symbol-percent="60" priority="-10"/>
       <rule e="node" k="*" v="*" zoom-min="15">
-        <caption symbol-id="id_station" k="name" dy="-4" font-style="bold" font-family="sans_serif" font-size="9" fill="#333333" stroke="#ffffff" stroke-width="1.5"/>
+        <caption symbol-id="id_station" k="name" dy="-4" font-style="bold" font-family="sans_serif" font-size="9" fill="#8c5c60" stroke="#ffffff" stroke-width="1.5"/>
       </rule>
     </rule>
-    <rule e="node" k="railway" v="tram_stop" zoom-min="14">
-      <symbol id="id_tram_stop" src="file:/symbols/railway_tram_stop.svg" symbol-percent="50"/>
+    <rule e="node" k="railway" v="tram_stop" zoom-min="13">
+      <symbol id="id_tram_stop" src="file:/symbols/railway_tram_stop.svg" symbol-percent="60" priority="-10"/>
       <rule e="node" k="*" v="*" zoom-min="15">
-        <caption symbol-id="id_tram_stop" k="name" dy="13" font-style="bold" font-family="sans_serif" font-size="9" fill="#333333" stroke="#ffffff" stroke-width="1.5"/>
+        <caption symbol-id="id_tram_stop" k="name" dy="-4" font-style="bold" font-family="sans_serif" font-size="9" fill="#ce6e71" stroke="#ffffff" stroke-width="1.5"/>
       </rule>
     </rule>
     <rule e="node" k="railway" v="halt" zoom-min="13">
-      <symbol id="id_halt" src="file:/symbols/railway_station.svg" symbol-percent="60" priority="-10"/>
+      <symbol id="id_halt" src="file:/symbols/railway_tram_stop.svg" symbol-percent="60" priority="-10"/>
       <rule e="node" k="*" v="*" zoom-min="15">
-        <caption symbol-id="id_halt" k="name" dy="-4" font-style="bold" font-family="sans_serif" font-size="9" fill="#333333" stroke="#ffffff" stroke-width="1.5"/>
+        <caption symbol-id="id_halt" k="name" dy="-4" font-style="bold" font-family="sans_serif" font-size="9" fill="#ce6e71" stroke="#ffffff" stroke-width="1.5"/>
       </rule>
     </rule>
   </rule>
@@ -3049,7 +3051,7 @@
     </rule>
   </rule>
   <rule e="way" k="route" v="hiking|foot" zoom-min="14" cat="trail_markings">
-    <rule e="way" k="osmc" v="yes">
+    <rule e="way" k="osmc_color" v="*">
       <rule e="way" k="osmc_foreground" v="*">
         <rule e="way" k="osmc_order" v="~|1|2" closed="any">
           <rule e="any" k="osmc_foreground" v="blue_arch">
